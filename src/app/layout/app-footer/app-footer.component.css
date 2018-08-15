@@ -1,0 +1,138 @@
+
+
+
+footer{
+  /*position: absolute;*/
+  bottom: 0;
+  width: 100%;
+  min-height: 150px;
+  background-color: #000000;
+  background-image: url("../../../assets/black_brick_wall_footer_background.jpg");
+  color: #ffffff;
+  margin-top: 20px;
+}
+.footer-nav{
+  margin: 0 auto 20px;
+  width: 90%;
+  min-height: 160px;
+  position: relative;
+  top: 10px;
+}
+.footer-nav ul{
+  float: left;
+  left: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 30px;
+}
+.footer-nav ul li{
+  float: left;
+  height: auto;
+  width: auto;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 62px;
+}
+.footer-nav ul li a{
+  font-size: 14px;
+  text-decoration: none;
+  height: 35px;
+  color: #ffffff;
+}
+.footer-nav ul li a:hover{
+  text-decoration: underline;
+}
+.footer-nav ul li a:link,
+.footer-nav ul li a:visited,
+.footer-nav ul li a:active{
+  text-decoration:none;
+}
+.footer-nav h1, h3, h5{
+  color: #ffffff;
+}
+.footer-wrapper{
+  width: 90%;
+  margin: 0 auto 0;
+}
+.footer-nav-subdiv{
+  width: 20%;
+  margin: 2% 0 0 12%;
+  float: left;
+}
+.footer-hr{
+  visibility: hidden;
+  display: none;
+}
+.site-footer{
+  margin: 15px auto 0;
+  width: 45%;
+  color: #bebebe;
+  text-align: center;
+}
+
+
+.push_footer_down {
+  height: 40px;
+}
+.footer-wrapper {
+  width: 100%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  background-color: #79ABF0;
+}
+.footer-nav {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  width: 70%;
+  min-height: 80px;
+}
+.footer-nav ul {
+  float: left;
+  left: 0px;
+  padding: 0px;
+  list-style: none;
+  margin-top: 30px;
+}
+.footer-nav ul li {
+  float: left;
+  height: auto;
+  width: auto;
+  list-style: none;
+  margin-left: 0px;
+  padding-left: 62px;
+}
+.footer-nav ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  height: 35px;
+  color: #FFF;
+}
+.footer-nav ul li a:hover {
+  text-decoration: underline;
+}
+.footer-nav ul li a:link, .footer-nav ul li a:visit, .footer-nav ul li a:active
+{
+  text-decoration: none;
+}
+
+@media (max-width: 768px){
+  .footer-wrapper{
+    width: 100%;
+    margin: 0 auto 0;
+  }
+  .footer-nav-subdiv{
+  }
+  .site-footer{
+    width: 90%;
+  }
+  .footer-nav-subdiv {
+    width: 80%;
+  }
+}
+@media (max-width: 414px){
+  .footer-nav-subdiv{
+    width: 80%;
+    margin: 0 auto 0;
+  }
+}

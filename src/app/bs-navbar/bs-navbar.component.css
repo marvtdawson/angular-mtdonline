@@ -1,0 +1,16 @@
+.logo-wrapper { /* -- Mast Head Logo Container @ 1920 PX -- */
+  margin: 12px 0 0 150px;
+  height: 55px;
+  width: 20%;
+}
+.nav-link-wrapper{
+  float: right;
+  right: 2%;
+  width: 25%;
+  position: absolute;
+}
+
+
+.dropdown-toggle {
+    cursor: pointer;
+}
