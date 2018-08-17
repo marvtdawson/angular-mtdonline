@@ -1,7 +1,11 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
   <div class="logo-wrapper">
-    <a class="navbar-brand" routerLink="/">Marvin T Dawson</a>
-    <img src="../../../src/assets/marvthemartian.jpg" alt="">
+    <a class="navbar-brand" routerLink="/">
+      <span class="logo-text-wrapper">{{ sitename }}</span>
+      <div class="logo-img-wrapper">
+        <img class="logo-img" src="../../assets/img/marvin_the_martian.jpg" alt="">
+      </div>
+    </a>
   </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -10,10 +14,7 @@
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto nav-link-wrapper">
       <li class="nav-item">
-        <a class="nav-link" routerLink="/about">ABOUT</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" routerLink="/resume">RESUME</a>
+        <a class="nav-link" routerLink="/experience">EXPERIENCE</a>
       </li>
       <li ngbDropdown class="nav-item dropdown">
         <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WORK</a>
@@ -22,6 +23,9 @@
           <a class="dropdown-item" routerLink="/portfolio/angular-ionic">Angular + Ionic 3</a>
           <a class="dropdown-item" routerLink="/portfolio/php">PHP 6 / 7</a>
         </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/resume">RESUME</a>
       </li>
     </ul>
   </div>

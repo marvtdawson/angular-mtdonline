@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class SiteDataService {
 
-  siteName = 'Marvin T Dawson';
+  siteName = 'Marvin T. Dawson';
 
   constructor() { }
 }

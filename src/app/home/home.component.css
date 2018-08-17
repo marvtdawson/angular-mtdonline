@@ -20,7 +20,7 @@
   margin: 50px auto 0;
   font-family: Arial sans-serif;
   font-size: 18px;
-  color: #545454;
+  color: #FFFFFF;
   text-align: center;
 }
 .homePage-MoreAboutMe h3{
@@ -95,4 +95,10 @@
 }
 .fa-icon-wrapper{
   text-align: center;
+}
+.bg-jumbrotron{
+  background: url('../../../src/assets/img/dallas2.JPG') no-repeat;
+}
+.bg-cloud{
+  background-color: #2c3e50;
 }

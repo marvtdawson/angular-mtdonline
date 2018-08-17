@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {SiteDataService} from '../../providers/site-data.service';
 
 @Component({
   selector: 'app-bs-navbar',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BsNavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private siteData: SiteDataService) { }
+
+  sitename = this.siteData.siteName;
 
   ngOnInit() {
   }

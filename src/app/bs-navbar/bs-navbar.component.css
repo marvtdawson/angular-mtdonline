@@ -2,6 +2,18 @@
   margin: 12px 0 0 150px;
   height: 55px;
   width: 20%;
+  display: inline;
+}
+.logo-text-wrapper{
+  display: inline;
+}
+.logo-img-wrapper{
+  display:inline;
+  margin-left: 10px;
+}
+.logo-img{
+  width: 12%;
+  border-radius: 75px;
 }
 .nav-link-wrapper{
   float: right;
@@ -9,7 +21,6 @@
   width: 25%;
   position: absolute;
 }
-
 
 .dropdown-toggle {
     cursor: pointer;
