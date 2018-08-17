@@ -1,0 +1,98 @@
+.homePage-BriefSummary {
+  width: 500px;
+  margin: 0 auto 0;
+  font-family: Arial sans-serif;
+  font-size: 18px;
+  color: #545454;
+}
+.myPhoto{
+  width: 100%;
+}
+.homePagePic{
+  width: 140px;
+  height: 145px;
+  margin: 25px auto 30px;
+  border-radius: 100px;
+}
+.homePage-BriefSummary,
+.homePage-MoreAboutMe{
+  width: 900px;
+  margin: 50px auto 0;
+  font-family: Arial sans-serif;
+  font-size: 18px;
+  color: #545454;
+  text-align: center;
+}
+.homePage-MoreAboutMe h3{
+  font-family: Arial sans-serif;
+  font-size: 24px;
+  color: #545454;
+}
+.moreAbout-Me{
+  width: 200px;
+  height: 50px;
+  margin: 35px auto 25px;
+  border: 1px solid #fff;
+  background-color: #545454;
+  color: #fff;
+  text-align: center;
+}
+.moreAbout-Me > span{
+  top: 15px;
+  position: relative;
+  font-weight: bold;
+}
+.section-h2{
+  width: 200px;
+  margin: 10px auto 20px;
+  font-family: Arial sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #545454;
+  text-align: center;
+  padding: 10px;
+}
+.work-thumbnail {
+  width: 350px;
+  text-align: center;
+}
+.work-thumbnail h3{
+  font-size: 20px;
+  color: #545454;
+}
+.portfolio-thumbnail-img{
+  margin: 10px auto 0;
+  border-radius: 7px;
+  border: 1px solid #545454;
+  transition: 0s;
+  width: 200px;
+  min-height: 195px;
+}
+
+
+.skills-thumbnail{
+  padding: 6px;
+  border: 1px solid #545454;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto 35px;
+  width: 65%;
+}
+.skills-thumbnail:hover{
+  box-shadow: 3px 3px 3px #545454;
+  color: #424242;
+}
+#thumbnail-wrapper{
+  height: 250px;
+}
+.caption{
+  text-align: center;
+  /* background-color: #545454;
+      display: none;
+      z-index: 500;
+      height: 250px;
+      margin-top: -25px; */
+}
+.fa-icon-wrapper{
+  text-align: center;
+}
