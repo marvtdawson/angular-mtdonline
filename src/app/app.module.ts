@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
@@ -23,6 +24,7 @@ import { PhpComponent } from './portfolio/php/php.component';
 import { AngularComponent } from './portfolio/angular/angular.component';
 import { AngularIonicComponent } from './portfolio/angular-ionic/angular-ionic.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { TodosComponent } from './todos/todos.component';
 
 @NgModule({
   declarations: [
@@ -41,12 +43,14 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AngularComponent,
     AngularIonicComponent,
     PageNotFoundComponent,
+    TodosComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     NgbModule.forRoot(),
+    MatCardModule,
     MatToolbarModule,
     MatCheckboxModule,
     LayoutModule,

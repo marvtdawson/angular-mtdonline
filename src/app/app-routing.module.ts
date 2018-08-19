@@ -12,20 +12,22 @@ import { ExperienceComponent } from './experience/experience.component';
 import { StacksComponent } from './stacks/stacks.component';
 import { ResumeComponent } from './resume/resume.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import {TodosComponent} from './todos/todos.component';
 
 
 const appRoutes: Routes = [
-    {path: '', component: HomeComponent },
-    {path: 'about', component: AboutComponent },
-    {path: 'portfolio', component: PortfolioComponent },
-    {path: 'portfolio/angular', component: AngularComponent },
-    {path: 'portfolio/angular-ionic', component: AngularIonicComponent },
-    {path: 'portfolio/php', component: PhpComponent },
-    {path: 'experience', component: ExperienceComponent },
-    {path: 'stacks', component: StacksComponent },
-    {path: 'resume', component: ResumeComponent },
-    {path: 'contact', component: ContactComponent },
-    {path: '**', component: PageNotFoundComponent },
+  {path: '', component: HomeComponent },
+  {path: 'about', component: AboutComponent },
+  {path: 'portfolio', component: PortfolioComponent },
+  {path: 'portfolio/angular', component: AngularComponent },
+  {path: 'portfolio/angular-ionic', component: AngularIonicComponent },
+  {path: 'portfolio/php', component: PhpComponent },
+  {path: 'experience', component: ExperienceComponent },
+  {path: 'stacks', component: StacksComponent },
+  {path: 'resume', component: ResumeComponent },
+  {path: 'todos', component: TodosComponent },
+  {path: 'contact', component: ContactComponent },
+  {path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
