@@ -23,8 +23,11 @@ import { BsNavbarComponent } from './bs-navbar/bs-navbar.component';
 import { PhpComponent } from './portfolio/php/php.component';
 import { AngularComponent } from './portfolio/angular/angular.component';
 import { AngularIonicComponent } from './portfolio/angular-ionic/angular-ionic.component';
+import { AngularCAspnetComponent } from './portfolio/angular-c-aspnet/angular-c-aspnet.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TodosComponent } from './todos/todos.component';
+import { ReactComponent } from './portfolio/react/react.component';
+
 
 @NgModule({
   declarations: [
@@ -44,6 +47,8 @@ import { TodosComponent } from './todos/todos.component';
     AngularIonicComponent,
     PageNotFoundComponent,
     TodosComponent,
+    AngularCAspnetComponent,
+    ReactComponent
   ],
   imports: [
     BrowserModule,
