@@ -6,7 +6,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { MatButtonModule, MatSidenavModule, MatIconModule, MatIconRegistry, MatListModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { AppHeaderComponent } from './layout/app-header/app-header.component';
@@ -28,6 +28,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { TodosComponent } from './todos/todos.component';
 import { ReactComponent } from './portfolio/react/react.component';
 import { WixComponent } from './portfolio/wix/wix.component';
+import { SkillsComponent } from './skills/skills.component';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { WixComponent } from './portfolio/wix/wix.component';
     TodosComponent,
     AngularCAspnetComponent,
     ReactComponent,
-    WixComponent
+    WixComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
@@ -66,7 +68,7 @@ import { WixComponent } from './portfolio/wix/wix.component';
     MatIconModule,
     MatListModule,
   ],
-  providers: [],
+  providers: [MatIconRegistry],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })

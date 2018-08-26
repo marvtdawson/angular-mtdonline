@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { SkillsComponent } from './skills/skills.component';
 import { StacksComponent } from './stacks/stacks.component';
 import { ResumeComponent } from './resume/resume.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -29,6 +30,7 @@ const appRoutes: Routes = [
   {path: 'portfolio/php', component: PhpComponent },
   {path: 'portfolio/wix', component: WixComponent },
   {path: 'experience', component: ExperienceComponent },
+  {path: 'skills', component: SkillsComponent },
   {path: 'stacks', component: StacksComponent },
   {path: 'resume', component: ResumeComponent },
   {path: 'todos', component: TodosComponent },

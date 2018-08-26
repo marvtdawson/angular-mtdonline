@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MatIconModule } from '@angular/material/icon';
-import { MatIconRegistry } from '@angular/material';
 
 
 @Component({
