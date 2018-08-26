@@ -13,8 +13,9 @@ import { ExperienceComponent } from './experience/experience.component';
 import { StacksComponent } from './stacks/stacks.component';
 import { ResumeComponent } from './resume/resume.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { TodosComponent} from './todos/todos.component';
-import {ReactComponent} from './portfolio/react/react.component';
+import { TodosComponent } from './todos/todos.component';
+import { ReactComponent } from './portfolio/react/react.component';
+import { WixComponent } from './portfolio/wix/wix.component';
 
 
 const appRoutes: Routes = [
@@ -26,6 +27,7 @@ const appRoutes: Routes = [
   {path: 'portfolio/angular-c-aspnet', component: AngularCAspnetComponent },
   {path: 'portfolio/react', component: ReactComponent },
   {path: 'portfolio/php', component: PhpComponent },
+  {path: 'portfolio/wix', component: WixComponent },
   {path: 'experience', component: ExperienceComponent },
   {path: 'stacks', component: StacksComponent },
   {path: 'resume', component: ResumeComponent },

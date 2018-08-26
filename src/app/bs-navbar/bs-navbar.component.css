@@ -6,6 +6,7 @@
 }
 .logo-text-wrapper{
   display: inline;
+  color: #007bff;
 }
 .logo-img-wrapper{
   display:inline;
@@ -24,4 +25,7 @@
 
 .dropdown-toggle {
     cursor: pointer;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #007bff;
 }

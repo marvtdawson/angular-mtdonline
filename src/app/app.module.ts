@@ -1,6 +1,6 @@
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatCardModule } from '@angular/material/card';
@@ -27,6 +27,7 @@ import { AngularCAspnetComponent } from './portfolio/angular-c-aspnet/angular-c-
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TodosComponent } from './todos/todos.component';
 import { ReactComponent } from './portfolio/react/react.component';
+import { WixComponent } from './portfolio/wix/wix.component';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { ReactComponent } from './portfolio/react/react.component';
     PageNotFoundComponent,
     TodosComponent,
     AngularCAspnetComponent,
-    ReactComponent
+    ReactComponent,
+    WixComponent
   ],
   imports: [
     BrowserModule,
@@ -65,6 +67,7 @@ import { ReactComponent } from './portfolio/react/react.component';
     MatListModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }

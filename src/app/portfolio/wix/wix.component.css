@@ -1,0 +1,10 @@
+div.healcode div.hc_footer * {
+  display: none !important;
+}
+
+/**
+<style>
+ div.healcode div.hc_footer img {
+   display: none !important;
+ }
+</style> **/

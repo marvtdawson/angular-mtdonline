@@ -4,8 +4,10 @@
 /* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
 
 body{
-    margin: 0;
-    padding-top: 80px;
+  margin: 0;
+  padding-top: 80px;
+  font-family: 'Metamorphous', cursive;
+  font-size: 18px;
 }
 .container {
   max-width: 100%;

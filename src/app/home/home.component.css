@@ -1,129 +1,176 @@
-.homepage-wall,
-.homepage-wall img{
-  width: 100%;
+  .homepage-wall,
+  .homepage-wall img{
+    width: 100%;
+  }
+
+  .homePage-BriefSummary {
+    width: 500px;
+    margin: 0 auto 0;
+    font-family: Arial sans-serif;
+    font-size: 18px;
+    color: #545454;
+  }
+  .myPhoto{
+    width: 100%;
+  }
+  .homePagePic{
+    background: url('../../assets/img/marvin_the_martian_black_cropped_2.jpg')no-repeat;
+    width: 140px;
+    height: 145px;
+    margin: 25px auto 30px;
+    border-radius: 100px;
+  }
+  .homePage-BriefSummary{
+    width: 900px;
+    margin: 18% 0 0 22%;
+    font-family: Arial sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #545454;
+    opacity: 0.8;
+    border-radius: 14px;
+    padding: 5px;
+  }
+  .homePage-MoreAboutMe{
+    width: 80%;
+    margin: 0 auto 0;
+    text-align: center;
+  }
+  .homePage-MoreAboutMe h3{
+    font-family: Arial sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+  }
+  .homePage-MoreAboutMe p{
+    color: #d2d2d2;
+  }
+  .moreAbout-Me{
+    width: 200px;
+    height: 50px;
+    margin: 1% 0 0 65%;
+    border: 1px solid #fff;
+    background-color: #dcccd9;
+    opacity: 0.6;
+    text-align: center;
+    position: relative;
+    border-radius: 20px;
+  }
+  .moreAbout-Me > span,
+  .my-resume > span {
+    color: #fff;
+    top: 12px;
+    position: relative;
+    font-weight: bold;
+  }
+  .my-resume{
+    width: 20%;
+    height: 50px;
+    margin: 1% auto 20px;
+    color: #007bff;
+    background-color: #dcccd9;
+    text-align: center;
+    position: relative;
+    border-radius: 20px;
+  }
+  .section-h2{
+    width: 200px;
+    margin: 10px auto 20px;
+    font-family: Arial sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+  }
+  .work-thumbnail {
+    width: 350px;
+    text-align: center;
+  }
+  .work-thumbnail h3{
+    font-size: 20px;
+    color: #545454;
+  }
+  .portfolio-thumbnail-img{
+    margin: 10px auto 0;
+    border-radius: 7px;
+    border: 1px solid #545454;
+    transition: 0s;
+    width: 200px;
+    min-height: 195px;
+  }
+
+
+  .skills-thumbnail{
+    padding: 6px;
+    border: 1px solid #545454;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto 35px;
+    width: 65%;
+  }
+  .skills-thumbnail:hover{
+    box-shadow: 3px 3px 3px #545454;
+    color: #424242;
+  }
+  #thumbnail-wrapper{
+    height: 250px;
+  }
+  .caption{
+    text-align: center;
+    /* background-color: #545454;
+        display: none;
+        z-index: 500;
+        height: 250px;
+        margin-top: -25px; */
+  }
+  .fa-icon-wrapper{
+    text-align: center;
+  }
+  .bg-jumbrotron {
+    background: url('../../assets/img/dallas1_cropped.jpg') no-repeat;
+    background-size: 100%;
+    height: 800px;
+  }
+  .bg-cloud{
+    background-color: #2c3e50;
+  }
+  .card-container{
+    width: 25%;
+    min-height: 226px;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-left: 75px;
+    margin-bottom: 50px;
+  }
+
+
+/**  Large devices (desktops, 992px and up) **/
+@media (min-width: 992px) {
+  .bg-jumbrotron {
+    background: url('../../assets/img/dallas1_cropped.jpg') no-repeat;
+    background-size: 100%;
+    height: 0;
+  }
 }
 
-.homePage-BriefSummary {
-  width: 500px;
-  margin: 0 auto 0;
-  font-family: Arial sans-serif;
-  font-size: 18px;
-  color: #545454;
-}
-.myPhoto{
-  width: 100%;
-}
-.homePagePic{
-  width: 140px;
-  height: 145px;
-  margin: 25px auto 30px;
-  border-radius: 100px;
-}
-.homePage-BriefSummary{
-  width: 900px;
-  margin: 18% 0 0 22%;
-  font-family: Arial sans-serif;
-  font-size: 18px;
-  color: #FFFFFF;
-  text-align: center;
-  background-color: #545454;
-  opacity: 0.8;
-  border-radius: 14px;
-  padding: 5px;
-}
-.homePage-MoreAboutMe{
 
+/**  Medium devices (tablets, 768px and up) **/
+@media (min-width: 768px) {
+  .homePage-BriefSummary {
+    width: 80%;
+    margin: 20px auto 0;
+  }
 }
-.homePage-MoreAboutMe h3{
-  font-family: Arial sans-serif;
-  font-size: 24px;
-  color: #545454;
-}
-.moreAbout-Me{
-  width: 200px;
-  height: 50px;
-  margin: 1% 0 0 65%;
-  border: 1px solid #fff;
-  background-color: #ff672c;
-  opacity: 0.8;
-  text-align: center;
-  position: relative;
-  border-radius: 20px;
-}
-.moreAbout-Me > span{
-  color: #fff;
-  top: 12px;
-  position: relative;
-  font-weight: bold;
-}
-.section-h2{
-  width: 200px;
-  margin: 10px auto 20px;
-  font-family: Arial sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: #545454;
-  text-align: center;
-  padding: 10px;
-}
-.work-thumbnail {
-  width: 350px;
-  text-align: center;
-}
-.work-thumbnail h3{
-  font-size: 20px;
-  color: #545454;
-}
-.portfolio-thumbnail-img{
-  margin: 10px auto 0;
-  border-radius: 7px;
-  border: 1px solid #545454;
-  transition: 0s;
-  width: 200px;
-  min-height: 195px;
+
+/** Small devices (landscape phones, 576px and up) **/
+@media (min-width: 576px) {
+  .bg-jumbrotron {
+    height: 0;
+  }
 }
 
 
-.skills-thumbnail{
-  padding: 6px;
-  border: 1px solid #545454;
-  border-radius: 10px;
-  text-align: center;
-  margin: 0 auto 35px;
-  width: 65%;
-}
-.skills-thumbnail:hover{
-  box-shadow: 3px 3px 3px #545454;
-  color: #424242;
-}
-#thumbnail-wrapper{
-  height: 250px;
-}
-.caption{
-  text-align: center;
-  /* background-color: #545454;
-      display: none;
-      z-index: 500;
-      height: 250px;
-      margin-top: -25px; */
-}
-.fa-icon-wrapper{
-  text-align: center;
-}
-.bg-jumbrotron {
-  background: url('../../assets/img/dallas1_cropped.jpg') no-repeat;
-  background-size: 100%;
-  height: 800px;
-}
-.bg-cloud{
-  background-color: #2c3e50;
-}
-.card-container{
-  width: 25%;
-  min-height: 226px;
-  text-align: center;
-  position: relative;
-  float: left;
-  margin-left: 75px;
-  margin-bottom: 50px;
-}
+
+
