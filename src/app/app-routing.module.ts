@@ -22,13 +22,18 @@ import { WixComponent } from './portfolio/wix/wix.component';
 const appRoutes: Routes = [
   {path: '', component: HomeComponent },
   {path: 'about', component: AboutComponent },
-  {path: 'portfolio', component: PortfolioComponent },
-  {path: 'portfolio/angular', component: AngularComponent },
-  {path: 'portfolio/angular-ionic', component: AngularIonicComponent },
-  {path: 'portfolio/angular-c-aspnet', component: AngularCAspnetComponent },
-  {path: 'portfolio/react', component: ReactComponent },
-  {path: 'portfolio/php', component: PhpComponent },
-  {path: 'portfolio/wix', component: WixComponent },
+  {path: 'portfolio', component: PortfolioComponent,
+    children: [
+      {path: '' +
+          '' +
+          'angular', component: AngularComponent},
+      {path: 'portfolio/angular-ionic', component: AngularIonicComponent},
+      {path: 'portfolio/angular-c-aspnet', component: AngularCAspnetComponent},
+      {path: 'portfolio/react', component: ReactComponent},
+      {path: 'portfolio/php', component: PhpComponent},
+      {path: 'portfolio/wix', component: WixComponent}
+    ],
+  },
   {path: 'experience', component: ExperienceComponent },
   {path: 'skills', component: SkillsComponent },
   {path: 'stacks', component: StacksComponent },
