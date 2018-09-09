@@ -24,14 +24,12 @@ const appRoutes: Routes = [
   {path: 'about', component: AboutComponent },
   {path: 'portfolio', component: PortfolioComponent,
     children: [
-      {path: '' +
-          '' +
-          'angular', component: AngularComponent},
-      {path: 'portfolio/angular-ionic', component: AngularIonicComponent},
-      {path: 'portfolio/angular-c-aspnet', component: AngularCAspnetComponent},
-      {path: 'portfolio/react', component: ReactComponent},
-      {path: 'portfolio/php', component: PhpComponent},
-      {path: 'portfolio/wix', component: WixComponent}
+      {path: 'angular', component: AngularComponent},
+      {path: 'angular-ionic', component: AngularIonicComponent},
+      {path: 'angular-c-aspnet', component: AngularCAspnetComponent},
+      {path: 'react', component: ReactComponent},
+      {path: 'php', component: PhpComponent},
+      {path: 'wix', component: WixComponent}
     ],
   },
   {path: 'experience', component: ExperienceComponent },

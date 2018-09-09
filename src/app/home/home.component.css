@@ -21,7 +21,7 @@
     border-radius: 100px;
   }
   .homePage-BriefSummary{
-    width: 900px;
+    width: 60%;
     margin: 18% 0 0 22%;
     font-family: Arial sans-serif;
     font-size: 18px;
@@ -45,10 +45,10 @@
   .homePage-MoreAboutMe p{
     color: #d2d2d2;
   }
-  .moreAbout-Me{
+  .moreAbout-Me-btn{
     width: 200px;
     height: 50px;
-    margin: 1% 0 0 65%;
+    margin: 1% 0 0 71%;
     border: 1px solid #fff;
     background-color: #dcccd9;
     opacity: 0.6;
@@ -56,7 +56,7 @@
     position: relative;
     border-radius: 20px;
   }
-  .moreAbout-Me > span,
+  .moreAbout-Me-btn > span,
   .my-resume > span {
     color: #fff;
     top: 12px;
@@ -79,7 +79,6 @@
     font-family: Arial sans-serif;
     font-size: 18px;
     font-weight: bold;
-    color: #FFFFFF;
     text-align: center;
     padding: 10px;
   }
@@ -100,6 +99,15 @@
     min-height: 195px;
   }
 
+  .recent-projects{
+    width: 80%;
+    margin: 0 auto 0;
+  }
+
+  .skills-experience{
+    width: 80%;
+    margin: 0 auto 0;
+  }
 
   .skills-thumbnail{
     padding: 6px;
@@ -138,9 +146,18 @@
   .bg-cloud{
     background-color: #ecf0f1;
   }
+  mat-card{
+    border: 0.5px solid #a0a0a0;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px #545454;
+  }
+  .recent-projects .card-container{
+    width: 25%;
+    margin-top: 55px;
+  }
   .card-container{
     width: 25%;
-    min-height: 226px;
+    min-height: 262px;
     text-align: center;
     position: relative;
     float: left;
@@ -150,27 +167,25 @@
 
 
 /**  Large devices (desktops, 992px and up) **/
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .bg-jumbrotron {
     background: url('../../assets/img/dallas1_cropped.jpg') no-repeat;
     background-size: 100%;
-    height: 0;
   }
 }
 
 
 /**  Medium devices (tablets, 768px and up) **/
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .homePage-BriefSummary {
     width: 80%;
-    margin: 20px auto 0;
+    margin: 10% 0 0 0;
   }
 }
 
 /** Small devices (landscape phones, 576px and up) **/
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .bg-jumbrotron {
-    height: 0;
   }
 }
 
