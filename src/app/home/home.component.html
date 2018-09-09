@@ -19,41 +19,51 @@
   <div class="row">
     <div class="recent-projects">
       <div id="" class="section-h2">RECENT PROJECTS</div>
+
         <mat-card class="card-container">
-          <mat-card-title>Marvin's ReactJS</mat-card-title>
+          <mat-header>
+            <mat-card-title>MTD Online</mat-card-title>
+            <mat-card-subtitle>ReactJS site</mat-card-subtitle>
+          </mat-header>
+          <img mat-card-image src="../../assets/img/clients/mtdonline.jpg" >
+          <mat-card-content>
+            <p>Check out my online portfolio develop with ReactJS.</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>Learn More</button>
+            <button mat-button (click)="goToMtdOnline()">Visit Site</button>
+          </mat-card-actions>
+        </mat-card>
+
+        <mat-card class="card-container">
+          <mat-header>
+            <mat-card-title>Reggie's Buckets</mat-card-title>
+            <mat-card-subtitle>WIX Site</mat-card-subtitle>
+          </mat-header>
+          <img mat-card-image src="../../assets/img/clients/reggiesbucket_homescreen.jpg" >
+          <mat-card-content>
+            <p>Retired Major League Baseball player, Reggie York Fitness Improvement site.</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>Learn More</button>
+            <button mat-button (click)="goToReggiesBucket()">Visit Site</button>
+          </mat-card-actions>
+        </mat-card>
+
+        <mat-card class="card-container">
+          <mat-header>
+            <mat-card-title>Bloutz App</mat-card-title>
+            <mat-card-subtitle>Angular 6 & Ionic 4 Site</mat-card-subtitle>
+          </mat-header>
           <img mat-card-image src="" >
           <mat-card-content>
-            <p>Check out my online portfolio written with ReactJS.</p>
+            <p>Social Media Posting Application written with Angular 6 & Ionic 4</p>
           </mat-card-content>
           <mat-card-actions>
             <button mat-button>Learn More</button>
             <button mat-button >Visit Site</button>
           </mat-card-actions>
         </mat-card>
-
-      <mat-card class="card-container">
-        <mat-card-title>Reggie's Buckets WIX site</mat-card-title>
-        <img mat-card-image src="" >
-        <mat-card-content>
-          <p>Retired Major League Baseball player, Reggie York Fitness Improvement site.</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>Learn More</button>
-          <button mat-button >Visit Site</button>
-        </mat-card-actions>
-      </mat-card>
-
-      <mat-card class="card-container">
-        <mat-card-title>Bloutz App</mat-card-title>
-        <img mat-card-image src="" >
-        <mat-card-content>
-          <p>Social Media Posting Application written with Angular 6 & Ionic 4</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>Learn More</button>
-          <button mat-button >Visit Site</button>
-        </mat-card-actions>
-      </mat-card>
 
     </div>
   </div>

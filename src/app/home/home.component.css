@@ -143,6 +143,9 @@
   .bg-midnight-blue{
     background-color: #2c3e50;
   }
+  .bg-midnight-blue .section-h2 {
+    color: #d2d2d2;
+  }
   .bg-cloud{
     background-color: #ecf0f1;
   }
@@ -154,6 +157,8 @@
   .recent-projects .card-container{
     width: 25%;
     margin-top: 55px;
+    background-color: #2c3e50;
+    color: #d2d2d2;
   }
   .card-container{
     width: 25%;
