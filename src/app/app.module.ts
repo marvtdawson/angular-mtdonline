@@ -29,6 +29,7 @@ import { TodosComponent } from './todos/todos.component';
 import { ReactComponent } from './portfolio/react/react.component';
 import { WixComponent } from './portfolio/wix/wix.component';
 import { SkillsComponent } from './skills/skills.component';
+import { RecentProjectsComponent } from './recent-projects/recent-projects.component';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { SkillsComponent } from './skills/skills.component';
     AngularCAspnetComponent,
     ReactComponent,
     WixComponent,
-    SkillsComponent
+    SkillsComponent,
+    RecentProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -70,6 +72,9 @@ import { SkillsComponent } from './skills/skills.component';
   ],
   providers: [MatIconRegistry],
   bootstrap: [AppComponent],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
+  entryComponents: [
+    RecentProjectsComponent
+  ]
 })
 export class AppModule { }
