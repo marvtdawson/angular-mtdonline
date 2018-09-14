@@ -20,7 +20,8 @@ import { WixComponent } from './portfolio/wix/wix.component';
 
 
 const appRoutes: Routes = [
-  {path: '', component: HomeComponent },
+  {path: '', redirectTo: '/home', pathMatch: 'full' },
+  {path: 'home', component: HomeComponent },
   {path: 'about', component: AboutComponent },
   {path: 'portfolio', component: PortfolioComponent,
     children: [

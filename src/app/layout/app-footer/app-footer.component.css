@@ -1,46 +1,89 @@
-.footer{
-  /*position: absolute;*/
-  bottom: 0;
-  width: 100%;
-  background: #000000 url("../../../assets/img/black_brick_wall_footer_background.jpg") no-repeat;
-  color: #ffffff;
-  margin-top: 20px;
-}
-.footer-nav-subdiv{
-  max-width: 23%;
-  margin: 2% 0 0 9%;
-  float: left;
-}
-.footer-nav-subdiv h3{
-  text-align: center;
-}
-.site-footer-wrapper{
-  background-color: #545454;
-}
-.site-footer{
-  margin: 15px auto 0;
-  width: 60%;
-  color: #bebebe;
-  text-align: center;
-  background-color: #545454;
-}
-
-@media (max-width: 768px){
+/** Extra small devices (portrait phones, less than 576px) */
+/** No media query for `xs` since this is the default in Bootstrap */
+@media (min-width: 320px) {
   .footer-wrapper{
     width: 100%;
     margin: 0 auto 0;
   }
-  .footer-nav-subdiv{
+  .footer-nav-subdiv {
+    width: 90%;
+    margin: 20px auto 0;
+    text-align: justify;
+    float: none;
+  }
+  .site-footer-wrapper{
+    width: 100%;
+    background-color: #545454;
   }
   .site-footer{
     width: 90%;
+    margin: 0 auto 0;
+    padding: 5px;
+    color: #bebebe;
+    font-size: 12px;
+    text-align: center;
+  }
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 568px) {
+  .footer-nav-subdiv {
+    width: 90%;
+    margin: 20px auto 0;
+    text-align: justify;
+    float: none;
+  }
+
+}
+
+
+@media (min-width: 667px) {
+  .footer-nav-subdiv {
+    float: none;
+  }
+}
+
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .footer-wrapper{
+    margin: 0 auto 0;
   }
   .footer-nav-subdiv {
     width: 98%;
-    margin: 0 auto 0;
     text-align: center;
   }
-}
-@media (max-width: 414px){
+  .site-footer{}
 
 }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .footer{
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  .footer-nav-subdiv{
+    max-width: 23%;
+    margin: 2% 0 0 9%;
+    float: left;
+  }
+  .footer-nav-subdiv h3{
+    text-align: center;
+  }
+  .site-footer{
+    margin: 2px auto 0;
+    font-size: 18px;
+    width: 60%;
+  }
+
+}
+

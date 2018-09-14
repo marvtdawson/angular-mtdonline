@@ -15,4 +15,7 @@ export class BsNavbarComponent implements OnInit {
   ngOnInit() {
   }
 
+  goToHomePage() {
+  }
+
 }
