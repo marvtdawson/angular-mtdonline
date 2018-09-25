@@ -1,9 +1,12 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="main-content">
-      <p>Don't have a updated copy of my resume down loaded it here.</p>
-      <p>Yeah I get it, I am kind of a traditionalist myself too, in which I like a good ole fashion paper copy to hold in my hand.</p>
-      <p>So go ahead and hit the button and print or download the pdf of my resume.</p>
-    </div>
-  </div>
-</div>
+<h3 mat-dialog-title>MY RESUME</h3>
+<mat-dialog-content>
+  <p>Get a updated copy of my resume.</p>
+  <p>Yeah I get it, I am kind of a traditionalist myself too, in which I like a good ole fashion paper copy to hold in my hand.</p>
+  <p>So go ahead and hit the button.</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Nah Maybe Later!</button>
+  <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
+  <button mat-button mat-dialog-close mat-raised-button>
+    <a href="../../assets/resume/mdrez_gptx_10_2018.pdf" target="_blank">Download</a></button>
+</mat-dialog-actions>

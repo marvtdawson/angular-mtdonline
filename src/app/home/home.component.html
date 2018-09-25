@@ -3,14 +3,14 @@
     <div class="row">
       <div class="bg-jumbrotron-wrapper">
         <div class="bg-jumbrotron animated fadeIn delay-1s">
-          <div class="homePage-BriefSummary-wrapper">
+          <div class="col-sm align-self-center homePage-BriefSummary-wrapper">
             <div class="homePage-BriefSummary animated slideInDown delay-2s">
-          I'm a Sr. Full Stack MEAN & LAMP Developer.
-          I design mobile, responsive websites and hybrid applications using Angular 6 & Ionic 4 Framework or PHP. I currently work as a freelance developer in the Dallas-Fort Worth area in Texas.
-        </div>
+              I'm a Sr. Full Stack MEAN & LAMP Developer.
+              I design mobile, responsive websites and hybrid applications using Angular 6 & Ionic 4 Framework or PHP. I currently work as a freelance developer in the Dallas-Fort Worth area in Texas.
+            </div>
             <div class="moreAbout-Me-btn animated rotateIn delay-3s">
-            <span><a href="#about-me">MORE ABOUT ME</a></span>
-        </div>
+              <span><a (click)="triggerScrollTo()">MORE ABOUT ME</a></span>
+            </div>
         </div>
       </div>
       </div>
@@ -28,16 +28,16 @@
 
         <mat-card class="card-container">
           <mat-header>
-            <mat-card-title>MTD Online</mat-card-title>
-            <mat-card-subtitle>ReactJS Site</mat-card-subtitle>
+            <mat-card-title>Burgin Construction MN</mat-card-title>
+            <mat-card-subtitle>Angular 6 & Ionic 4 Site</mat-card-subtitle>
           </mat-header>
-          <img mat-card-image src="../../assets/img/clients/mtdonline.jpg" >
+          <img mat-card-image src="../../assets/img/clients/burgin_home_screen.jpg" >
           <mat-card-content>
-            <p>Check out my online portfolio develop with ReactJS.</p>
+            <p>Twin Cities general contractor quote application.</p>
           </mat-card-content>
           <mat-card-actions>
             <button mat-button>Learn More</button>
-            <button mat-button (click)="goToMtdOnline()">Visit Site</button>
+            <button mat-button (click)="goToBurginConstruction()">Visit Site</button>
           </mat-card-actions>
         </mat-card>
 
@@ -67,7 +67,7 @@
           </mat-card-content>
           <mat-card-actions>
             <button mat-button>Learn More</button>
-            <button mat-button >Visit Site</button>
+            <button mat-button (click)="goToWhosLaundry()">Visit Site</button>
           </mat-card-actions>
         </mat-card>
 
@@ -126,7 +126,7 @@
 
       <mat-card class="card-container">
         <mat-card-title>RESTful API</mat-card-title>
-        <i class="fa-2x">'/api/member/:id'</i>
+        <i class="fa-2x">api/member/:id</i>
         <mat-card-content>
           <p>Possess the ability to build custom API's and consume third party API's using tools like Postman.</p>
         </mat-card-content>
@@ -166,8 +166,9 @@
 
 
 <!-- Start About Me -->
-<div id="about-me" class="container-fluid bg-midnight-blue">
+<div id="about-me" class="container-fluid ">
   <div class="row">
+    <div class="bg-midnight-blue">
     <div class="col-md-12">
       <div class="section-h2">ABOUT ME</div>
       <div class="homePagePic"></div>
@@ -190,11 +191,12 @@
         </p>
       </div>
       <!-- download resume -->
-      <div class="my-resume-btn">
+      <div class="my-resume-btn" (click)="openResumeDialog()">
         <span>
-          <a routerLink="/resume">DOWNLOAD MY RESUME</a>
+          <a>DOWNLOAD MY RESUME</a>
         </span>
       </div>
+    </div>
     </div>
   </div><!-- #end row -->
 </div><!--  #end container  -->

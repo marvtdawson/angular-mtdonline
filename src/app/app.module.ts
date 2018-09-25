@@ -6,7 +6,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatButtonModule, MatSidenavModule, MatIconModule, MatIconRegistry, MatListModule } from '@angular/material';
+import { MatButtonModule, MatSidenavModule, MatIconModule, MatIconRegistry, MatListModule, MatDialogModule} from '@angular/material';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 import { AppComponent } from './app.component';
 import { AppHeaderComponent } from './layout/app-header/app-header.component';
@@ -30,6 +31,7 @@ import { ReactComponent } from './portfolio/react/react.component';
 import { WixComponent } from './portfolio/wix/wix.component';
 import { SkillsComponent } from './skills/skills.component';
 import { RecentProjectsComponent } from './recent-projects/recent-projects.component';
+import { ConsultingComponent } from './consulting/consulting.component';
 
 
 @NgModule({
@@ -54,7 +56,8 @@ import { RecentProjectsComponent } from './recent-projects/recent-projects.compo
     ReactComponent,
     WixComponent,
     SkillsComponent,
-    RecentProjectsComponent
+    RecentProjectsComponent,
+    ConsultingComponent
   ],
   imports: [
     BrowserModule,
@@ -69,12 +72,15 @@ import { RecentProjectsComponent } from './recent-projects/recent-projects.compo
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    MatDialogModule,
+    ScrollToModule.forRoot()
   ],
   providers: [MatIconRegistry],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   entryComponents: [
-    RecentProjectsComponent
+    RecentProjectsComponent,
+    ResumeComponent
   ]
 })
 export class AppModule { }

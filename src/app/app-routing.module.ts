@@ -17,12 +17,14 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { TodosComponent } from './todos/todos.component';
 import { ReactComponent } from './portfolio/react/react.component';
 import { WixComponent } from './portfolio/wix/wix.component';
+import {ConsultingComponent} from './consulting/consulting.component';
 
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full' },
   {path: 'home', component: HomeComponent },
   {path: 'about', component: AboutComponent },
+  {path: 'consulting', component: ConsultingComponent },
   {path: 'portfolio', component: PortfolioComponent,
     children: [
       {path: 'angular', component: AngularComponent},

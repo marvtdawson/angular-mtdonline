@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~animate.css";
-/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 
 /** Small devices (landscape phones, 576px and up) **/
@@ -10,7 +10,6 @@
     padding-left: 0;
     padding-right: 0;
   }
-
 }
 
 /**  Small devices (landscape phones, 576px and up) */
