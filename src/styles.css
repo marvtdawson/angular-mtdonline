@@ -35,4 +35,17 @@
     margin: 0;
     padding: 0;
   }
+  .page-header-bar{
+    width: 100%;
+    margin-top:0;
+    height: 75px;
+    background: url("/assets/img/site/black_brick_wall_header_background.png") no-repeat;
+    background-size: cover;
+  }
+  .page-title-wrapper{
+    margin: 17px auto 0;
+    width: 24%;
+    color: #FFFFFF;
+    font-size: 32px;
+  }
 }

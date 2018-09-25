@@ -65,11 +65,12 @@
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-  .footer{
+  footer{
     bottom: 0;
     width: 100%;
     color: #ffffff;
-    margin-top: 20px;
+    margin-top: 0;
+    background: url("../../../assets/img/site/black_brick_wall_footer_background.jpg");
   }
   .footer-nav-subdiv{
     max-width: 23%;

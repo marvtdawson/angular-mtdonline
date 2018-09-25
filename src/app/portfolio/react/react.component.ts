@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReactComponent implements OnInit {
 
+  pageTitle: 'React Project';
+
   constructor() { }
 
   ngOnInit() {

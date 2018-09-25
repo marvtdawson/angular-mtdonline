@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WixComponent implements OnInit {
 
+  pageTitle: 'WIX';
+
   constructor() { }
 
   ngOnInit() {

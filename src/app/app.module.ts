@@ -32,6 +32,7 @@ import { WixComponent } from './portfolio/wix/wix.component';
 import { SkillsComponent } from './skills/skills.component';
 import { RecentProjectsComponent } from './recent-projects/recent-projects.component';
 import { ConsultingComponent } from './consulting/consulting.component';
+import { AppTitleComponent } from './layout/app-title/app-title.component';
 
 
 @NgModule({
@@ -57,7 +58,8 @@ import { ConsultingComponent } from './consulting/consulting.component';
     WixComponent,
     SkillsComponent,
     RecentProjectsComponent,
-    ConsultingComponent
+    ConsultingComponent,
+    AppTitleComponent
   ],
   imports: [
     BrowserModule,
