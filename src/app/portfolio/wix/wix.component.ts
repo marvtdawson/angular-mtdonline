@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-wix',
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WixComponent implements OnInit {
 
-  pageTitle: 'WIX';
+ @Input() pageTitle: 'WIX';
 
   constructor() { }
 
