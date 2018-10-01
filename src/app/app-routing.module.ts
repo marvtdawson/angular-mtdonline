@@ -17,7 +17,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { TodosComponent } from './todos/todos.component';
 import { ReactComponent } from './portfolio/react/react.component';
 import { WixComponent } from './portfolio/wix/wix.component';
-import {ConsultingComponent} from './consulting/consulting.component';
+import { ConsultingComponent} from './consulting/consulting.component';
+import { LoginComponent } from './login/login.component';
 
 
 const appRoutes: Routes = [
@@ -41,6 +42,7 @@ const appRoutes: Routes = [
   {path: 'resume', component: ResumeComponent },
   {path: 'todos', component: TodosComponent },
   {path: 'contact', component: ContactComponent },
+  {path: 'login', component: LoginComponent },
   {path: '**', component: PageNotFoundComponent },
 ];
 

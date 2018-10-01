@@ -12,8 +12,8 @@
   .homePage-BriefSummary-wrapper{
     width: 100%;
     padding: 1px;
-   /* margin: 0 0 0 6%;
-    position: absolute;*/
+    position: absolute;
+   /* margin: 0 0 0 6%;*/
   }
   .homePage-BriefSummary {
     width: 80%;
@@ -92,23 +92,7 @@
   .bg-cloud {
     background-color: #ecf0f1;
   }
-  mat-card {
-    border: 1px solid #a0a0a0;
-    border-radius: 10px;
-    box-shadow: 4px 4px 4px #545454;
-  }
-  mat-card-actions button {
-    border: 2px solid #fff;
-    color: #fff;
-    background: none;
-  }
-  mat-card-actions button:hover {
-    color: #ff672c;
-  }
-  mat-card-title {
-    font-size: 23px;
-    font-weight: 400;
-  }
+
 
   .recent-projects .card-container {
     width: 80%;
@@ -211,6 +195,9 @@
     margin: 0 auto 0;
     font-size: 18px;
   }
+  .bg-cloud[_ngcontent-c4] {
+    margin: 0 auto 0;
+  }
   .homepage-wall,
   .homepage-wall img {
     width: 100%;
@@ -288,12 +275,6 @@
   }
   .fa-icon-wrapper {
     text-align: center;
-  }
-
-  mat-card {
-    border: 1px solid #a0a0a0;
-    border-radius: 10px;
-    box-shadow: 4px 4px 4px #545454;
   }
   .recent-projects .card-container {
     width: 25%;

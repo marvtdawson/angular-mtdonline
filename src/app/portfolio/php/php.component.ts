@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PhpComponent implements OnInit {
 
+  pageTitle = 'PHP PROJECTS';
+
+
   constructor() { }
 
   ngOnInit() {

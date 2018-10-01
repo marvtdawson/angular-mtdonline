@@ -22,6 +22,7 @@
     width: 65%;
     color: #FFFFFF;
     font-size: 18px;
+    text-align: center;
   }
   .main-content {
     width: 85%;
@@ -33,6 +34,23 @@
   .corepage_wall_image{
     width: 98%;
     height: 200px;
+  }
+  mat-card {
+    border: 1px solid #a0a0a0;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px #545454;
+  }
+  mat-card-actions button {
+    border: 2px solid #fff;
+    color: #fff;
+    background: none;
+  }
+  mat-card-actions button:hover {
+    color: #ff672c;
+  }
+  mat-card-title {
+    font-size: 23px;
+    font-weight: 400;
   }
 }
 
@@ -60,7 +78,6 @@
     font-family: 'Metamorphous', cursive;
     font-size: 18px;
   }
-
   .container {
     max-width: 100%;
     margin: 0;
@@ -75,12 +92,24 @@
   }
   .page-title-wrapper{
     margin: 17px auto 0;
-    width: 24%;
+    width: 30%;
     color: #FFFFFF;
     font-size: 32px;
+  }
+  .corepage-wall{
+    height: 700px;
+  }
+  .corepage_wall_image{
+    width: 98%;
+    height: 700px;
   }
   .main-content {
     width: 60%;
     margin: 0 auto 0;
+  }
+  mat-card {
+    border: 1px solid #a0a0a0;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px #545454;
   }
 }

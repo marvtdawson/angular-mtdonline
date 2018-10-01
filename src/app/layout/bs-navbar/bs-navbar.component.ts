@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {SiteDataService} from '../../providers/site-data.service';
+import {SiteDataService} from '../../../providers/site-data.service';
 import {MatDialog, MatDialogRef} from '@angular/material';
-import {ResumeComponent} from '../resume/resume.component';
+import {ResumeComponent} from '../../resume/resume.component';
 import { Router } from '@angular/router';
 
 @Component({
