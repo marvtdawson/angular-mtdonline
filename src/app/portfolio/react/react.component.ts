@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { globalConst } from '../../../../config/lib/global-const';
 
 @Component({
   selector: 'app-react',
