@@ -14,7 +14,6 @@ import { SkillsComponent } from './skills/skills.component';
 import { StacksComponent } from './stacks/stacks.component';
 import { ResumeComponent } from './resume/resume.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { TodosComponent } from './todos/todos.component';
 import { ReactComponent } from './portfolio/react/react.component';
 import { WixComponent } from './portfolio/wix/wix.component';
 import { ConsultingComponent} from './consulting/consulting.component';
@@ -40,7 +39,6 @@ const appRoutes: Routes = [
   {path: 'skills', component: SkillsComponent },
   {path: 'stacks', component: StacksComponent },
   {path: 'resume', component: ResumeComponent },
-  {path: 'todos', component: TodosComponent },
   {path: 'contact', component: ContactComponent },
   {path: 'login', component: LoginComponent },
   {path: '**', component: PageNotFoundComponent },

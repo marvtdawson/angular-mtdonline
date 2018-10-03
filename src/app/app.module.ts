@@ -27,7 +27,6 @@ import { AngularComponent } from './portfolio/angular/angular.component';
 import { AngularIonicComponent } from './portfolio/angular-ionic/angular-ionic.component';
 import { AngularCAspnetComponent } from './portfolio/angular-c-aspnet/angular-c-aspnet.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { TodosComponent } from './todos/todos.component';
 import { ReactComponent } from './portfolio/react/react.component';
 import { WixComponent } from './portfolio/wix/wix.component';
 import { SkillsComponent } from './skills/skills.component';
@@ -35,6 +34,9 @@ import { RecentProjectsComponent } from './recent-projects/recent-projects.compo
 import { ConsultingComponent } from './consulting/consulting.component';
 import { AppTitleComponent } from './layout/app-title/app-title.component';
 import { LoginComponent } from './login/login.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { CreateProjectComponent } from './projects/create-project/create-project.component';
+import { ListProjectComponent } from './projects/list-project/list-project.component';
 
 
 @NgModule({
@@ -54,7 +56,6 @@ import { LoginComponent } from './login/login.component';
     AngularComponent,
     AngularIonicComponent,
     PageNotFoundComponent,
-    TodosComponent,
     AngularCAspnetComponent,
     ReactComponent,
     WixComponent,
@@ -62,7 +63,10 @@ import { LoginComponent } from './login/login.component';
     RecentProjectsComponent,
     ConsultingComponent,
     AppTitleComponent,
-    LoginComponent
+    LoginComponent,
+    ProjectsComponent,
+    CreateProjectComponent,
+    ListProjectComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,46 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="main-content">
+      <form [formGroup]="createProjectForm" (ngSubmit)="onCreateProject()">
+        <mat-form-field [floatLabel]="formOptions.value.floatLabel">
+          <mat-label></mat-label>
+          <input
+            type="text"
+            matInput class="input-field"
+            placeholder="Title"
+            formControlName="title">
+          <span class="form-error"
+                *ngIf="!createProjectForm.get('title').valid && createProjectForm.get('title').touched"
+          >Please Enter A Valid Title</span>
+        </mat-form-field>
+        <mat-form-field [floatLabel]="formOptions.value.floatLabel">
+          <mat-label></mat-label>
+          <input
+            type="text"
+            matInput class="input-field"
+            placeholder="Framework Type"
+            formControlName="frameworkType">
+          <span class="form-error"
+                *ngIf="!createProjectForm.get('frameworkType').valid && createProjectForm.get('frameworkType').touched"
+          >Please Enter A Valid Title</span>
+        </mat-form-field>
+        <mat-form-field [floatLabel]="formOptions.value.floatLabel">
+          <mat-label></mat-label>
+          <input
+            type="text"
+            matInput class="input-field"
+            placeholder="Project Summary"
+            formControlName="summary">
+          <span class="form-error"
+                *ngIf="!createProjectForm.get('summary').valid && createProjectForm.get('summary').touched"
+          >Please Enter A Valid Title</span>
+        </mat-form-field>
+        <mat-form-field>
+          <button mat-raised-button color="primary">Save Project</button>
+        </mat-form-field>
+      </form>
+    </div>
+  </div>
+</div>
+
+
