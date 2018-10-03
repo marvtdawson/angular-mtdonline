@@ -22,8 +22,6 @@ export class BsNavbarComponent implements OnInit {
   ngOnInit() {
 
     const currentUrl = this.router.url;
-    console.log(currentUrl);
-
     if (currentUrl === '') {
       this.isHomePage = true;
     }

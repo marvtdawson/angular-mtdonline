@@ -28,8 +28,8 @@ export class CreateProjectComponent implements OnInit {
     });
   }
 
-  onCreateProject(project) {
-    this.createProject.push(project);
+  onCreateProject() {
+   // this.createProject.push(project);
   }
 
 }
