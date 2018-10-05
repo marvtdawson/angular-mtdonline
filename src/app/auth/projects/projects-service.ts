@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Pro}
+import { ProjectsInterface } from './projects-interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProjectsService {
 
-  projects: ProjectsInterface
+  projects: ProjectsInterface[] = [];
 
   constructor() { }
 }
