@@ -26,11 +26,11 @@
         </mat-form-field>
         <mat-form-field [floatLabel]="formOptions.value.floatLabel">
           <mat-label></mat-label>
-          <input
+          <textarea
             type="text"
             matInput class="input-field"
             placeholder="Project Summary"
-            formControlName="summary">
+            formControlName="summary"></textarea>
           <span class="form-error"
                 *ngIf="!createProjectForm.get('summary').valid && createProjectForm.get('summary').touched"
           >Please Enter A Valid Title</span>

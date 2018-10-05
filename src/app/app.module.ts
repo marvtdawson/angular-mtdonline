@@ -1,6 +1,7 @@
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -29,14 +30,18 @@ import { AngularCAspnetComponent } from './portfolio/angular-c-aspnet/angular-c-
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ReactComponent } from './portfolio/react/react.component';
 import { WixComponent } from './portfolio/wix/wix.component';
-import { SkillsComponent } from './skills/skills.component';
+import { SkillsComponent } from './auth/skills/skills.component';
 import { RecentProjectsComponent } from './recent-projects/recent-projects.component';
 import { ConsultingComponent } from './consulting/consulting.component';
 import { AppTitleComponent } from './layout/app-title/app-title.component';
-import { LoginComponent } from './login/login.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { CreateProjectComponent } from './projects/create-project/create-project.component';
-import { ListProjectComponent } from './projects/list-project/list-project.component';
+import { LoginComponent } from './auth/login/login.component';
+import { ProjectsComponent } from './auth/projects/projects.component';
+import { CreateProjectComponent } from './auth/projects/create-project/create-project.component';
+import { ListProjectComponent } from './auth/projects/list-project/list-project.component';
+import { ConsultationComponent } from './auth/consultation/consultation.component';
+import { ContactedComponent } from './auth/contacted/contacted.component';
+import { NewsletterComponent } from './auth/newsletter/newsletter.component';
+import { AuthComponent } from './auth/auth.component';
 
 
 @NgModule({
@@ -66,10 +71,15 @@ import { ListProjectComponent } from './projects/list-project/list-project.compo
     LoginComponent,
     ProjectsComponent,
     CreateProjectComponent,
-    ListProjectComponent
+    ListProjectComponent,
+    ConsultationComponent,
+    ContactedComponent,
+    NewsletterComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
     AppRoutingModule,

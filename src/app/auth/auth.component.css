@@ -1,0 +1,33 @@
+@media (min-width: 1200px) {
+  .sidenav-container {
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    width: 6%;
+    height: 375px;
+    background-color: #3c3f44;
+    border-radius: 7px;
+    position: fixed;
+  }
+  .sidenav {
+    color: #ecf0f1;
+    padding: 5px;
+    font-size: 14px;
+  }
+  .sidenav-btn-container {
+    /*height: 75px;
+    border: 1px solid #a0a0a0;
+    border-radius: 10px;*/
+    margin-top: 10px;
+    margin-bottom: 35px;
+    align-content: center;
+    text-align: center;
+    vertical-align: center;
+  }
+  .main-content {
+    width: 80%;
+    height: 600px;
+    float: right;
+  }
+}

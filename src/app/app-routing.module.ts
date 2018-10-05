@@ -10,14 +10,15 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ExperienceComponent } from './experience/experience.component';
-import { SkillsComponent } from './skills/skills.component';
+import { SkillsComponent } from './auth/skills/skills.component';
 import { StacksComponent } from './stacks/stacks.component';
 import { ResumeComponent } from './resume/resume.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ReactComponent } from './portfolio/react/react.component';
 import { WixComponent } from './portfolio/wix/wix.component';
 import { ConsultingComponent} from './consulting/consulting.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './auth/login/login.component';
+import {AuthComponent} from './auth/auth.component';
 
 
 const appRoutes: Routes = [
@@ -41,6 +42,7 @@ const appRoutes: Routes = [
   {path: 'resume', component: ResumeComponent },
   {path: 'contact', component: ContactComponent },
   {path: 'login', component: LoginComponent },
+  {path: 'auth', component: AuthComponent },
   {path: '**', component: PageNotFoundComponent },
 ];
 
