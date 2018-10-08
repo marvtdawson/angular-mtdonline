@@ -2,8 +2,12 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const mongoose = require('mongoose');
-const Project = require('./models/projects');
+const Project = require('./models/projects-model');
 const globals = require('../config/lib/global-const');
+
+// api routes
+const projectRoutes = require('routes/projects-route');
+const skillsRoutes = require('reoutes/skills-route');
 
 /**
  * Mongodb connection data
@@ -27,25 +31,9 @@ app.use((req, res) => {
   res.send('Hello from ExpressJs ' + AUTHOR_NAME + ' ' + COMPANY_NAME);
 });
 
-app.use("/api/projects", (req, res, next) => {
-  const projects = [
-    {
-      id: "fjaidkakd39qee33_dka",
-      title: "Marvin Portfolio",
-      frameworkType: "Angular",
-      summary: "My online portfolio is made with Angular 6"
-    },
-    {
-      id: "wafaahetjkjwkdk",
-      title: "Marvin React Portfolio",
-      frameworkType: "React",
-      summary: "My online portfolio is made with React 16"
-    }
-  ];
-  res.status(200).json({
-    message: 'Projects fetched successfully!',
-    projects: projects
-  });
-});
+
+
+app.use("api/projects", projectRoutes);
+app.use("api/skills", skillsRoutes);
 
 module.exports = app;

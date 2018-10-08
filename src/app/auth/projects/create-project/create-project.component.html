@@ -2,7 +2,7 @@
   <div class="row">
     <div class="main-content">
       <form [formGroup]="createProjectForm" (ngSubmit)="onCreateProject()">
-        <mat-form-field [floatLabel]="formOptions.value.floatLabel">
+        <mat-form-field>
           <mat-label></mat-label>
           <input
             type="text"
@@ -13,8 +13,7 @@
                 *ngIf="!createProjectForm.get('title').valid && createProjectForm.get('title').touched"
           >Please Enter A Valid Title</span>
         </mat-form-field>
-        <mat-form-field [floatLabel]="formOptions.value.floatLabel">
-          <mat-label></mat-label>
+        <mat-form-field>
           <input
             type="text"
             matInput class="input-field"
@@ -24,8 +23,7 @@
                 *ngIf="!createProjectForm.get('frameworkType').valid && createProjectForm.get('frameworkType').touched"
           >Please Enter A Valid Title</span>
         </mat-form-field>
-        <mat-form-field [floatLabel]="formOptions.value.floatLabel">
-          <mat-label></mat-label>
+        <mat-form-field>
           <textarea
             type="text"
             matInput class="input-field"

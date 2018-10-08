@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { FormControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -10,8 +10,6 @@ export class LoginComponent implements OnInit {
 
   formOptions: FormGroup;
   loginForm: FormGroup;
-
-
   constructor(private formBuilder: FormBuilder) {
     this.formOptions = this.formBuilder.group({
       floatLabel: 'auto'

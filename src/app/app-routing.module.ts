@@ -18,7 +18,13 @@ import { ReactComponent } from './portfolio/react/react.component';
 import { WixComponent } from './portfolio/wix/wix.component';
 import { ConsultingComponent} from './consulting/consulting.component';
 import { LoginComponent } from './auth/login/login.component';
-import {AuthComponent} from './auth/auth.component';
+import { AuthComponent } from './auth/auth.component';
+import { ContactedComponent } from './auth/contacted/contacted.component';
+import { NewsletterComponent } from './auth/newsletter/newsletter.component';
+import { ConsultationComponent } from './auth/consultation/consultation.component';
+import { ProjectsComponent } from './auth/projects/projects.component';
+import { CreateProjectComponent } from './auth/projects/create-project/create-project.component';
+import { ListProjectComponent } from './auth/projects/list-project/list-project.component';
 
 
 const appRoutes: Routes = [
@@ -37,12 +43,24 @@ const appRoutes: Routes = [
     ],
   },
   {path: 'experience', component: ExperienceComponent },
-  {path: 'skills', component: SkillsComponent },
   {path: 'stacks', component: StacksComponent },
   {path: 'resume', component: ResumeComponent },
   {path: 'contact', component: ContactComponent },
-  {path: 'login', component: LoginComponent },
-  {path: 'auth', component: AuthComponent },
+  {path: 'auth', component: AuthComponent,
+    children: [
+      { path: 'login', component: LoginComponent },
+      { path: 'contacted', component: ContactedComponent },
+      { path: 'projects', component: ProjectsComponent,
+        children: [
+          { path: 'create-project', component: CreateProjectComponent },
+          { path: 'list-project', component: ListProjectComponent }
+        ]
+      },
+      { path: 'skills', component: SkillsComponent },
+      { path: 'consultation', component: ConsultationComponent },
+      { path: 'newsletter', component: NewsletterComponent }
+    ],
+  },
   {path: '**', component: PageNotFoundComponent },
 ];
 

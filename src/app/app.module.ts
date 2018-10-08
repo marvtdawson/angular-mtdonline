@@ -5,10 +5,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { MatCardModule } from '@angular/material/card';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatButtonModule, MatSidenavModule, MatIconModule, MatIconRegistry, MatListModule, MatDialogModule} from '@angular/material';
+import { AngularMaterialModule } from './angular-material.module';
+
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 import { AppComponent } from './app.component';
@@ -36,12 +34,12 @@ import { ConsultingComponent } from './consulting/consulting.component';
 import { AppTitleComponent } from './layout/app-title/app-title.component';
 import { LoginComponent } from './auth/login/login.component';
 import { ProjectsComponent } from './auth/projects/projects.component';
-import { CreateProjectComponent } from './auth/projects/create-project/create-project.component';
-import { ListProjectComponent } from './auth/projects/list-project/list-project.component';
 import { ConsultationComponent } from './auth/consultation/consultation.component';
 import { ContactedComponent } from './auth/contacted/contacted.component';
 import { NewsletterComponent } from './auth/newsletter/newsletter.component';
 import { AuthComponent } from './auth/auth.component';
+import { ProjectsModule } from './auth/projects/projects.module';
+import { MatIconRegistry } from '@angular/material';
 
 
 @NgModule({
@@ -70,8 +68,6 @@ import { AuthComponent } from './auth/auth.component';
     AppTitleComponent,
     LoginComponent,
     ProjectsComponent,
-    CreateProjectComponent,
-    ListProjectComponent,
     ConsultationComponent,
     ContactedComponent,
     NewsletterComponent,
@@ -84,15 +80,9 @@ import { AuthComponent } from './auth/auth.component';
     ReactiveFormsModule,
     AppRoutingModule,
     NgbModule.forRoot(),
-    MatCardModule,
-    MatToolbarModule,
-    MatCheckboxModule,
     LayoutModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
-    MatDialogModule,
+    AngularMaterialModule,
+    ProjectsModule,
     ScrollToModule.forRoot()
   ],
   providers: [MatIconRegistry],

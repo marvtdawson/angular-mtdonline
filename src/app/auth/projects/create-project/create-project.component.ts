@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormBuilder, FormGroup, Validators} from '@angular/forms';
-import { ProjectsInterface } from '../projects-interface';
+import { FormControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
+// import { ProjectsInterface } from '../projects-interface';
 
 @Component({
   selector: 'app-create-project',
@@ -10,7 +10,7 @@ import { ProjectsInterface } from '../projects-interface';
 export class CreateProjectComponent implements OnInit {
   createProjectForm: FormGroup;
   formOptions: FormGroup;
-  createProject: ProjectsInterface[] = [];
+  // createProject: ProjectsInterface[] = [];
 
   constructor(private formBuilder: FormBuilder) {
     // allows angular material to float input label
@@ -21,8 +21,7 @@ export class CreateProjectComponent implements OnInit {
 
   ngOnInit() {
     this.createProjectForm = new FormGroup({
-     'title': new FormControl(null, [
-       Validators.required]),
+      'title': new FormControl(null, [Validators.required]),
       'frameworkType': new FormControl(null, Validators.required),
       'summary': new FormControl(null, Validators.required)
     });
