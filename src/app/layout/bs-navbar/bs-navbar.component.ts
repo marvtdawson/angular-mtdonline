@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {SiteDataService} from '../../../providers/site-data.service';
 import {MatDialog, MatDialogRef} from '@angular/material';
-import {ResumeComponent} from '../../resume/resume.component';
 import { Router } from '@angular/router';
+import {AuthService} from '../../auth/auth.service';
+
 
 @Component({
   selector: 'app-bs-navbar',
@@ -15,7 +16,10 @@ export class BsNavbarComponent implements OnInit {
 
   constructor(private siteData: SiteDataService,
               private dialog: MatDialog,
-              private router: Router) { }
+              private router: Router,
+              public authService: AuthService) {
+
+  }
 
   sitename = this.siteData.siteName;
 
@@ -28,17 +32,13 @@ export class BsNavbarComponent implements OnInit {
   }
 
   goToHomePage() {
+    this.router.navigate(['/home']);
   }
 
-  openResumeDialog(): void {
-    const dialogRef = this.dialog.open(ResumeComponent, {
-        // data: {name: this.name, animal: this.animal}
-      });
-
-    /*dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      // this.animal = result;
-    });*/
+  // log user out
+  onLogout() {
+    this.authService.logUserOut();
   }
+
 
 }

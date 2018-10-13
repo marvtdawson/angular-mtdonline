@@ -1,7 +1,8 @@
 <div class="container-fluid">
   <div class="row">
     <div class="main-content">
-      <form [formGroup]="createProjectForm" (ngSubmit)="onCreateProject()">
+      <mat-card class="card-container">
+        <form [formGroup]="createProjectForm" (ngSubmit)="onCreateProject()">
         <mat-form-field>
           <mat-label></mat-label>
           <input
@@ -21,7 +22,7 @@
             formControlName="frameworkType">
           <span class="form-error"
                 *ngIf="!createProjectForm.get('frameworkType').valid && createProjectForm.get('frameworkType').touched"
-          >Please Enter A Valid Title</span>
+          >Please Enter A Valid Framework</span>
         </mat-form-field>
         <mat-form-field>
           <textarea
@@ -31,12 +32,13 @@
             formControlName="summary"></textarea>
           <span class="form-error"
                 *ngIf="!createProjectForm.get('summary').valid && createProjectForm.get('summary').touched"
-          >Please Enter A Valid Title</span>
+          >Please Enter A Valid Project Summary</span>
         </mat-form-field>
-        <mat-form-field>
-          <button mat-raised-button color="primary">Save Project</button>
-        </mat-form-field>
+          <div class="form-button" color="primary">
+            <button mat-raised-button color="primary">Save Project</button>
+          </div>
       </form>
+      </mat-card>
     </div>
   </div>
 </div>

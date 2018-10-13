@@ -1,32 +1,29 @@
-import { Component, OnInit } from '@angular/core';
-import { FormControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component } from '@angular/core';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
 
-  formOptions: FormGroup;
-  loginForm: FormGroup;
-  constructor(private formBuilder: FormBuilder) {
-    this.formOptions = this.formBuilder.group({
-      floatLabel: 'auto'
-    });
+  invalidLogin: boolean;
+  constructor(public authService: AuthService) {
   }
 
-  ngOnInit() {
-    this.loginForm = new FormGroup({
-      'email': new FormControl(null, [
-        Validators.required,
-        Validators.email]),
-      'password': new FormControl(null, Validators.required)
-    });
+  // sign in with Google credentials
+  onLoginWithGoogle() {
+    this.authService.loginWithGoogle();
   }
 
-  onSubmit() {
-    console.log(this.loginForm);
+  // sign in with Facebook credentials
+  onLoginWithFacebook() {
+    this.authService.loginWithFacebook();
   }
 
+  // sign in using email and password
+  onLoginWithEmailandPassword() {
+    this.authService.signInWithEmailAndPassword();
+  }
 }

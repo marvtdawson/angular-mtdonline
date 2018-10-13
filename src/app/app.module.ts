@@ -1,13 +1,20 @@
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { FIREBASE_CONFIG } from './app-firebase.config';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AngularMaterialModule } from './angular-material.module';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+
+import {AuthService} from './auth/auth.service';
+import {AuthGuard} from './auth-guard.service';
 
 import { AppComponent } from './app.component';
 import { AppHeaderComponent } from './layout/app-header/app-header.component';
@@ -39,7 +46,6 @@ import { ContactedComponent } from './auth/contacted/contacted.component';
 import { NewsletterComponent } from './auth/newsletter/newsletter.component';
 import { AuthComponent } from './auth/auth.component';
 import { ProjectsModule } from './auth/projects/projects.module';
-import { MatIconRegistry } from '@angular/material';
 
 
 @NgModule({
@@ -77,15 +83,19 @@ import { MatIconRegistry } from '@angular/material';
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
     NgbModule.forRoot(),
     LayoutModule,
     AngularMaterialModule,
     ProjectsModule,
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    AngularFireModule.initializeApp(FIREBASE_CONFIG),
+    AngularFireAuthModule,
+    AngularFireDatabaseModule
   ],
-  providers: [MatIconRegistry],
+  providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   entryComponents: [

@@ -13,7 +13,14 @@ const skillsRoutes = require('reoutes/skills-route');
  * Mongodb connection data
  * // k4VvRlXICEFw8UyA
  */
-// mongoose.connect('mongodb://localhost/27017/mtdOnline');
+
+mongoose.connect('mongodb://localhost/27017/mtdOnline')
+  .then(() => {
+    console.log('Connected to Local DB');
+  })
+  .catch((err) => {
+    console.error(err);
+  });
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));

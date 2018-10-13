@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {AuthGuard} from './auth-guard.service';
 
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AngularComponent } from './portfolio/angular/angular.component';
@@ -46,9 +47,9 @@ const appRoutes: Routes = [
   {path: 'stacks', component: StacksComponent },
   {path: 'resume', component: ResumeComponent },
   {path: 'contact', component: ContactComponent },
-  {path: 'auth', component: AuthComponent,
+  {path: 'login', component: LoginComponent },
+  {path: 'auth', component: AuthComponent, canActivate: [AuthGuard],
     children: [
-      { path: 'login', component: LoginComponent },
       { path: 'contacted', component: ContactedComponent },
       { path: 'projects', component: ProjectsComponent,
         children: [

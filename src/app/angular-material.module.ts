@@ -9,7 +9,8 @@ import {
   MatCardModule,
   MatToolbarModule,
   MatCheckboxModule,
-  MatInputModule
+  MatInputModule,
+  MatIconRegistry
 } from '@angular/material';
 
 
@@ -38,5 +39,6 @@ import {
     MatCheckboxModule,
     MatInputModule
   ],
+  providers: [ MatIconRegistry ],
 })
 export class AngularMaterialModule {}
