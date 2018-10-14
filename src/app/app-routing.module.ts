@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {AuthGuard} from './auth-guard.service';
+import { AuthGuard } from './auth-guard.service';
 
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AngularComponent } from './portfolio/angular/angular.component';
@@ -10,6 +10,7 @@ import { PhpComponent } from './portfolio/php/php.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
+import { AboutSiteComponent } from './about-site/about-site.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './auth/skills/skills.component';
 import { StacksComponent } from './stacks/stacks.component';
@@ -31,6 +32,7 @@ import { ListProjectComponent } from './auth/projects/list-project/list-project.
 const appRoutes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full' },
   {path: 'home', component: HomeComponent },
+  {path: 'about-site', component: AboutSiteComponent },
   {path: 'about', component: AboutComponent },
   {path: 'consulting', component: ConsultingComponent },
   {path: 'portfolio', component: PortfolioComponent,
@@ -48,7 +50,7 @@ const appRoutes: Routes = [
   {path: 'resume', component: ResumeComponent },
   {path: 'contact', component: ContactComponent },
   {path: 'login', component: LoginComponent },
-  {path: 'auth', component: AuthComponent, canActivate: [AuthGuard],
+  {path: 'auth', component: AuthComponent,
     children: [
       { path: 'contacted', component: ContactedComponent },
       { path: 'projects', component: ProjectsComponent,

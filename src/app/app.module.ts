@@ -13,8 +13,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
-import {AuthService} from './auth/auth.service';
-import {AuthGuard} from './auth-guard.service';
+import { AuthService} from './auth/auth.service';
+import { AuthGuard} from './auth-guard.service';
 
 import { AppComponent } from './app.component';
 import { AppHeaderComponent } from './layout/app-header/app-header.component';
@@ -22,6 +22,7 @@ import { AppFooterComponent } from './layout/app-footer/app-footer.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { AboutSiteComponent } from './about-site/about-site.component';
 import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { StacksComponent } from './stacks/stacks.component';
@@ -55,6 +56,7 @@ import { ProjectsModule } from './auth/projects/projects.module';
     AppFooterComponent,
     HomeComponent,
     AboutComponent,
+    AboutSiteComponent,
     ContactComponent,
     PortfolioComponent,
     StacksComponent,

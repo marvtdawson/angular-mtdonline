@@ -3,11 +3,17 @@
     <div class="main-content">
       <mat-card class="card-container">
         <mat-card-header>
-          <mat-card-title>LOGIN</mat-card-title>
+          <!--mat-card-title>LOGIN</mat-card-title -->
         </mat-card-header>
         <mat-card-content>
-          <button (click)="onLoginWithGoogle()" class="btn btn-primary">Login using Google</button>
-          <button (click)="onLoginWithFacebook()" class="btn btn-primary">Login using Facebook</button>
+          <div class="login-btn-wrapper">
+            <button (click)="onLoginWithGoogle()" class="btn btn-primary">
+              <i class="fab fa-google"></i>Login using Google
+            </button>
+            <button (click)="onLoginWithFacebook()" class="btn btn-primary">
+              <i class="fab fa-facebook-square"></i>Login using Facebook
+            </button>
+          </div>
           <form #loginForm="ngForm" (ngSubmit)="onLoginWithEmailandPassword(loginForm.value)">
             <div *ngIf="invalidLogin" class="alert alert-danger">
               Invalid username and/or password.
@@ -37,12 +43,13 @@
               *ngIf="!loginForm.get('password').valid && loginForm.get('password').touched"
               >Please Enter A Valid Password</div -->
             </mat-form-field>
-            <div class="form-button" color="primary">
-              <button mat-raised-button color="primary">LOGIN</button>
+            <div class="form-button-wrapper">
+              <button mat-raised-button class="btn btn-primary">LOGIN</button>
             </div>
           </form>
         </mat-card-content>
       </mat-card>
+      <div class="sign-paragraph">Sign in to leave a your testimony or comment on a recent newsletter article.</div>
     </div>
   </div>
 </div>

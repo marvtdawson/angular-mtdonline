@@ -1,9 +1,7 @@
 <!-- Start Body Content -->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="bg-jumbrotron-wrapper">
-        <div class="bg-jumbrotron animated fadeIn delay-1s">
-          <div class="col-sm align-self-center homePage-BriefSummary-wrapper">
+    <div class="row bg-jumbrotron-wrapper">
+      <div class="bg-jumbrotron animated fadeIn delay-1s">
+        <div class="col-sm align-self-center homePage-BriefSummary-wrapper">
             <div class="homePage-BriefSummary animated slideInDown delay-2s">
               I'm a Sr. Full Stack MEAN & LAMP Developer.
               I design mobile, responsive websites and hybrid applications using Angular 6 & Ionic 4 Framework or PHP. I currently work as a freelance developer in the Dallas-Fort Worth area in Texas.
@@ -12,20 +10,22 @@
               <span><a (click)="triggerScrollTo()">MORE ABOUT ME</a></span>
             </div>
         </div>
-      </div>
-      </div>
-    </div><!-- end row -->
-  </div><!--  end container-fluid  -->
+      </div><!-- end row -->
+    </div><!--  end container-fluid  -->
 
+  <div class="row bg-chinese-city-light">
+    <div class="about-this-site">
+      <div class="section-h2">ABOUT THIS SITE</div>
+      <mat-card class="card-container">
+        WHAT tools and resources did he used to make his site.
+        <button class="btn btn-primary">About This Site</button>
+      </mat-card>
+    </div>
+  </div>
 <!-- Recent Projects -->
-<div class="container-fluid bg-cloud">
-  <div class="row">
+  <div class="row bg-cloud">
     <div class="recent-projects">
-
-      <!-- app-recent-projects></app-recent-projects -->
-
       <div id="" class="section-h2">RECENT PROJECTS</div>
-
         <mat-card class="card-container">
           <mat-card-header>
             <mat-card-title>Burgin Construction MN</mat-card-title>
@@ -70,14 +70,10 @@
             <button mat-button (click)="goToWhosLaundry()">Visit Site</button>
           </mat-card-actions>
         </mat-card>
-
     </div>
   </div>
-</div>
-
 <!-- Start Skills -->
-<div id="skills" class="container-fluid">
-  <div class="row">
+  <div id="skills" class="row">
     <div class="skills-experience">
       <div class="section-h2">SKILLS</div>
         <mat-card class="card-container">
@@ -87,7 +83,6 @@
             <p>Web design using HTML 5, CSS, ES6 and TypeScript.</p>
           </mat-card-content>
         </mat-card>
-
         <mat-card class="card-container">
           <mat-card-title>Front End</mat-card-title>
           <i class="fab fa-angular fa-5x"></i>
@@ -95,7 +90,6 @@
             <p>Proficient in JavaScript libraries such as Angular 6, React, React-Native.</p>
           </mat-card-content>
         </mat-card>
-
         <mat-card class="card-container">
           <mat-card-title>Back End</mat-card-title>
           <i class="fas fa-code fa-5x"></i>
@@ -115,7 +109,6 @@
           <p>Knowledgeable of Linux for dev environment setup via Ubuntu.</p>
         </mat-card-content>
       </mat-card>
-
       <mat-card class="card-container">
         <mat-card-title>Version Control</mat-card-title>
         <i class="fab fa-github fa-5x"></i>
@@ -123,7 +116,6 @@
           <p>Possess knowledge of version control tools such as GIT or Mercurial.</p>
         </mat-card-content>
       </mat-card>
-
       <mat-card class="card-container">
         <mat-card-title>RESTful API</mat-card-title>
         <i class="fa-2x">api/member/:id</i>
@@ -162,13 +154,8 @@
     </div>
   </div><!-- #end row -->
 
-</div><!--  #end container  -->
-
-
 <!-- Start About Me -->
-<div id="about-me" class="container-fluid ">
-  <div class="row">
-    <div class="bg-midnight-blue">
+  <div id="about-me" class="row bg-midnight-blue">
     <div class="col-md-12">
       <div class="section-h2">ABOUT ME</div>
       <div class="homePagePic"></div>
@@ -197,6 +184,4 @@
         </span>
       </div>
     </div>
-    </div>
   </div><!-- #end row -->
-</div><!--  #end container  -->

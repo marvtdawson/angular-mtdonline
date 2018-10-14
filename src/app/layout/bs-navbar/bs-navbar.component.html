@@ -1,11 +1,11 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-  <div class="logo-wrapper">
-    <a class="navbar-brand" (click)="goToHomePage()">
-      <span class="logo-text-wrapper animated fadeInDown delay-1s">{{ sitename }}</span>
+  <div class="logo-wrapper" (click)="goToHomePage()">
+    <a class="navbar-brand">
+      <span class="logo-text-wrapper animated fadeInDown delay-1s">{{ sitename | uppercase }}</span>
+    </a>
       <div class="logo-img-wrapper">
         <img class="logo-img animated bounce delay-2s" src="../../../assets/img/marvin_the_martian.jpg" alt="">
       </div>
-    </a>
   </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
       </li>
       <ng-template #anonymousUser>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/login">LOGIN</a>
+          <a class="nav-link" routerLink="/login"><i class="far fa-user-circle"></i></a>
         </li>
       </ng-template>
       <li *ngIf="authService.user$ | async as user; else anonymousUser " ngbDropdown class="nav-item dropdown">

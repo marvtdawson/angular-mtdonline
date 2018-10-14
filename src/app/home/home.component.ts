@@ -6,6 +6,7 @@ import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scrol
 import { RecentProjectsComponent } from '../recent-projects/recent-projects.component';
 import { ResumeComponent } from '../resume/resume.component';
 import { MatDialog } from '@angular/material';
+import {SiteDataService} from '../../providers/site-data.service';
 
 
 @Component({
@@ -15,11 +16,13 @@ import { MatDialog } from '@angular/material';
 })
 export class HomeComponent implements OnInit {
   content = null;
+  siteName = this.siteData.siteName;
 
   constructor(public router: Router,
               public injector: Injector,
               private dialog: MatDialog,
-              private _scrollToService: ScrollToService) {
+              private _scrollToService: ScrollToService,
+              private siteData: SiteDataService) {
     const RecentProjectsElement = createCustomElement(RecentProjectsComponent, {injector: injector});
     customElements.define('recent-projects', RecentProjectsElement);
     setTimeout(() => {

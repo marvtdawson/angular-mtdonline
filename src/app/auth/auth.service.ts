@@ -4,34 +4,39 @@ import 'rxjs/add/operator/map';
 import {Observable} from 'rxjs';
 import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase';
+import {ActivatedRoute} from '@angular/router';
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
   user$: Observable<firebase.User>;
 
   constructor(private http: HttpClient,
-              private afAuth: AngularFireAuth) {
+              private afAuth: AngularFireAuth,
+              private route: ActivatedRoute) {
     this.user$ = afAuth.authState;
   }
 
     /**
      * Login with Google
      */
-    loginWithGoogle(){
+    loginWithGoogle() {
+      const returnUrl = this.route.snapshot.queryParamMap.get('returnUrl') || '/' ;
+      localStorage.setItem('returnUrl', returnUrl);
+
       this.afAuth.auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider());
     }
 
     /**
      * Login with Facebook
      */
-    loginWithFacebook(){
+    loginWithFacebook() {
       this.afAuth.auth.signInWithRedirect((new firebase.auth.FacebookAuthProvider()));
     }
 
     /**
      *  Login with email and password
      */
-    signInWithEmailAndPassword(){
+    signInWithEmailAndPassword() {
       // sign in with email and password using firebase
       /*this.authService.signInWithEmailAndPassword(credentials)
         .subscribe(result => {
@@ -45,7 +50,7 @@ export class AuthService {
     /**
      * Check if user is logged in
      */
-    isLoggedIn(){ return false; }
+    isLoggedIn() { return false; }
 
   /**
    * Log user out
@@ -55,8 +60,8 @@ export class AuthService {
   }
 
   /**
-     * Create a new project
-     */
-    createNewClientProject(){}
+   * Create a new project
+   */
+  createNewClientProject() {}
 
 }
