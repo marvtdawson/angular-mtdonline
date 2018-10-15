@@ -6,7 +6,7 @@ const Project = require('./models/projects-model');
 const globals = require('../config/lib/global-const');
 
 // api routes
-const projectRoutes = require('routes/projects-route');
+const projectRoutes = require('routes/projectsRouter');
 const skillsRoutes = require('reoutes/skills-route');
 
 /**

@@ -1,12 +1,10 @@
 @media(min-width: 1200px) {
   .main-content {
     margin: 50px auto 0;
-    width: 60%;
-    min-height: 341px;
+    width: 80%;
   }
   .card-container{
-    width: 350px;
-    height: 350px;
+    width: 100%;
     margin-bottom: 30px;
     border-radius: 10px;
   }
@@ -30,8 +28,9 @@
     color: #ff0000;
     margin-bottom: 25px;
     width: 215px;
+    text-decoration: none;
   }
-  .mat-form-field-infix {
-    width: 200px;
+  .mat-form-field {
+    width: 100%;
   }
 }

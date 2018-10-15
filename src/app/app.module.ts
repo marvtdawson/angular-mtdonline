@@ -47,6 +47,7 @@ import { ContactedComponent } from './auth/contacted/contacted.component';
 import { NewsletterComponent } from './auth/newsletter/newsletter.component';
 import { AuthComponent } from './auth/auth.component';
 import { ProjectsModule } from './auth/projects/projects.module';
+import {FrameworksService} from './frameworks.service';
 
 
 @NgModule({
@@ -97,7 +98,7 @@ import { ProjectsModule } from './auth/projects/projects.module';
     AngularFireAuthModule,
     AngularFireDatabaseModule
   ],
-  providers: [AuthService, AuthGuard],
+  providers: [AuthService, AuthGuard, FrameworksService],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   entryComponents: [

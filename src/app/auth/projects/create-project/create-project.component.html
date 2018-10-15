@@ -2,39 +2,51 @@
   <div class="row">
     <div class="main-content">
       <mat-card class="card-container">
-        <form [formGroup]="createProjectForm" (ngSubmit)="onCreateProject()">
-        <mat-form-field>
-          <mat-label></mat-label>
+        <form #form="ngForm" (ngSubmit)="onCreateProject(form.value)">
+        <mat-form-field appearance="outline">
+          <mat-label>Title</mat-label>
           <input
             type="text"
-            matInput class="input-field"
-            placeholder="Title"
-            formControlName="title">
+            ngModel
+            name="title"
+            matInput class="input-field">
+          <mat-hint>Reggie Buckets</mat-hint>
           <span class="form-error"
                 *ngIf="!createProjectForm.get('title').valid && createProjectForm.get('title').touched"
           >Please Enter A Valid Title</span>
         </mat-form-field>
-        <mat-form-field>
-          <input
+        <mat-form-field appearance="outline">
+          <mat-label>Framework</mat-label>
+          <mat-select
             type="text"
-            matInput class="input-field"
-            placeholder="Framework Type"
-            formControlName="frameworkType">
+            ngModel
+            name="framework"
+            matInput class="input-field">
+            <mat-option value=""></mat-option>
+            <mat-option *ngFor="let fw of frameworks$ | async" [value]="fw.key">{{ fw.payload.val().name}}</mat-option>
+          </mat-select>
+          <mat-hint>"Angular, React, Ionic"</mat-hint>
           <span class="form-error"
                 *ngIf="!createProjectForm.get('frameworkType').valid && createProjectForm.get('frameworkType').touched"
           >Please Enter A Valid Framework</span>
         </mat-form-field>
-        <mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Summary</mat-label>
           <textarea
             type="text"
-            matInput class="input-field"
-            placeholder="Project Summary"
-            formControlName="summary"></textarea>
+            ngModel
+            name="summary"
+            matInput class="input-field"></textarea>
+         <mat-hint>Max 250 characters</mat-hint>
           <span class="form-error"
                 *ngIf="!createProjectForm.get('summary').valid && createProjectForm.get('summary').touched"
           >Please Enter A Valid Project Summary</span>
         </mat-form-field>
-          <div class="form-button" color="primary">
+          <mat-form-field appearance="outline">
+            <mat-label>Image</mat-label>
+            <input matInput name="imageUrl" type="text" ngModel>
+          </mat-form-field>
+          <div class="form-button">
             <button mat-raised-button color="primary">Save Project</button>
           </div>
       </form>

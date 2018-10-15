@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FrameworksService } from '../../../frameworks.service';
 // import { ProjectsInterface } from '../projects-interface';
 
 @Component({
@@ -11,12 +12,16 @@ export class CreateProjectComponent implements OnInit {
   createProjectForm: FormGroup;
   formOptions: FormGroup;
   // createProject: ProjectsInterface[] = [];
+  frameworks$;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder,
+              private frameworkService: FrameworksService) {
     // allows angular material to float input label
     this.formOptions = this.formBuilder.group({
       floatLabel: 'auto'
     });
+    this.frameworks$ = this.frameworkService.getFrameworks().snapshotChanges();
+
   }
 
   ngOnInit() {
@@ -27,8 +32,8 @@ export class CreateProjectComponent implements OnInit {
     });
   }
 
-  onCreateProject() {
-   // this.createProject.push(project);
+  onCreateProject(project) {
+   this.frameworkService.createProject(project);
   }
 
 }

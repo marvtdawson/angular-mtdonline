@@ -1,7 +1,7 @@
 const express = require('express');
-const router = express.Router();
+const projectsRouter = express.Router();
 
-router.post("/create", (req, res, next) => {
+projectsRouter.post("/create", (req, res, next) => {
   const projects = [
     {
       id: "fjaidkakd39qee33_dka",
@@ -23,5 +23,5 @@ router.post("/create", (req, res, next) => {
 });
 
 
-module.exports = router;
+module.exports = projectsRouter;
 
