@@ -12,7 +12,7 @@ export class AdminService {
   user$: Observable<firebase.User>;
 
   constructor(private http: HttpClient,
-              private af: AngularFirestore,
+              private afStore: AngularFirestore,
               private afAuth: AngularFireAuth,
               private route: ActivatedRoute) {
     this.user$ = afAuth.authState;

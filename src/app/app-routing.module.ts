@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-// import { AuthGuard } from './auth-guard.service';
 
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AngularComponent } from './portfolio/angular/angular.component';
@@ -28,10 +27,11 @@ import { ProjectsComponent } from './admin/projects/projects.component';
 import { CreateProjectComponent } from './admin/projects/create-project/create-project.component';
 import { ListProjectComponent } from './admin/projects/list-project/list-project.component';
 import { BlogComponent } from './blog/blog.component';
+import {AdminGuardService} from '../providers/admin-guard/admin-guard.service';
 
 
 const appRoutes: Routes = [
-  {path: '', redirectTo: '/home', pathMatch: 'full' },
+{path: '', redirectTo: '/home', pathMatch: 'full' },
   {path: 'home', component: HomeComponent },
   {path: 'about-site', component: AboutSiteComponent },
   {path: 'about', component: AboutComponent },
@@ -52,7 +52,7 @@ const appRoutes: Routes = [
   {path: 'resume', component: ResumeComponent },
   {path: 'contact', component: ContactComponent },
   {path: 'login', component: LoginComponent },
-  {path: 'admin', component: AdminComponent,
+  {path: 'admin', component: AdminComponent, canActivate: [AdminGuardService],
     children: [
       { path: 'contacted', component: ContactedComponent },
       { path: 'projects', component: ProjectsComponent,

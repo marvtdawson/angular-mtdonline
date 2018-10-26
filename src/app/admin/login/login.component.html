@@ -7,18 +7,18 @@
         </mat-card-header>
         <mat-card-content>
           <div class="login-btn-wrapper">
-            <button mat-button (click)="onLoginWithGoogle()" class="btn btn-primary">
+            <button mat-button (click)="onSignUpWithGoogle()" class="btn btn-primary">
               <i class="fab fa-google"></i>Sign Up With Google
             </button>
-            <button mat-button (click)="onLoginWithFacebook()" class="btn btn-primary">
+            <button mat-button (click)="onSignUpWithFacebook()" class="btn btn-primary">
               <i class="fab fa-facebook-f"></i>Sign Up With Facebook
             </button>
-            <button mat-button (click)="onLoginWithTwitter()" class="btn btn-primary">
+            <button mat-button (click)="onSignUpWithTwitter()" class="btn btn-primary">
               <i class="fab fa-twitter"></i>Sign Up With Twitter
             </button>
           </div>
           <div class="or-text">OR</div>
-          <form #loginForm="ngForm" (ngSubmit)="onLoginWithEmailandPassword(loginForm.value)">
+          <form #loginForm="ngForm" (ngSubmit)="onSignUpWithEmailandPassword(loginForm.value)">
             <div *ngIf="invalidLogin" class="alert alert-danger">
               Invalid username and/or password.
             </div>
@@ -28,14 +28,15 @@
                 matInput
                 class="input-field"
                 name="email"
+                #email
                 ngModel
                 #email>
-              <!--div class="form-error"
-                *ngIf="!loginForm.get('email').valid && loginForm.get('email').touched"
-                >Please Enter A Valid Email</div -->
+              <div class="form-error"
+                *ngIf="email.invalid && email.touched"
+                >Please Enter A Valid Email</div>
             </mat-form-field>
             <mat-form-field appearance="legacy">
-              <mat-label>Password</mat-label>
+              <mat-label for="password">Password</mat-label>
               <input
                 type="password"
                 name="password"
@@ -58,7 +59,7 @@
   </div>
   <div class="col">
     <div class="sign-paragraph-wrapper">
-      Sign in to leave a your project testimony or comment on a recent newsletter article.
+      Sign up to leave your project's testimony or comment on a recent newsletter article.
     </div>
   </div>
 </div>

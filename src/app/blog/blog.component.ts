@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class BlogComponent implements OnInit {
 
   prePageTitle = 'Blah Blah Blah';
-  pageTitle = 'Blog';
+  pageTitle = 'BLOG!';
 
 
   constructor() { }

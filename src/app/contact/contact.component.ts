@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {SiteDataService} from '../../providers/site-data/site-data.service';
+import { UnitedStatesServiceList } from '../../providers/forms/united-states.service';
 
 @Component({
   selector: 'app-contact',
@@ -10,8 +11,11 @@ export class ContactComponent implements OnInit {
 
   prePageTitle = 'Got A Question?';
   pageTitle = 'Contact Me';
+  stateOptions: any;
 
-  constructor(private siteData: SiteDataService) { }
+  constructor(private siteData: SiteDataService) {
+    this.stateOptions = UnitedStatesServiceList;
+  }
 
   ngOnInit() {
   }

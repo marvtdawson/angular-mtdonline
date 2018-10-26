@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {CanActivate, Router, RouterStateSnapshot} from '@angular/router';
+import {ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot} from '@angular/router';
 import {AdminService} from '../../app/admin/admin.service';
 import 'rxjs/add/operator/map';
 
@@ -11,7 +11,7 @@ export class AdminGuardService implements CanActivate {
   constructor(private adminService: AdminService,
               private router: Router) { }
 
-  canActivate(route, state: RouterStateSnapshot) {
+  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
    return this.adminService.user$.map(user => {
       if (user) {
         return true;

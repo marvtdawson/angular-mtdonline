@@ -62,6 +62,8 @@ import { ResumeComponent } from './resume/resume.component';
 import { RequestQuoteComponent } from './consulting/request-quote/request-quote.component';
 import { RecentProjectsComponent } from './recent-projects/recent-projects.component';
 
+// import {UnitedStatesServiceList} from '../providers/forms/united-states.service';
+
 
 @NgModule({
   declarations: [
@@ -114,7 +116,7 @@ import { RecentProjectsComponent } from './recent-projects/recent-projects.compo
     AngularFirestoreModule,
     TranslateModule.forRoot()
   ],
-  providers: [AdminService, AdminGuardService, FrameworksService],
+  providers: [AdminService, AdminGuardService, FrameworksService ],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   entryComponents: [

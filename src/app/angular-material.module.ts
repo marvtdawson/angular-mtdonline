@@ -13,6 +13,7 @@ import {
   MatIconRegistry,
   MatSelectModule,
   MatOptionModule,
+  MatSnackBarModule
 } from '@angular/material';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
@@ -31,7 +32,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatInputModule,
     MatSelectModule,
     MatOptionModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatSnackBarModule
   ],
   exports: [
     MatButtonModule,
