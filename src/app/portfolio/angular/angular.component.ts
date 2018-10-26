@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AngularComponent implements OnInit {
 
+  prePageTitle = 'Designed with';
+  pageTitle = 'Angular 6 / 7';
+
   constructor() { }
 
   ngOnInit() {

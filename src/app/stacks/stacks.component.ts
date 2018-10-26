@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StacksComponent implements OnInit {
 
+  prePageTitle = 'M.E.A.N & LAMP';
+  pageTitle = 'Stacks';
+
   constructor() { }
 
   ngOnInit() {

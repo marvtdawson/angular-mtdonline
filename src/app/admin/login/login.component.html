@@ -1,0 +1,64 @@
+<div class="row">
+  <div class="col">
+    <div class="form-wrapper">
+      <mat-card class="card-container">
+        <mat-card-header>
+          <!--mat-card-title>LOGIN</mat-card-title -->
+        </mat-card-header>
+        <mat-card-content>
+          <div class="login-btn-wrapper">
+            <button mat-button (click)="onLoginWithGoogle()" class="btn btn-primary">
+              <i class="fab fa-google"></i>Sign Up With Google
+            </button>
+            <button mat-button (click)="onLoginWithFacebook()" class="btn btn-primary">
+              <i class="fab fa-facebook-f"></i>Sign Up With Facebook
+            </button>
+            <button mat-button (click)="onLoginWithTwitter()" class="btn btn-primary">
+              <i class="fab fa-twitter"></i>Sign Up With Twitter
+            </button>
+          </div>
+          <div class="or-text">OR</div>
+          <form #loginForm="ngForm" (ngSubmit)="onLoginWithEmailandPassword(loginForm.value)">
+            <div *ngIf="invalidLogin" class="alert alert-danger">
+              Invalid username and/or password.
+            </div>
+            <mat-form-field appearance="legacy">
+              <mat-label>Email</mat-label>
+              <input
+                matInput
+                class="input-field"
+                name="email"
+                ngModel
+                #email>
+              <!--div class="form-error"
+                *ngIf="!loginForm.get('email').valid && loginForm.get('email').touched"
+                >Please Enter A Valid Email</div -->
+            </mat-form-field>
+            <mat-form-field appearance="legacy">
+              <mat-label>Password</mat-label>
+              <input
+                type="password"
+                name="password"
+                #password
+                matInput
+                ngModel
+                class="input-field">
+              <!--div class="form-error"
+              *ngIf="!loginForm.get('password').valid && loginForm.get('password').touched"
+              >Please Enter A Valid Password</div -->
+            </mat-form-field>
+            <div class="form-button-wrapper">
+              <button mat-raised-button class="btn btn-primary">SIGN UP</button>
+            </div>
+          </form>
+        </mat-card-content>
+      </mat-card>
+
+    </div>
+  </div>
+  <div class="col">
+    <div class="sign-paragraph-wrapper">
+      Sign in to leave a your project testimony or comment on a recent newsletter article.
+    </div>
+  </div>
+</div>

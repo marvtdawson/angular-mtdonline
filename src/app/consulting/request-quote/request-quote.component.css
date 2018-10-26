@@ -1,0 +1,10 @@
+.main-content{
+  width: 75%;
+  margin: 0 auto 0;
+}
+mat-form-field,
+mat-dialog-actions{
+  float: left;
+  display: block;
+}
+

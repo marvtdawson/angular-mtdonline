@@ -12,8 +12,9 @@ import {
   MatInputModule,
   MatIconRegistry,
   MatSelectModule,
-  MatOptionModule
+  MatOptionModule,
 } from '@angular/material';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import {
     MatCheckboxModule,
     MatInputModule,
     MatSelectModule,
-    MatOptionModule
+    MatOptionModule,
+    MatTooltipModule
   ],
   exports: [
     MatButtonModule,

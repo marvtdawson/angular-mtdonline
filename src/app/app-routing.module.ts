@@ -12,21 +12,22 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { AboutSiteComponent } from './about-site/about-site.component';
 import { ExperienceComponent } from './experience/experience.component';
-import { SkillsComponent } from './auth/skills/skills.component';
+import { SkillsComponent } from './admin/skills/skills.component';
 import { StacksComponent } from './stacks/stacks.component';
 import { ResumeComponent } from './resume/resume.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ReactComponent } from './portfolio/react/react.component';
 import { WixComponent } from './portfolio/wix/wix.component';
 import { ConsultingComponent} from './consulting/consulting.component';
-import { LoginComponent } from './auth/login/login.component';
-import { AuthComponent } from './auth/auth.component';
-import { ContactedComponent } from './auth/contacted/contacted.component';
-import { NewsletterComponent } from './auth/newsletter/newsletter.component';
-import { ConsultationComponent } from './auth/consultation/consultation.component';
-import { ProjectsComponent } from './auth/projects/projects.component';
-import { CreateProjectComponent } from './auth/projects/create-project/create-project.component';
-import { ListProjectComponent } from './auth/projects/list-project/list-project.component';
+import { LoginComponent } from './admin/login/login.component';
+import { AdminComponent } from './admin/admin.component';
+import { ContactedComponent } from './admin/contacted/contacted.component';
+import { NewsletterComponent } from './admin/newsletter/newsletter.component';
+import { ConsultationComponent } from './admin/consultation/consultation.component';
+import { ProjectsComponent } from './admin/projects/projects.component';
+import { CreateProjectComponent } from './admin/projects/create-project/create-project.component';
+import { ListProjectComponent } from './admin/projects/list-project/list-project.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 const appRoutes: Routes = [
@@ -35,6 +36,7 @@ const appRoutes: Routes = [
   {path: 'about-site', component: AboutSiteComponent },
   {path: 'about', component: AboutComponent },
   {path: 'consulting', component: ConsultingComponent },
+  {path : 'blog', component: BlogComponent },
   {path: 'portfolio', component: PortfolioComponent,
     children: [
       {path: 'angular', component: AngularComponent},
@@ -50,13 +52,13 @@ const appRoutes: Routes = [
   {path: 'resume', component: ResumeComponent },
   {path: 'contact', component: ContactComponent },
   {path: 'login', component: LoginComponent },
-  {path: 'auth', component: AuthComponent,
+  {path: 'admin', component: AdminComponent,
     children: [
       { path: 'contacted', component: ContactedComponent },
       { path: 'projects', component: ProjectsComponent,
         children: [
           { path: 'create-project', component: CreateProjectComponent },
-          { path: 'list-project', component: ListProjectComponent }
+          { path: 'list-projects', component: ListProjectComponent }
         ]
       },
       { path: 'skills', component: SkillsComponent },

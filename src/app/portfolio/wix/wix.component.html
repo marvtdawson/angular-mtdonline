@@ -1,14 +1,28 @@
-<div class="container-fluid">
-  <!-- app page title bar -->
-  <app-title></app-title>
-  <div class="row">
-    <p>This is the WIX page</p>
-    <healcode-widget data-type="appointments" data-widget-partner="object" data-widget-id="1227892e953" data-widget-version="0"></healcode-widget>
+<!-- app page title header bar -->
+<app-title [prePageTitle]="prePageTitle" [pageTitle]="pageTitle"></app-title>
 
-    <healcode-widget data-version="0.2" data-link-class="healcode-contract-text-link" data-site-id="35272" data-mb-site-id="883172" data-type="contract-link" data-inner-html="Buy Now" data-contract-id="102"></healcode-widget>
+<div class="row">
+  <div class="corepage-wall">
+    <img src="../../../assets/img/site/zend_2018_php_7.jpg" class="corepage_wall_image">
+  </div>
+</div>
 
-    <healcode-widget data-version="0.2" data-link-class="healcode-cart-text-link" data-site-id="35272" data-mb-site-id="883172" data-type="cart-link" data-inner-html="Cart"></healcode-widget>
-
-    <healcode-widget data-version="0.2" data-link-class="healcode-pricing-option-text-link" data-site-id="35272" data-mb-site-id="883172" data-type="pricing-link" data-inner-html="Buy Now" data-service-id="100021"></healcode-widget>
+<div class="row">
+  <div class="project-content-wrapper">
+    <div class="section-h2">WIX</div>
+    <mat-card class="card-container">
+      <mat-card-header>
+        <mat-card-title>Reggie's Buckets</mat-card-title>
+        <mat-card-subtitle>WIX Site</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="../../../assets/img/clients/reggiesbucket/reggiesbucket_homescreen.jpg" >
+      <mat-card-content>
+        <p>Ex MLB player, Reggie York's fitness improvement site.</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>Learn More</button>
+        <button mat-button (click)="goToReggiesBucket()">Visit Site</button>
+      </mat-card-actions>
+    </mat-card>
   </div>
 </div>

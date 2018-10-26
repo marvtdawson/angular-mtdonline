@@ -1,46 +1,76 @@
-<div class="container-fluid">
-  <!-- app page title bar -->
-  <div class="row">
-    <div class="page-header-bar">
-      <div class="page-title-wrapper">{{ siteName }} : {{ pageTitle }}</div>
+<!-- app page title header bar -->
+<app-title [prePageTitle]="prePageTitle" [pageTitle]="pageTitle"></app-title>
+
+  <div class="row" id="consultation-content-wrapper">
+      <div class="text-wrapper">
+        <p>
+          If you seek a passionate developer,
+          have a project that you and your team are working on and need a extra set of hands,
+          or have a question about your current site.
+        </p>
+      </div>
+      <div class="img-wrapper">
+        <p>Contact me for a consultation quote</p>
+        <button mat-raised-button (click)="openQuoteDialog()">Quote</button>
+      </div>
+  </div>
+
+  <div class="row main-content">
+    <div class="col-img-wrapper">
+      <img class="consult-imgs" src="../../assets/img/ionic_and_angular.png">
+    </div>
+    <div class="col-text-wrapper">
+      <h4>FRAMEWORKS</h4>
+      <p>Frameworks knowledge of Angular 6/7, React 16, Ionic, Stencil for application development.</p>
     </div>
   </div>
 
-  <div class="row consultation-content">
-    <div class="consultation-content">
-      <p>Contact me for a consultation quote</p>
-      <button class="btn btn-primary">Quote</button>
-      <p>
-        If you seek a passionate developer,
-        or you have a project that you and your team are working on and need a extra set of hands,
-        or have a question about your current site.
-      </p>
+  <div class="row main-content">
+    <div class="col-text-wrapper">
+      <h4>MOBILE RESPONSIVE DESIGN</h4>
+      <p>CSS, Bootstrap or Flexbox for mobile first development.</p>
+    </div>
+    <div class="col-img-wrapper">
+      <img class="consult-imgs" src="../../assets/img/mobile_responsive.jpeg">
     </div>
   </div>
 
   <div class="row main-content">
-    <div><img src="../../assets/img/ionic_and_angular.png"> </div>
-    <h4>FRAMEWORKS</h4>
+    <div class="col-img-wrapper">
+      <img class="consult-imgs" src="../../assets/img/deploy-4.jpg">
+    </div>
+    <div class="col-text-wrapper">
+      <h4>DEPLOYMENT</h4>
+      <p>AWS, Google Cloud Plaform or any hosting providers. Mobile deployment to Google Play or Apple App Store</p>
+    </div>
   </div>
-  <div class="row main-content">
-    <h4>MOBILE RESPONSIVE DESIGN</h4>
-    <div><img src="../../assets/img/mobile_responsive.jpeg"> </div>
-  </div>
-  <div class="row main-content">
-    <div><img src="../../assets/img/deploy-4.jpg"> </div>
-    <h4>DEPLOYMENT</h4>
-  </div>
-  <div class="row main-content">
-    <h4>EXPERIMENTAL & CUSTOM DESIGN</h4>
-    <div><img src="../../assets/img/prototype_and_mockup.png"> </div>
-  </div>
-  <div class="row main-content">
-    <div><img src="../../assets/img/socialmediamarketing.jpg"> </div>
-    <h4>SOCIAL INTEGRATION & MIGRATION</h4>
 
-  </div>
   <div class="row main-content">
-    <h4>STYLING</h4>
-    <div><img src="../../assets/img/less_and_sass.jpg"> </div>
+    <div class="col-text-wrapper">
+      <h4>EXPERIMENTAL & CUSTOM DESIGN</h4>
+      <p>Rapid prototyping or custom development for proof of concept validation.</p>
+    </div>
+    <div class="col-img-wrapper">
+      <img class="consult-imgs" src="../../assets/img/prototype_and_mockup.png">
+    </div>
   </div>
-</div>
+
+  <div class="row main-content">
+    <div class="col-img-wrapper">
+      <img class="consult-imgs" src="../../assets/img/socialmediamarketing.jpg">
+    </div>
+    <div class="col-text-wrapper">
+      <h4>SOCIAL INTEGRATION & MIGRATION</h4>
+      <p>Consumption of federate API's.</p>
+    </div>
+  </div>
+
+  <div class="row main-content">
+    <div class="col-text-wrapper">
+      <h4>STYLING</h4>
+      <p>LESS or SASS abilities to minimize styling code.</p>
+    </div>
+    <div class="col-img-wrapper">
+      <img class="consult-imgs" src="../../assets/img/less_and_sass.jpg">
+    </div>
+  </div>

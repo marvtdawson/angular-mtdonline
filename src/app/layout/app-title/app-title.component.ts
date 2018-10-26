@@ -1,4 +1,4 @@
-import {Component, Injectable, OnInit, Output} from '@angular/core';
+import {Component, Injectable, OnInit, Input} from '@angular/core';
 
 @Injectable()
 @Component({
@@ -8,7 +8,8 @@ import {Component, Injectable, OnInit, Output} from '@angular/core';
 })
 export class AppTitleComponent implements OnInit {
 
-  @Output() pageTitle: string;
+  @Input() prePageTitle: string;
+  @Input() pageTitle: string;
 
  constructor() { }
 

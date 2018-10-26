@@ -1,0 +1,23 @@
+<div class="row main-content">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Title</th>
+      <th>Framework</th>
+      <th>Summary</th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let p of projects$ ">
+      <td>{{ p.title }}</td>
+      <td>{{ p.framework }}</td>
+      <td>{{ p.summary }}</td>
+      <td>
+        <a routerLink="['/auth/projects/', p.$key]">Edit</a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+

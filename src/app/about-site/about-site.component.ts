@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {SiteDataService} from '../../providers/site-data.service';
+import {SiteDataService} from '../../providers/site-data/site-data.service';
 
 @Component({
   selector: 'app-about-site',

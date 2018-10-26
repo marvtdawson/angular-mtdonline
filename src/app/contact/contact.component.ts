@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {SiteDataService} from '../../providers/site-data/site-data.service';
 
 @Component({
   selector: 'app-contact',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  prePageTitle = 'Got A Question?';
+  pageTitle = 'Contact Me';
+
+  constructor(private siteData: SiteDataService) { }
 
   ngOnInit() {
   }

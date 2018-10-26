@@ -1,8 +1,32 @@
-<div class="container-fluid">
-  <div class="row">
-    <!-- app page title bar -->
-    <app-title></app-title>
+<!-- app page title header bar -->
+<app-title [prePageTitle]="prePageTitle" [pageTitle]="pageTitle"></app-title>
+
+<div class="row">
+  <div class="corepage-wall">
+    <img src="../../../assets/img/site/zend_2018_php_7.jpg" class="corepage_wall_image">
   </div>
+</div>
+
+<div class="row">
+  <div class="project-content-wrapper">
+    <div class="section-h2">WIX</div>
+    <mat-card class="card-container">
+      <mat-card-header>
+        <mat-card-title>Reggie's Buckets</mat-card-title>
+        <mat-card-subtitle>WIX Site</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="../../../assets/img/clients/reggiesbucket/reggiesbucket_homescreen.jpg" >
+      <mat-card-content>
+        <p>Ex MLB player, Reggie York's fitness improvement site.</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>Learn More</button>
+        <button mat-button (click)="goToReggiesBucket()">Visit Site</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+
   <div class="row">
     <div class="main-content">
       <p>
@@ -11,8 +35,6 @@
       <p>Visit my very first React application, which is a my online portfolio written with React 16 at
         <a href="https://www.mtdonline.net">MTDOnline.net</a>
       </p>
-
-    </div>
   </div>
 </div>
 

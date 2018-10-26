@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-angular-ionic',
@@ -7,7 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AngularIonicComponent implements OnInit {
 
-  constructor() { }
+  prePageTitle = 'Designed with';
+  pageTitle = 'Angular & Ionic';
+
+  constructor(private translate: TranslateService) {
+    // set default language
+    this.translate.setDefaultLang('en');
+
+    this.translate.use('en');
+
+    this.translate.setTranslation('en', {
+      ANGULAR_IONIC: 'Angular & Ionic'
+    })
+  }
 
   ngOnInit() {
   }

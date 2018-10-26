@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {SiteDataService} from '../../../providers/site-data.service';
-import {MatDialog, MatDialogRef} from '@angular/material';
+import { SiteDataService } from '../../../providers/site-data/site-data.service';
+import { MatDialog } from '@angular/material';
 import { Router } from '@angular/router';
-import {AuthService} from '../../auth/auth.service';
+import { AdminService } from '../../admin/admin.service';
+import { environment } from '../../../environments/environment';
 
 
 @Component({
@@ -13,11 +14,12 @@ import {AuthService} from '../../auth/auth.service';
 export class BsNavbarComponent implements OnInit {
 
   isHomePage: boolean;
+  backgroundColor = environment.navBarBackgroundColor;
 
   constructor(private siteData: SiteDataService,
               private dialog: MatDialog,
               private router: Router,
-              public authService: AuthService) {
+              public adminService: AdminService) {
 
   }
 
@@ -37,7 +39,7 @@ export class BsNavbarComponent implements OnInit {
 
   // log user out
   onLogout() {
-    this.authService.logUserOut();
+    this.adminService.logUserOut();
   }
 
 

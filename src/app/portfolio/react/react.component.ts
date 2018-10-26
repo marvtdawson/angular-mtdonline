@@ -8,7 +8,8 @@ import { globalConst } from '../../../../config/lib/global-const';
 })
 export class ReactComponent implements OnInit {
 
-  pageTitle: 'React Project';
+  prePageTitle = 'Designed with';
+  pageTitle = 'React 16';
 
   constructor() { }
 

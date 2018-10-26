@@ -81,6 +81,13 @@
   .footer-nav-subdiv h3{
     text-align: center;
   }
+  .footer-consult-btn {
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: #ff6200;
+    color: #ffffff;
+
+  }
   .site-footer{
     margin: 2px auto 0;
     font-size: 18px;

@@ -6,7 +6,7 @@ import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scrol
 import { RecentProjectsComponent } from '../recent-projects/recent-projects.component';
 import { ResumeComponent } from '../resume/resume.component';
 import { MatDialog } from '@angular/material';
-import {SiteDataService} from '../../providers/site-data.service';
+import {SiteDataService} from '../../providers/site-data/site-data.service';
 
 
 @Component({
@@ -49,12 +49,15 @@ export class HomeComponent implements OnInit {
     window.location.href = 'https://www.mtdonline.net';
   }
 
-  goToReggiesBucket() {
+  /*goToReggiesBucket() {
     window.location.href = 'https://www.reggiesbucket.com/home';
-  }
+  }*/
 
   goToWhosLaundry() {
-    window.location.href = 'https://whoslaundry.com';
+    window.location.href = 'https://www.whoslaundry.com';
+  }
+  goToMattressAndThings() {
+    window.location.href = 'https://www.mattressandthings.com';
   }
 
   openResumeDialog(): void {

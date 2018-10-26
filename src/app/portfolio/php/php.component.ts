@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import {Routes} from '@angular/router';
 
 @Component({
   selector: 'app-php',
@@ -7,12 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PhpComponent implements OnInit {
 
-  pageTitle = 'PHP PROJECTS';
+  prePageTitle = 'Designed with';
+  pageTitle = 'PHP 6 / 7';
 
 
   constructor() { }
 
   ngOnInit() {
   }
+
+ /* goToDividsHubSite() {
+    this.router.navigate('https://www.dvidshub.net');
+  }*/
 
 }

@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AngularCAspnetComponent implements OnInit {
 
+  prePageTitle = 'Designed with';
+  pageTitle = 'Angular & C#';
+
   constructor() { }
 
   ngOnInit() {

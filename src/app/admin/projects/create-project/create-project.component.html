@@ -1,0 +1,80 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <mat-card class="card-container">
+        <form #form="ngForm" (ngSubmit)="onCreateProject(form.value)">
+          <mat-form-field appearance="outline">
+            <mat-label>Title</mat-label>
+            <input
+              type="text"
+              ngModel
+              #title="ngModel"
+              name="title"
+              required
+              matInput class="input-field">
+            <mat-hint>Reggie Buckets</mat-hint>
+            <span class="form-error"
+                  *ngIf="title.invalid && title.touched"
+            >Please Enter A Valid Title Name</span>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Framework</mat-label>
+            <mat-select
+              type="text"
+              #framework="ngModel"
+              ngModel
+              required
+              name="framework"
+              matInput class="input-field">
+              <mat-option value=""></mat-option>
+              <mat-option *ngFor="let fw of frameworks$ | async" [value]="fw.key">{{ fw.payload.val().name}}</mat-option>
+            </mat-select>
+            <mat-hint>"Angular, React, Ionic"</mat-hint>
+            <span class="form-error"
+                  *ngIf="framework.invalid && framework.touched"
+            >Please Select A Valid Framework</span>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Summary</mat-label>
+            <textarea
+              type="text"
+              #summary="ngModel"
+              required
+              ngModel
+              name="summary"
+              matInput class="input-field"></textarea>
+            <mat-hint>Max 250 characters</mat-hint>
+            <span class="form-error"
+                  *ngIf="summary.invalid && summary.touched"
+            >Please Enter A Valid Project Summary</span>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Image</mat-label>
+            <input matInput #imageUrl="ngModel" required name="imageUrl" type="text" ngModel>
+            <button mat-stroked-button type="button" (click)="imageUploader.click()">Upload Image</button>
+            <input type="file" #imageUploader >
+            <span class="form-error"
+                  *ngIf="imageUrl.invalid && imageUrl.touched"
+            >Image Url is Required</span>
+          </mat-form-field>
+          <div class="form-button">
+            <button mat-raised-button color="primary">Save Project</button>
+          </div>
+        </form>
+      </mat-card>
+    </div>
+    <div class="col-md-6">
+      <div class="mat-card">
+        <mat-card-header>
+          <mat-card-title>{{ title.value }}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="imageUrl.value" >
+        <mat-card-content>
+          <p>{{ summary.value }}</p>
+        </mat-card-content>
+      </div>
+    </div>
+  </div>
+</div>
+
+
