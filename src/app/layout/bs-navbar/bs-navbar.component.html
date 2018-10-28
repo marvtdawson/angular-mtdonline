@@ -15,15 +15,22 @@
 
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto nav-link-wrapper">
+
       <li class="nav-item">
-        <a class="nav-link" routerLink="/about">MY STORY</a>
+        <a class="nav-link" routerLink="/about">ABOUT</a>
+        <!--a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ABOUT</a>
+        <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" routerLink="/about">My Story</a>
+          <a class="dropdown-item" routerLink="/experience">Experience</a>
+          <a class="dropdown-item" routerLink="/stacks">Stacks</a>
+        </div-->
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/consulting">CONSULTING</a>
       </li>
       <li ngbDropdown class="nav-item dropdown">
-        <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WORK</a>
-        <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+        <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WORK</a>
+        <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown02">
           <a class="dropdown-item" routerLink="portfolio/angular">Angular 6 / 7 </a>
           <a class="dropdown-item" routerLink="portfolio/angular-ionic">Angular & Ionic</a>
           <!--a class="dropdown-item" routerLink="portfolio/angular-c-aspnet">Angular + C# ASP.NET</a-->
@@ -38,8 +45,8 @@
         </li>
       </ng-template>
       <li *ngIf="adminService.user$ | async as user; else anonymousUser " ngbDropdown class="nav-item dropdown">
-        <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ user.displayName }}</a>
-        <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown02">
+        <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ user.displayName }}</a>
+        <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown03">
           <a class="dropdown-item" routerLink="/auth">Profile</a>
           <a class="dropdown-item" routerLink="/auth/consultation">Consultations</a>
           <a class="dropdown-item" routerLink="/auth/projects">Projects</a>

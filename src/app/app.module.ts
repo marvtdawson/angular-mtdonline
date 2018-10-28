@@ -5,7 +5,7 @@ import { FIREBASE_CONFIG } from './app-firebase.config';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {NgbDropdownModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AngularMaterialModule } from './angular-material.module';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
@@ -61,6 +61,7 @@ import { NewsletterComponent } from './admin/newsletter/newsletter.component';
 import { ResumeComponent } from './resume/resume.component';
 import { RequestQuoteComponent } from './consulting/request-quote/request-quote.component';
 import { RecentProjectsComponent } from './recent-projects/recent-projects.component';
+import {NgbDropdownMenu} from '@ng-bootstrap/ng-bootstrap/dropdown/dropdown';
 
 // import {UnitedStatesServiceList} from '../providers/forms/united-states.service';
 
