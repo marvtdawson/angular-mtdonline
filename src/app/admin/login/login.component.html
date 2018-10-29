@@ -18,7 +18,7 @@
             </button>
           </div>
           <div class="or-text">OR</div>
-          <form #loginForm="ngForm" (ngSubmit)="onSignUpWithEmailandPassword(loginForm.value)">
+          <form #loginForm="ngForm" (ngSubmit)="onSignUpWithEmailandPassword(loginForm)">
             <div *ngIf="invalidLogin" class="alert alert-danger">
               Invalid username and/or password.
             </div>
@@ -49,7 +49,7 @@
               >Please Enter A Valid Password</div -->
             </mat-form-field>
             <div class="form-button-wrapper">
-              <button mat-raised-button class="btn btn-primary">SIGN UP</button>
+              <button class="btn btn-primary" [disabled]="!loginForm.valid">SIGN UP</button>
             </div>
           </form>
         </mat-card-content>

@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { AdminService } from '../admin.service';
 import { Meta, Title } from '@angular/platform-browser';
 import { SiteDataService } from '../../../providers/site-data/site-data.service';
-import {MatSnackBar} from '@angular/material';
+import { MatSnackBar } from '@angular/material';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -54,8 +55,10 @@ export class LoginComponent {
   }
 
   // sign in using email and password
-  onSignUpWithEmailandPassword(email, password) {
-    console.log(email + password);
+  onSignUpWithEmailandPassword(form: NgForm) {
+    const email = form.value.email;
+    const password = form.value.password;
+    console.log(email + ' ' + password);
     this.adminService.signInWithEmailAndPassword(email, password);
     this.snackBar.open('Authenticating', 'Welcome!', {
       duration: 2000
