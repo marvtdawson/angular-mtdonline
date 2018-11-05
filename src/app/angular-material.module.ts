@@ -13,9 +13,12 @@ import {
   MatIconRegistry,
   MatSelectModule,
   MatOptionModule,
-  MatSnackBarModule
+  MatSnackBarModule,
+  MatExpansionModule,
+  MatStepperModule
 } from '@angular/material';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { CdkStepperModule } from '@angular/cdk/stepper';
 
 
 @NgModule({
@@ -33,7 +36,10 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatSelectModule,
     MatOptionModule,
     MatTooltipModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatExpansionModule,
+    CdkStepperModule,
+    MatStepperModule
   ],
   exports: [
     MatButtonModule,

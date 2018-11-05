@@ -27,7 +27,8 @@ import { ProjectsComponent } from './admin/projects/projects.component';
 import { CreateProjectComponent } from './admin/projects/create-project/create-project.component';
 import { ListProjectComponent } from './admin/projects/list-project/list-project.component';
 import { BlogComponent } from './blog/blog.component';
-import {AdminGuardService} from '../providers/admin-guard/admin-guard.service';
+import { AdminGuardService} from '../providers/admin-guard/admin-guard.service';
+import { SignupComponent} from './admin/signup/signup.component';
 
 
 const appRoutes: Routes = [
@@ -51,19 +52,20 @@ const appRoutes: Routes = [
   {path: 'stacks', component: StacksComponent },
   {path: 'resume', component: ResumeComponent },
   {path: 'contact', component: ContactComponent },
+  {path: 'signup', component: SignupComponent },
   {path: 'login', component: LoginComponent },
   {path: 'admin', component: AdminComponent, canActivate: [AdminGuardService],
     children: [
-      { path: 'contacted', component: ContactedComponent },
-      { path: 'projects', component: ProjectsComponent,
+      { path: 'contacted', component: ContactedComponent, canActivate: [AdminGuardService] },
+      { path: 'projects', component: ProjectsComponent, canActivate: [AdminGuardService],
         children: [
           { path: 'create-project', component: CreateProjectComponent },
           { path: 'list-projects', component: ListProjectComponent }
         ]
       },
-      { path: 'skills', component: SkillsComponent },
-      { path: 'consultation', component: ConsultationComponent },
-      { path: 'newsletter', component: NewsletterComponent }
+      { path: 'skills', component: SkillsComponent, canActivate: [AdminGuardService] },
+      { path: 'consultation', component: ConsultationComponent, canActivate: [AdminGuardService] },
+      { path: 'newsletter', component: NewsletterComponent, canActivate: [AdminGuardService] }
     ],
   },
   {path: '**', component: PageNotFoundComponent },

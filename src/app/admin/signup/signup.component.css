@@ -1,12 +1,12 @@
 @media(min-width: 1200px) {
- .form-wrapper {
-   margin: 50px auto 0;
-   width: 45%;
-   min-height: 341px;
- }
+  .form-wrapper {
+    margin: 50px auto 0;
+    width: 45%;
+    min-height: 341px;
+  }
   .card-container{
     width: 350px;
-    min-height: 300px;
+    min-height: 400px;
     margin-bottom: 30px;
     border-radius: 10px;
   }
@@ -25,7 +25,6 @@
     float: none;
     align-content: center;
     display:block;
-    margin-top: 20px;
   }
   input.ng-invalid.ng-touched {
     border: 1px solid #ff0000;
@@ -53,9 +52,29 @@
     margin: 200px auto 0;
   }
   .or-text{
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto 0;
     text-align: center;
-    width: 210px;
-    margin: 0 auto;
-    padding: 5px;
   }
+  h4.span {
+        display: inline-block;
+        vertical-align: baseline;
+        zoom: 1;
+        *display: inline;
+        *vertical-align: auto;
+        position: relative;
+        padding: 5px;
+         /* &:before, &:after {
+                       content: '';
+                       display: block;
+                       width: 1000px;
+                       position: absolute;
+                       top: 0.73em;
+                       border-top: 1px solid red;
+                     }
+          &:before { right: 100%; }
+          &:after { left: 100%; }*/
+    }
 }

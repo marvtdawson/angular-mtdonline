@@ -11,7 +11,7 @@ export class AdminGuardService implements CanActivate {
   constructor(private adminService: AdminService,
               private router: Router) { }
 
-  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
+  canActivate(route, state: RouterStateSnapshot) {
    return this.adminService.user$.map(user => {
       if (user) {
         return true;

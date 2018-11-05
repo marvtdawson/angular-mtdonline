@@ -20,6 +20,9 @@ describe('AboutComponent', () => {
   });
 
   it('should create', () => {
+    // arrange
+    // action
+    // assertion
     expect(component).toBeTruthy();
   });
 });

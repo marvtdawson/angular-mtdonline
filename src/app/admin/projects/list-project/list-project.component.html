@@ -1,23 +1,25 @@
-<div class="row main-content">
-  <table class="table">
+<div class="row">
+  <table class="table" *ngIf="projects.length > 0">
     <thead>
     <tr>
       <th>Title</th>
       <th>Framework</th>
       <th>Summary</th>
-      <th></th>
+      <th>Image Path</th>
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let p of projects$ ">
-      <td>{{ p.title }}</td>
-      <td>{{ p.framework }}</td>
-      <td>{{ p.summary }}</td>
+    <tr *ngFor="let projs of projects ">
+      <td>{{ projs.title }}</td>
+      <td>{{ projs.frameworkType }}</td>
+      <td>{{ projs.summary }}</td>
+      <td>{{ projs.imagePath }}</td>
       <td>
-        <a routerLink="['/auth/projects/', p.$key]">Edit</a>
+        <a routerLink="['/admin/projects/', p.$key]">Edit</a>
       </td>
     </tr>
     </tbody>
   </table>
+  <p *ngIf="projects.length <= 0 ">No projects have been added.</p>
 </div>
 

@@ -47,12 +47,12 @@
       <li *ngIf="adminService.user$ | async as user; else anonymousUser " ngbDropdown class="nav-item dropdown">
         <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ user.displayName }}</a>
         <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown03">
-          <a class="dropdown-item" routerLink="/auth">Profile</a>
-          <a class="dropdown-item" routerLink="/auth/consultation">Consultations</a>
-          <a class="dropdown-item" routerLink="/auth/projects">Projects</a>
-          <a class="dropdown-item" routerLink="/auth/skills">Skills</a>
-          <a class="dropdown-item" routerLink="/auth/newsletter">Newsletter</a>
-          <a class="dropdown-item" routerLink="/auth/contacted">Contacted</a>
+          <a class="dropdown-item" routerLink="/admin">Profile</a>
+          <a class="dropdown-item" routerLink="/admin/consultation">Consultations</a>
+          <a class="dropdown-item" routerLink="/admin/projects">Projects</a>
+          <a class="dropdown-item" routerLink="/admin/skills">Skills</a>
+          <a class="dropdown-item" routerLink="/admin/newsletter">Newsletter</a>
+          <a class="dropdown-item" routerLink="/admin/contacted">Contacted</a>
           <a class="dropdown-item" (click)="onLogout()">Logout </a>
         </div>
       </li>

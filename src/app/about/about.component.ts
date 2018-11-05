@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { SiteDataService } from '../../providers/site-data/site-data.service';
+import { AppTitleComponent } from '../layout/app-title/app-title.component';
 
 @Component({
   selector: 'app-about',
@@ -9,7 +10,7 @@ import { SiteDataService } from '../../providers/site-data/site-data.service';
 })
 export class AboutComponent implements OnInit {
 
-  prePageTitle = "About Marvin";
+  prePageTitle = 'About Marvo';
   pageTitle = 'The Quiet Anomally!';
 
   pageDescription = 'Learn all about Marvin Dawson\'s story and his journey to become a Full Stack Software Engineer. ' +
@@ -18,7 +19,7 @@ export class AboutComponent implements OnInit {
   constructor(private titleService: Title,
               private metaData: Meta,
               private siteData: SiteDataService) {
-    this.titleService.setTitle(this.pageTitle);
+    this.titleService.setTitle(this.pageTitle );
     this.metaData.addTags([
       {name: 'description', content: this.pageDescription},
       {name: 'keywords', content: this.siteData.siteKeywords},

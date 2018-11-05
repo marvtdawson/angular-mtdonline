@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { globalConst } from '../../../../config/lib/global-const';
+import { MTD_ONLINE } from '../../../../config/lib/global-const';
+import {ExternalRoutesService} from '../../../providers/external-routes/external-routes.service';
 
 @Component({
   selector: 'app-react',
@@ -9,11 +10,17 @@ import { globalConst } from '../../../../config/lib/global-const';
 export class ReactComponent implements OnInit {
 
   prePageTitle = 'Designed with';
-  pageTitle = 'React 16';
+  pageTitle = 'React';
+  extRoute: any;
 
-  constructor() { }
+  constructor(private externalRoute: ExternalRoutesService) {
+    this.extRoute = MTD_ONLINE;
+  }
 
   ngOnInit() {
+  }
+  mtdOnline() {
+    this.externalRoute.goToMtdOnline();
   }
 
 }

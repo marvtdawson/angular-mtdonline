@@ -6,15 +6,16 @@ import { MatSnackBar } from '@angular/material';
 import {NgForm} from '@angular/forms';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-signup',
+  templateUrl: './signup.component.html',
+  styleUrls: ['./signup.component.css']
 })
-export class LoginComponent {
+
+export class SignupComponent {
 
   invalidLogin: boolean;
-  pageTitle = 'Login';
-  pageDescription = 'Admin Login Page';
+  pageTitle = 'Signup';
+  pageDescription = 'Admin Signup Page';
   constructor(public adminService: AdminService,
               private metaData: Meta,
               private titleService: Title,
@@ -54,15 +55,15 @@ export class LoginComponent {
     });
   }
 
-
   // sign in using email and password
-  onSignInWithEmailandPassword(form: NgForm) {
+  onSignUpWithEmailandPassword(form: NgForm) {
     const email = form.value.email;
     const password = form.value.password;
     console.log(email + ' ' + password);
-    this.adminService.signInWithEmailAndPassword(email, password);
+    this.adminService.signUpWithEmailandPassword(email, password);
     this.snackBar.open('Authenticating', 'Welcome!', {
       duration: 2000
     });
   }
+
 }

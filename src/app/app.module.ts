@@ -19,6 +19,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { AdminService} from './admin/admin.service';
 import { AdminGuardService} from '../providers/admin-guard/admin-guard.service';
 import { FrameworksService } from '../providers/frameworks/frameworks.service';
+import { UserService } from '../providers/user/user.service';
+import { ExternalRoutesService } from '../providers/external-routes/external-routes.service';
 
 // app and layout components
 import { AppComponent } from './app.component';
@@ -61,9 +63,9 @@ import { NewsletterComponent } from './admin/newsletter/newsletter.component';
 import { ResumeComponent } from './resume/resume.component';
 import { RequestQuoteComponent } from './consulting/request-quote/request-quote.component';
 import { RecentProjectsComponent } from './recent-projects/recent-projects.component';
-import {NgbDropdownMenu} from '@ng-bootstrap/ng-bootstrap/dropdown/dropdown';
+// import {NgbDropdownMenu} from '@ng-bootstrap/ng-bootstrap/dropdown/dropdown';
+import { SignupComponent } from './admin/signup/signup.component';
 
-// import {UnitedStatesServiceList} from '../providers/forms/united-states.service';
 
 
 @NgModule({
@@ -97,7 +99,8 @@ import {NgbDropdownMenu} from '@ng-bootstrap/ng-bootstrap/dropdown/dropdown';
     NewsletterComponent,
     AdminComponent,
     RequestQuoteComponent,
-    BlogComponent
+    BlogComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
@@ -115,9 +118,9 @@ import {NgbDropdownMenu} from '@ng-bootstrap/ng-bootstrap/dropdown/dropdown';
     AngularFireAuthModule,
     AngularFireDatabaseModule,
     AngularFirestoreModule,
-    TranslateModule.forRoot()
+    TranslateModule.forRoot(),
   ],
-  providers: [AdminService, AdminGuardService, FrameworksService ],
+  providers: [AdminService, AdminGuardService, FrameworksService, UserService, ExternalRoutesService ],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   entryComponents: [
