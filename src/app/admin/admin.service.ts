@@ -20,18 +20,14 @@ export class AdminService {
     this.user$ = afAuth.authState;
   }
 
- /* private socialSignIn(provider: number): firebase.Promise<FirebaseAuthState> {
-    return this.afAuth.auth.signInWithRedirect({provider, method: AuthMethods.Popup})
-      .then( () => this.updateUserData() )
-      .catch(error => console.log(error));
-  }*/
-
   /**
    * Log In With Google
    */
   loginWithGoogle() {
-    const returnUrl = this.actRoute.snapshot.queryParamMap.get('returnUrl') || '' ;
-    localStorage.setItem('returnUrl', returnUrl);
+    const returnUrl = this.actRoute.snapshot.queryParamMap.get('returnUrl') || ['/admin'] ;
+    if (typeof returnUrl === 'string') {
+      localStorage.setItem('returnUrl', returnUrl);
+    }
     this.afAuth.auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider());
   }
 

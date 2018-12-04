@@ -16,4 +16,9 @@ export class WixComponent implements OnInit {
   ngOnInit() {
   }
 
+  goToReggiesBucket() {
+    window.location.href = 'https://www.reggiesbucket.com';
+  }
+
+
 }

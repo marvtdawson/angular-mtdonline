@@ -9,15 +9,7 @@ import { Router } from '@angular/router';
 })
 export class AdminComponent implements OnInit, OnDestroy {
 
-  constructor(private adminService: AdminService,
-              private router: Router) {
-    this.adminService.user$.subscribe(user => {
-      if (user) {
-        const returnUrl = localStorage.getItem('returnUrl');
-        router.navigateByUrl(returnUrl);
-      }
-    });
-  }
+  constructor(private adminService: AdminService) { }
 
   ngOnInit() {
   }

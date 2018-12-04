@@ -1,15 +1,16 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { UnitedStatesServiceList } from './united-states.service';
+import { UnitedStatesService } from './united-states.service';
 
 describe('UnitedStatesServiceList', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [UnitedStatesServiceList]
+      providers: [UnitedStatesService]
     });
   });
 
-  it('should be created', inject([UnitedStatesServiceList], (service: UnitedStatesServiceList) => {
+  // @ts-ignore
+  it('should be created', inject([UnitedStatesService], (service: UnitedStatesService) => {
     expect(service).toBeTruthy();
   }));
 });

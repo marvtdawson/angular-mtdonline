@@ -1,5 +1,5 @@
 <div class="row">
-  <table class="table" *ngIf="projects.length > 0">
+  <table class="table">
     <thead>
     <tr>
       <th>Title</th>
@@ -9,7 +9,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let projs of projects ">
+    <!--tr *ngFor="let projs of projects ">
       <td>{{ projs.title }}</td>
       <td>{{ projs.frameworkType }}</td>
       <td>{{ projs.summary }}</td>
@@ -17,9 +17,19 @@
       <td>
         <a routerLink="['/admin/projects/', p.$key]">Edit</a>
       </td>
+    </tr -->
+
+    <tr *ngFor="let projs of projects$ | async ">
+      <td>{{ projs.title }}</td>
+      <td>{{ projs.framework }}</td>
+      <td>{{ projs.summary }}</td>
+      <td>{{ projs.imageUrl }}</td>
+      <td>
+        <a routerLink="['/admin/projects/', p.$key]">Edit</a>
+      </td>
     </tr>
     </tbody>
   </table>
-  <p *ngIf="projects.length <= 0 ">No projects have been added.</p>
+  <!-- p *ngIf="projects.length <= 0 ">No projects have been added.</p -->
 </div>
 

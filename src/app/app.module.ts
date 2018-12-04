@@ -65,12 +65,13 @@ import { RequestQuoteComponent } from './consulting/request-quote/request-quote.
 import { RecentProjectsComponent } from './recent-projects/recent-projects.component';
 // import {NgbDropdownMenu} from '@ng-bootstrap/ng-bootstrap/dropdown/dropdown';
 import { SignupComponent } from './admin/signup/signup.component';
-
-
+import { HighlightDirective } from '../directives/highlight/highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
+    BsNavbarComponent,
+    AppTitleComponent,
     AppFooterComponent,
     HomeComponent,
     AboutComponent,
@@ -80,7 +81,6 @@ import { SignupComponent } from './admin/signup/signup.component';
     StacksComponent,
     ExperienceComponent,
     ResumeComponent,
-    BsNavbarComponent,
     PhpComponent,
     AngularComponent,
     AngularIonicComponent,
@@ -91,7 +91,6 @@ import { SignupComponent } from './admin/signup/signup.component';
     SkillsComponent,
     RecentProjectsComponent,
     ConsultingComponent,
-    AppTitleComponent,
     LoginComponent,
     ProjectsComponent,
     ConsultationComponent,
@@ -100,7 +99,8 @@ import { SignupComponent } from './admin/signup/signup.component';
     AdminComponent,
     RequestQuoteComponent,
     BlogComponent,
-    SignupComponent
+    SignupComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

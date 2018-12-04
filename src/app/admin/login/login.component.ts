@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
-import { AdminService } from '../admin.service';
+import { NgForm} from '@angular/forms';
+import { Router} from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
-import { SiteDataService } from '../../../providers/site-data/site-data.service';
 import { MatSnackBar } from '@angular/material';
-import {NgForm} from '@angular/forms';
+
+import { AdminService } from '../admin.service';
+import { SiteDataService } from '../../../providers/site-data/site-data.service';
+import { UserService } from '../../../providers/user/user.service';
 
 @Component({
   selector: 'app-login',
@@ -19,7 +22,9 @@ export class LoginComponent {
               private metaData: Meta,
               private titleService: Title,
               private siteData: SiteDataService,
-              private snackBar: MatSnackBar) {
+              private snackBar: MatSnackBar,
+              private router: Router,
+              private userService: UserService) {
     // set page title
     this.titleService.setTitle(this.pageTitle);
     // set page meta data
@@ -28,6 +33,14 @@ export class LoginComponent {
       {name: 'keywords', content: this.siteData.siteKeywords},
       {name: 'author', content: this.siteData.siteName}
     ]);
+
+    this.adminService.user$.subscribe(user => {
+      if (user) {
+        this.userService.save(user);
+        const returnUrl = localStorage.getItem('returnUrl');
+        router.navigateByUrl(returnUrl);
+      }
+    });
   }
 
   // sign up with Google credentials

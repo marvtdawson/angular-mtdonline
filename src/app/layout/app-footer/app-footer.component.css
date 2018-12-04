@@ -78,6 +78,12 @@
     margin: 2% 0 0 9%;
     float: left;
   }
+  .contact-text:hover,
+  .contact-text a:hover{
+    cursor: pointer;
+    color: #ff6200;
+  }
+
   .footer-nav-subdiv h3{
     text-align: center;
   }

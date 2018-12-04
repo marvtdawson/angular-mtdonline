@@ -34,7 +34,6 @@
   }
   .corepage_wall_image{
     width: 98%;
-    height: 200px;
   }
   mat-form-field {
     width: 100%;
@@ -114,12 +113,11 @@
     font-size: 32px;
   }
   .corepage-wall{
-    height: 700px;
-    margin-bottom: 50px;
+    height: 390px;
+    margin-bottom: 40px;
   }
   .corepage_wall_image{
-    width: 98%;
-    height: 700px;
+    width: 100%;
   }
   .main-content {
     width: 60%;

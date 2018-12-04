@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
     customElements.define('recent-projects', RecentProjectsElement);
     setTimeout(() => {
       this.content = '<recent-projects></recent-projects>';
-    }, 1000);
+    }, 5000);
   }
 
   ngOnInit() {
@@ -69,6 +69,10 @@ export class HomeComponent implements OnInit {
       console.log('The dialog was closed');
       // this.animal = result;
     });*/
+  }
+
+  myTestFunction(): void {
+    const functionName = 'My Test Funcdtion';
   }
 
 }

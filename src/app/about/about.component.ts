@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { SiteDataService } from '../../providers/site-data/site-data.service';
 import { AppTitleComponent } from '../layout/app-title/app-title.component';
+import { HighlightDirective } from '../../directives/highlight/highlight.directive';
 
 @Component({
   selector: 'app-about',

@@ -1,45 +1,47 @@
 <mat-dialog-title>Request Consultation</mat-dialog-title>
 <mat-dialog-content>
-  <form #requestQuoteForm="ngForm" (ngSubmit)="onSubmitRequestQuoteForm(requestQuoteForm.value)" >
-    <p>
-      <mat-form-field appearance="legacy">
-        <mat-label>Name: </mat-label>
-        <input type="text" matInput name="requestorName" ngModel #requestorName required>
-        <mat-error *ngIf="requestorName.invalid">Please enter a Valid Name.</mat-error>
-      </mat-form-field>
-    </p>
-    <p>
-      <mat-form-field appearance="legacy">
-        <mat-label>Email: </mat-label>
-        <input type="text" matInput name="requestorEmail" ngModel #requestorEmail required>
-        <mat-error *ngIf="requestorEmail.invalid">Please enter a Valid Email.</mat-error>
-      </mat-form-field>
-    </p>
-    <p>
-      <mat-form-field  appearance="legacy">
-        <mat-label>Web Site: </mat-label>
-        <input name="rquestorSite" type="text" matInput ngModel #requestorSite required>
-        <mat-hint>https://www.your-site.com</mat-hint>
-        <mat-error *ngIf="requestorSite.invalid && requestorSite.touched">Please enter a Web Site.</mat-error>
-      </mat-form-field>
-    </p>
-    <p>
-      <mat-form-field appearance="legacy">
-        <mat-label>Project Description: </mat-label>
-        <textarea name="projectDescription" matInput ngModel #projectDescription cols="30" rows="4" required></textarea>
-        <mat-hint>1,000 characters</mat-hint>
-        <mat-error *ngIf="projectDescription.invalid">Please enter a Project Description.</mat-error>
-      </mat-form-field>
-    </p>
-    <p>
-      <mat-dialog-actions>
-        <button mat-button mat-dialog-close="no">No Thanks!</button>
-        <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
-        <button mat-button mat-raised-button mat-dialog-close="yes" >
-          Request Consultation
-        </button>
-      </mat-dialog-actions>
-    </p>
-</form>
+  <mat-card class="card-container">
+      <form #requestQuoteForm="ngForm" (ngSubmit)="onSubmitRequestQuoteForm(requestQuoteForm.value)" >
+        <p>
+          <mat-form-field appearance="legacy">
+            <mat-label>Name: </mat-label>
+            <input type="text" matInput name="requestorName" ngModel #requestorName required>
+            <mat-error *ngIf="requestorName.invalid">Please enter a Valid Name.</mat-error>
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="legacy">
+            <mat-label>Email: </mat-label>
+            <input type="text" matInput name="requestorEmail" ngModel #requestorEmail required>
+            <mat-error *ngIf="requestorEmail.invalid">Please enter a Valid Email.</mat-error>
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field  appearance="legacy">
+            <mat-label>Web Site: </mat-label>
+            <input name="rquestorSite" type="text" matInput ngModel #requestorSite required>
+            <mat-hint>https://www.your-site.com</mat-hint>
+            <mat-error *ngIf="requestorSite.invalid && requestorSite.touched">Please enter a Web Site.</mat-error>
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="legacy">
+            <mat-label>Project Description: </mat-label>
+            <textarea name="projectDescription" matInput ngModel #projectDescription cols="10" rows="3" required></textarea>
+            <mat-hint>1,000 characters</mat-hint>
+            <mat-error *ngIf="projectDescription.invalid">Please enter a Project Description.</mat-error>
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-dialog-actions>
+            <button mat-button mat-dialog-close="no">No Thanks!</button>
+            <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
+            <button mat-button mat-raised-button mat-dialog-close="yes" >
+              Request Consultation
+            </button>
+          </mat-dialog-actions>
+        </p>
+    </form>
+  </mat-card>
 </mat-dialog-content>
 

@@ -15,9 +15,10 @@ import {
   MatOptionModule,
   MatSnackBarModule,
   MatExpansionModule,
-  MatStepperModule
+  MatStepperModule,
+  MatProgressSpinnerModule,
+  MatTooltipModule
 } from '@angular/material';
-import { MatTooltipModule } from '@angular/material/tooltip';
 import { CdkStepperModule } from '@angular/cdk/stepper';
 
 
@@ -39,7 +40,8 @@ import { CdkStepperModule } from '@angular/cdk/stepper';
     MatSnackBarModule,
     MatExpansionModule,
     CdkStepperModule,
-    MatStepperModule
+    MatStepperModule,
+    MatProgressSpinnerModule
   ],
   exports: [
     MatButtonModule,

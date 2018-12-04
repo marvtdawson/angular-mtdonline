@@ -1,6 +1,9 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-6">
+      <label for="image">Choose a project picture:</label>
+      <input type="file"  id="image" name="image" #image >
+      <button type="button" (click)="onImageUpload()">Upload Image</button>
       <mat-card class="card-container">
         <form #form="ngForm" (ngSubmit)="onCreateProject(form.value)">
           <mat-form-field appearance="outline">
@@ -49,10 +52,8 @@
             >Please Enter A Valid Project Summary</span>
           </mat-form-field>
           <mat-form-field appearance="outline">
-            <mat-label>Image</mat-label>
+            <mat-label>Online Image</mat-label>
             <input matInput #imageUrl="ngModel" required name="imageUrl" type="text" ngModel>
-            <button mat-stroked-button type="button" (click)="imageUploader.click()">Upload Image</button>
-            <input type="file" #imageUploader >
             <span class="form-error"
                   *ngIf="imageUrl.invalid && imageUrl.touched"
             >Image Url is Required</span>
@@ -60,6 +61,7 @@
           <div class="form-button">
             <button mat-raised-button color="primary">Save Project</button>
           </div>
+
         </form>
       </mat-card>
     </div>

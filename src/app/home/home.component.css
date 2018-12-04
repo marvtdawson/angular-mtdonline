@@ -9,11 +9,12 @@
     background-size: cover;
     height: 300px;
   }
-  .homePage-BriefSummary-wrapper{
-    width: 100%;
-    padding: 1px;
+  .homePage-BriefSummary-wrapper {
     position: absolute;
-   /* margin: 0 0 0 6%;*/
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
   .homePage-BriefSummary {
     width: 80%;
@@ -196,6 +197,8 @@
   .bg-jumbrotron-wrapper{
     width: 100%;
     height: 700px;
+    position: relative;
+    /*clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);*/
   }
   .bg-jumbrotron {
     width: 100%;
@@ -206,8 +209,14 @@
   .bg-jumbrotron-wrapper:focus .bg-jumbrotron {
     transform: scale(1.1);
   }
+  .homePage-BriefSummary-wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
   .homePage-BriefSummary {
-    width: 70%;
     margin: 0 auto 0;
     font-size: 18px;
   }
@@ -278,16 +287,25 @@
     width: 200px;
     margin: 10px auto 20px;
     padding: 10px;
+    color: #fff;
   }
+  .section-h2 :first-child {
+      color: #000000;
+    }
+
 
   .recent-projects {
     width: 80%;
     margin: 20px auto 0;
   }
 
+  .bg-skills {
+    background: url("../../assets/img/site/ai-codes-coding-247791.jpg") no-repeat;
+  }
   .skills-experience {
-    width: 70%;
-    margin: 0 auto 0;
+    width: 90%;
+    margin: 0 auto;
+    opacity: 5;
   }
   .fa-icon-wrapper {
     text-align: center;

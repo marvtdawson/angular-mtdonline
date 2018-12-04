@@ -10,12 +10,13 @@ export class UserService {
 
   user$: Observable<firebase.User>;
 
-  constructor(private afDB: AngularFireDatabase) {
-    /*save(user: this.user$){
-      this.afDB.object('/users/' + user.uid).update({
-        name: user.displayName,
-        email: user.email
-      });
-    }*/
+  constructor(private afDB: AngularFireDatabase) { }
+
+  save(user: firebase.User) {
+    this.afDB.object('/users/' + user.uid).update({
+      name: user.displayName,
+      email: user.email
+    });
   }
+
 }

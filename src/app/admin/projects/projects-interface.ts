@@ -1,7 +1,7 @@
 export interface ProjectsInterface {
   id: string;
   title: string;
-  frameworkType: string;
+  framework: string;
   summary: string;
-  imagePath: string;
+  imageUrl: string;
 }

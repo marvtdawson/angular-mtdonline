@@ -14,7 +14,7 @@ export class ConsultingComponent {
 
   prePageTitle = this.siteData.siteName;
   pageTitle = 'Consulting';
-  pageDescription = 'Contact Marvin for your project needs';
+  pageDescription = 'Hire Marvin as a consultant for your project needs';
   siteName = this.siteData.siteName;
   toolTipPositionOptions: TooltipPosition[] =  ['after', 'before', 'above', 'below', 'left', 'right'];
   constructor(private siteData: SiteDataService,

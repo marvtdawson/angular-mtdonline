@@ -41,4 +41,8 @@ export class CreateProjectComponent implements OnInit {
    this.router.navigate(['admin/projects/list-projects']);
   }
 
+  onImageUpload() {
+
+  }
+
 }

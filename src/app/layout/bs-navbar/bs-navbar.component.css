@@ -40,6 +40,9 @@
     width: 20%;
     display: inline;
   }
+  .logo-wrapper:hover {
+    cursor: pointer;
+  }
 
   .logo-text-wrapper {
     display: inline;
