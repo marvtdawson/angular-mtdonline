@@ -66,6 +66,9 @@ import { RecentProjectsComponent } from './recent-projects/recent-projects.compo
 // import {NgbDropdownMenu} from '@ng-bootstrap/ng-bootstrap/dropdown/dropdown';
 import { SignupComponent } from './admin/signup/signup.component';
 import { HighlightDirective } from '../directives/highlight/highlight.directive';
+import { PortfolioRoutingModule } from './portfolio/portfolio-routing.module/portfolio-routing.module';
+import { AdminRoutingModule } from './admin/admin-routing/admin-routing.module';
+
 
 @NgModule({
   declarations: [
@@ -77,17 +80,17 @@ import { HighlightDirective } from '../directives/highlight/highlight.directive'
     AboutComponent,
     AboutSiteComponent,
     ContactComponent,
-    PortfolioComponent,
     StacksComponent,
     ExperienceComponent,
     ResumeComponent,
+    PortfolioComponent,
     PhpComponent,
     AngularComponent,
     AngularIonicComponent,
-    PageNotFoundComponent,
     AngularCAspnetComponent,
     ReactComponent,
     WixComponent,
+    PageNotFoundComponent,
     SkillsComponent,
     RecentProjectsComponent,
     ConsultingComponent,
@@ -108,7 +111,6 @@ import { HighlightDirective } from '../directives/highlight/highlight.directive'
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule,
     NgbModule.forRoot(),
     LayoutModule,
     AngularMaterialModule,
@@ -119,6 +121,9 @@ import { HighlightDirective } from '../directives/highlight/highlight.directive'
     AngularFireDatabaseModule,
     AngularFirestoreModule,
     TranslateModule.forRoot(),
+    PortfolioRoutingModule,
+    AdminRoutingModule,
+    AppRoutingModule,
   ],
   providers: [AdminService, AdminGuardService, FrameworksService, UserService, ExternalRoutesService ],
   bootstrap: [AppComponent],
