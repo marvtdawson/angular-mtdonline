@@ -1,21 +1,19 @@
 <!-- @ng-bootstrap/ng-bootstrap with mosh -->
 <nav
   class="navbar navbar-expand-md navbar-light bg-light fixed-top" >
-  <div class="logo-wrapper" (click)="goToHomePage()">
+  <div class="navbar__logo-wrapper" (click)="goToHomePage()">
     <a class="navbar-brand">
-      <span class="logo-text-wrapper animated fadeInDown delay-1s">{{ siteName | uppercase }}</span>
+      <span class="navbar__text animated fadeInDown delay-1s">{{ siteName | uppercase }}</span>
     </a>
-      <div class="logo-img-wrapper">
-        <img class="logo-img animated bounce delay-2s" src="../../../assets/img/marvin_the_martian.jpg" alt="">
-      </div>
+    <img class="navbar__logo animated bounce delay-2s" src="../../../assets/img/Marvin_the_Martian.svg.png" alt="">
   </div>
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav mr-auto nav-link-wrapper">
-
+    <ul class="navbar-nav mr-auto navbar__link-wrapper">
       <li ngbDropdown class="nav-item">
         <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ABOUT
           <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">

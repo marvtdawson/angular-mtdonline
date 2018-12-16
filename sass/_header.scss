@@ -3,6 +3,6 @@
   height: 700px;
   position: relative;
   /*clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);*/
-
+  grid-column: full-start / col-end 6;
 
 }

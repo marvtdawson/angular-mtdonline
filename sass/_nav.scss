@@ -1,45 +1,40 @@
-.header {
-  background-color: $color-grey-dark-1;
-  grid-column: full-start / col-end 6;
+.navbar {
+
+  &__logo-wrapper {
+    display: inline;
+    margin-left: 125px;
+  }
+
+  &__logo-wrapper:hover {
+    cursor: pointer;
+  }
+
+  &__text {
+    display: inline;
+    color: #007bff;
+  }
+
+  &__logo {
+    height: 45px;
+    /*display: inline;
+    margin-left: 10px;*/
+  }
+
+  &__link-wrapper  {
+    float: right;
+    right: 0;
+    width: 33%;
+    position: absolute;
+  }
+
 }
 
-.logo-wrapper { /* -- Mast Head Logo Container @ 1920 PX -- */
-  margin: 12px 0 0 150px;
-  height: 55px;
-  width: 20%;
-  display: inline;
-}
-.logo-wrapper:hover {
-  cursor: pointer;
-}
-
-.logo-text-wrapper {
-  display: inline;
+.navbar-light .navbar-nav .nav-link {
   color: #007bff;
-}
-
-.logo-img-wrapper {
-  display: inline;
-  margin-left: 10px;
-}
-
-.logo-img {
-  width: 3%;
-  height: 50px;
-  border-radius: 75px;
-}
-
-.nav-link-wrapper {
-  float: right;
-  right: 2%;
-  width: 33%;
-  position: absolute;
 }
 
 .dropdown-toggle {
   cursor: pointer;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: #007bff;
-}
+
