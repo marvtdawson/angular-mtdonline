@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule} from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 import {AdminComponent} from '../admin.component';
 import {AdminGuardService} from '../../../providers/admin-guard/admin-guard.service';
-import {ContactedComponent} from '../contacted/contacted.component';
+
 import {ProjectsComponent} from '../projects/projects.component';
+import {ContactedComponent} from '../contacted/contacted.component';
 import {CreateProjectComponent} from '../projects/create-project/create-project.component';
 import {ListProjectComponent} from '../projects/list-project/list-project.component';
 import {SkillsComponent} from '../skills/skills.component';

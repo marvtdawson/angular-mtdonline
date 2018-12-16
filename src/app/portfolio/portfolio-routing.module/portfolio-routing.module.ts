@@ -16,12 +16,12 @@ import {WixComponent} from '../wix/wix.component';
       { path: 'portfolio', component: PortfolioComponent,
         children: [
           { path: 'angular', component: AngularComponent},
-          { path: 'angular-ionic', component: AngularIonicComponent},
           { path: 'angular-c-aspnet', component: AngularCAspnetComponent},
-          { path: 'react', component: ReactComponent},
+          { path: 'angular-ionic', component: AngularIonicComponent},
           { path: 'php', component: PhpComponent},
+          { path: 'react', component: ReactComponent},
           { path: 'wix', component: WixComponent}
-        ],
+        ]
       },
     ])
   ],

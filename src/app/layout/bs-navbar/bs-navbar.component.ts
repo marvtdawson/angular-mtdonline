@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 @Component({
   selector: 'app-bs-navbar',
   templateUrl: './bs-navbar.component.html',
-  styleUrls: ['./bs-navbar.component.css']
+  styleUrls: ['./bs-navbar.component.scss']
 })
 export class BsNavbarComponent implements OnInit {
 
@@ -28,7 +28,7 @@ export class BsNavbarComponent implements OnInit {
 
   }
 
-  sitename = this.siteData.siteName;
+  siteName = this.siteData.siteName;
 
   ngOnInit() {
 

@@ -35,8 +35,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { AboutSiteComponent } from './about-site/about-site.component';
 import { ConsultingComponent } from './consulting/consulting.component';
-import { StacksComponent } from './stacks/stacks.component';
-import { ExperienceComponent } from './experience/experience.component';
+import { StacksComponent } from './about/stacks/stacks.component';
+import { ExperienceComponent } from './about/experience/experience.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
 
@@ -68,6 +68,7 @@ import { SignupComponent } from './admin/signup/signup.component';
 import { HighlightDirective } from '../directives/highlight/highlight.directive';
 import { PortfolioRoutingModule } from './portfolio/portfolio-routing.module/portfolio-routing.module';
 import { AdminRoutingModule } from './admin/admin-routing/admin-routing.module';
+import {AboutRoutingModule} from './about/about-routing/about-routing.module';
 
 
 @NgModule({
@@ -121,6 +122,7 @@ import { AdminRoutingModule } from './admin/admin-routing/admin-routing.module';
     AngularFireDatabaseModule,
     AngularFirestoreModule,
     TranslateModule.forRoot(),
+    AboutRoutingModule,
     PortfolioRoutingModule,
     AdminRoutingModule,
     AppRoutingModule,

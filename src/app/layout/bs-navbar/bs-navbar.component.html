@@ -1,10 +1,9 @@
 <!-- @ng-bootstrap/ng-bootstrap with mosh -->
 <nav
-  [style.backgroundColor]="backgroundColor"
   class="navbar navbar-expand-md navbar-light bg-light fixed-top" >
   <div class="logo-wrapper" (click)="goToHomePage()">
     <a class="navbar-brand">
-      <span class="logo-text-wrapper animated fadeInDown delay-1s">{{ sitename | uppercase }}</span>
+      <span class="logo-text-wrapper animated fadeInDown delay-1s">{{ siteName | uppercase }}</span>
     </a>
       <div class="logo-img-wrapper">
         <img class="logo-img animated bounce delay-2s" src="../../../assets/img/marvin_the_martian.jpg" alt="">
@@ -20,9 +19,9 @@
       <li ngbDropdown class="nav-item">
         <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ABOUT
           <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" routerLink="/about">My Story</a>
-            <a class="dropdown-item" routerLink="/experience">Experience</a>
-            <a class="dropdown-item" routerLink="/stacks">Stacks</a>
+            <a class="dropdown-item" routerLink="about/my-story">My Story</a>
+            <a class="dropdown-item" routerLink="about/experience">Experience</a>
+            <a class="dropdown-item" routerLink="about/stacks">Stacks</a>
           </div>
         </a>
       </li>
