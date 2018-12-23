@@ -64,11 +64,12 @@ import { ResumeComponent } from './resume/resume.component';
 import { RequestQuoteComponent } from './consulting/request-quote/request-quote.component';
 import { RecentProjectsComponent } from './recent-projects/recent-projects.component';
 // import {NgbDropdownMenu} from '@ng-bootstrap/ng-bootstrap/dropdown/dropdown';
+
 import { SignupComponent } from './admin/signup/signup.component';
 import { HighlightDirective } from '../directives/highlight/highlight.directive';
 import { PortfolioRoutingModule } from './portfolio/portfolio-routing.module/portfolio-routing.module';
 import { AdminRoutingModule } from './admin/admin-routing/admin-routing.module';
-import {AboutRoutingModule} from './about/about-routing/about-routing.module';
+import { AboutRoutingModule } from './about/about-routing/about-routing.module';
 
 
 @NgModule({
