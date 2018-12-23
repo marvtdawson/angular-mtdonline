@@ -1,8 +1,9 @@
 <!-- Start Body Content -->
-<div class="row header">
+<div class="row">
+  <div class="header">
     <div class="bg-jumbrotron animated fadeIn delay-1s">
 
-    <div class="homePage-BriefSummary-wrapper">
+      <div class="homePage-BriefSummary-wrapper">
         <div class="homePage-BriefSummary animated slideInDown delay-2s">
           I'm a Sr. Full Stack MEAN & LAMP Developer.
           I design mobile, responsive and hybrid applications using Angular 6 & Ionic 4 Framework or PHP.
@@ -11,22 +12,25 @@
         <div class="btn animated rotateIn delay-3s">
           <span><a (click)="triggerScrollTo()">MORE ABOUT ME</a></span>
         </div>
-    </div>
-  </div><!-- end row -->
-</div><!--  end container-fluid  -->
+      </div>
+    </div><!-- end row -->
+  </div><!--  end container-fluid  -->
 
-  <!--div class="row bg-chinese-city-light">
-    <div class="about-this-site">
-      <div class="section-h2">ABOUT THIS SITE</div>
-      <mat-card class="card-container">
-        WHAT tools and resources did he used to make his site.
-        <button class="btn btn-primary">About This Site</button>
-      </mat-card>
-    </div>
-  </div-->
+</div>
+
+<!--div class="row bg-chinese-city-light">
+  <div class="about-this-site">
+    <div class="section-h2">ABOUT THIS SITE</div>
+    <mat-card class="card-container">
+      WHAT tools and resources did he used to make his site.
+      <button class="btn btn-primary">About This Site</button>
+    </mat-card>
+  </div>
+</div-->
 
 <!-- Recent Projects -->
-  <div class="row bg-cloud">
+<div class="row">
+  <div class="bg-cloud">
     <div class="recent-projects">
       <div id="" class="section-h2">RECENT PROJECTS</div>
       <mat-card class="card-container">
@@ -34,7 +38,7 @@
           <mat-card-title>Burgin Construction MN</mat-card-title>
           <mat-card-subtitle>Angular 6 & Ionic 4</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image src="../../assets/img/clients/burginconstruction/burgin_home_screen.jpg" >
+        <img mat-card-image src="../../assets/img/clients/burginconstruction/burgin_home_screen.jpg">
         <mat-card-content>
           <p>Twin Cities general contractor quote application.</p>
         </mat-card-content>
@@ -64,7 +68,7 @@
           <mat-card-title>Who's Laundry</mat-card-title>
           <mat-card-subtitle>Angular 6 & Ionic 4</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image src="../../assets/img/clients/whoslaundry/wholaundry_homescreen.jpg" >
+        <img mat-card-image src="../../assets/img/clients/whoslaundry/wholaundry_homescreen.jpg">
         <mat-card-content>
           <p>Rental Property Office Management Portal SaaS.</p>
         </mat-card-content>
@@ -73,135 +77,135 @@
           <button mat-button (click)="goToWhosLaundry()">Visit Site</button>
         </mat-card-actions>
       </mat-card>
-
     </div>
   </div>
+</div>
 
 <!-- Start Skills -->
-  <div id="skills" class="row bg-skills">
+<div class="row">
 
-    <div class="row">
 
-      <div class="skills-experience">
+  <div id="skills" class="row skills">
 
-        <div class="section-h2">SKILLS</div>
+    <!--div class="heading-2">SKILLS</div-->
 
-        <mat-card class="card-container">
-          <mat-card-title>HTML5, CSS3 & ES6</mat-card-title>
-          <i class="fab fa-html5 fa-5x"></i>
-          <mat-card-content>
-            <p>Web design using HTML5, CSS3, ES6 and TypeScript.</p>
-          </mat-card-content>
-        </mat-card>
-
-        <mat-card class="card-container">
-          <mat-card-title>Front End</mat-card-title>
-          <i class="fab fa-angular fa-5x"></i>
-          <mat-card-content>
-            <p>Proficient in JavaScript frameworks such as: Angular 6 / 7, ReactJS v16.</p>
-          </mat-card-content>
-        </mat-card>
-
-        <mat-card class="card-container">
-          <mat-card-title>Back End</mat-card-title>
-          <i class="fas fa-code fa-5x"></i>
-          <mat-card-content>
-            <p>Proficient in server-side languages such as PHP, Node.JS & C#, Java</p>
-          </mat-card-content>
-        </mat-card>
-
-        </div>
-
+    <div class="skill">
+      <div class="heading-4--light">HTML5, CSS3 & ES6</div>
+      <i class="fab fa-html5 fa-9x  skill__icon"></i>
+      <div class="skill__content">
+        <p>Web design using HTML5, CSS3, ES6 and TypeScript.</p>
+      </div>
     </div>
 
-    <div class="row">
-   <div class="skills-experience">
-      <mat-card class="card-container">
-        <mat-card-title>Open Source</mat-card-title>
-        <i class="fab fa-linux fa-5x"></i>
-        <mat-card-content>
-          <p>Knowledgeable of Linux for dev environment setup via Ubuntu.</p>
-        </mat-card-content>
-      </mat-card>
-      <mat-card class="card-container">
-        <mat-card-title>Version Control</mat-card-title>
-        <i class="fab fa-github fa-5x"></i>
-        <mat-card-content>
-          <p>Possess knowledge of version control tools such as GIT or Mercurial.</p>
-        </mat-card-content>
-      </mat-card>
-      <mat-card class="card-container">
-        <mat-card-title>RESTful API</mat-card-title>
-        <i class="fa-2x">api/member/:id</i>
-        <mat-card-content>
-          <p>Possess the ability to build custom API's and consume third party API's using tools like Postman.</p>
-        </mat-card-content>
-      </mat-card>
-   </div>
-  </div>
-
-    <div class="row">
-    <div class="skills-experience">
-        <mat-card class="card-container">
-          <mat-card-title>Cloud</mat-card-title>
-          <i class="fas fa-cloud fa-5x"></i>
-          <mat-card-content>
-            <p>Capable of CI/CD via cloud environment such as AWS, Google Cloud and Azure.</p>
-          </mat-card-content>
-        </mat-card>
-
-        <mat-card class="card-container">
-          <mat-card-title>Mobile Deployment</mat-card-title>
-          <i class="fab fa-android fa-5x"></i>
-          <mat-card-content>
-            <p>Experienced in app deployment for Android to the Google Play App Store.</p>
-          </mat-card-content>
-        </mat-card>
-
-        <mat-card class="card-container">
-          <mat-card-title>Data Storage</mat-card-title>
-          <i class="fas fa-database fa-5x"></i>
-          <mat-card-content>
-            <p>Proficient in MySQL and NoSQL databases MongoDB & Firebase for persistent data capturing.</p>
-          </mat-card-content>
-        </mat-card>
+    <div class="skill">
+      <div class="heading-4">Front End</div>
+      <i class="fab fa-angular fa-5x"></i>
+      <div class="skill__content">
+        <p>JavaScript frameworks such as: Angular 6 / 7, ReactJS v16.</p>
+      </div>
     </div>
-  </div>
 
+    <div class="skill">
+      <div class="heading-4">Back End</div>
+      <i class="fas fa-code fa-5x"></i>
+      <div class="skill__content">
+        <p>Server-side languages such as PHP, Node.JS & C#, Java</p>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="heading-4">Open Source</div>
+      <i class="fab fa-linux fa-5x"></i>
+      <div class="skill__content">
+        <p>Linux command line for dev environment setup.</p>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="heading-4">Version Control</div>
+      <i class="fab fa-github fa-5x"></i>
+      <div class="skill__content">
+        <p>Knowledge of version control tools such as GIT or Mercurial.</p>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="heading-4">RESTful API</div>
+      <i class="fa-2x">api/member/:id</i>
+      <div class="skill__content">
+        <p>Build custom API's and consume third party API's using tools like Postman.</p>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="heading-4">Cloud</div>
+      <i class="fas fa-cloud fa-5x"></i>
+      <div class="skill__content">
+        <p>CI/CD via cloud environment such as AWS, Google Cloud and Azure.</p>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="heading-4">Mobile Deployment</div>
+      <i class="fab fa-android fa-5x"></i>
+      <div class="skill__content">
+        <p>Experienced in app deployment for Android to the Google Play App Store.</p>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="heading-4">Data Storage</div>
+      <i class="fas fa-database fa-5x"></i>
+      <div class="skill__content">
+        <p>Proficient in MySQL and NoSQL databases MongoDB & Firebase for persistent data capturing.</p>
+      </div>
+    </div>
   </div><!-- #end row -->
 
+
+</div>
+
 <!-- Start About Me -->
-<div id="about-me" class="row bg-midnight-blue">
-    <div class="col-md-12">
-      <div class="section-h2">ABOUT ME</div>
-      <div class="homePagePic"></div>
+<div id="about-me" class="row">
+  <div class="bg-midnight-blue">
 
-      <!-- more about me home page -->
-      <div class="homePage-MoreAboutMe">
-        <h3>Sr Full Stack MEAN / LAMP Developer</h3>
-        <p>
-          I am a self taught developer that understands the big picture to maximize any project's bottom line.</p>
-        <p>
-          Having over 10 + years of Inventory Control / Supply Chain Management with a focus on root cause analysis, inventory control, and LEAN manufacturing,
-          has given me the ability to better understand the UI development timeline for the end user in an Agile environment.</p>
-        <p>
-          During my 10 + years tenure in Inventory Control / Supply Chain Management, I moon-lighted as a freelance developer, learning various programming languages and skills.
-        </p>
-        <p>
-          My friends say I am smart, easy going, and business focus. Being optimistic I believe that there is always a silver lining in most situations.
-          My ambitious nature gives me a keen sense of business, which translates into success.
-        </p>
-        <p>
-          When I am not head first in the digital world via new tech, code, frameworks, applications or reading books.  I have tunnel vision playing Call of Duty.  I own
-          all of the release games and I only game with Xbox for my play-station.
-        </p>
-      </div>
+    <div class="section-h2">ABOUT ME</div>
 
-      <!-- download resume -->
-      <div class="my-resume-btn" (click)="openResumeDialog()">
+    <div class="homePagePic"></div>
+
+    <!-- more about me home page -->
+    <div class="homePage-MoreAboutMe">
+      <h3>Sr Full Stack MEAN / LAMP Developer</h3>
+      <p>
+        I am a self taught developer that understands the big picture to maximize any project's bottom line.
+      </p>
+      <p>
+        Having over 10 + years of Inventory Control / Supply Chain Management with a focus on root cause analysis,
+        Agile and LEAN manufacturing,
+        has given me the ability to better understand the UI development timeline for the end user in an Agile
+        environment.
+      </p>
+      <p>
+        During my 10 + years tenure in Inventory Control / Supply Chain Management, I've moon-lighted as a freelance
+        developer, learning various programming languages and skills.
+      </p>
+      <p>
+        My friends say I am smart, easy going, and business focus. Being optimistic I believe that there is always a
+        silver lining in most situations.
+        My ambitious nature gives me a keen sense of business, which translates into success.
+      </p>
+      <p>
+        When I am not head first in the digital world via new tech, code, frameworks, applications or reading books. I
+        have tunnel vision playing Call of Duty. I own
+        all of the release games and I only game with Xbox for my play-station.
+      </p>
+    </div>
+
+    <!-- download resume -->
+    <div class="btn" (click)="openResumeDialog()">
         <span>
           <a>DOWNLOAD MY RESUME</a>
         </span>
-      </div>
     </div>
-  </div><!-- #end row -->
+  </div>
+</div><!-- #end row -->

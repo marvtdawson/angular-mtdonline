@@ -12,12 +12,13 @@
   &__text {
     display: inline;
     color: #007bff;
+    font-size: 1.75rem;
   }
 
   &__logo {
     height: 45px;
-    /*display: inline;
-    margin-left: 10px;*/
+   display: none;
+    /* margin-left: 10px;*/
   }
 
   &__link-wrapper  {
@@ -25,6 +26,7 @@
     right: 0;
     width: 33%;
     position: absolute;
+    font-size: 1.75rem;
   }
 
 }
