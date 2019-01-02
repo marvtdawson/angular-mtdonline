@@ -4,7 +4,7 @@ import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-angular-ionic',
   templateUrl: './angular-ionic.component.html',
-  styleUrls: ['./angular-ionic.component.css']
+  styleUrls: ['./angular-ionic.component.scss']
 })
 export class AngularIonicComponent implements OnInit {
 

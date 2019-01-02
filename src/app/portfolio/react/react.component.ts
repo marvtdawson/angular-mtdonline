@@ -5,7 +5,7 @@ import {ExternalRoutesService} from '../../../providers/external-routes/external
 @Component({
   selector: 'app-react',
   templateUrl: './react.component.html',
-  styleUrls: ['./react.component.css']
+  styleUrls: ['./react.component.scss']
 })
 export class ReactComponent implements OnInit {
 

@@ -1,4 +1,4 @@
-import {Component, Injector, OnInit, AfterViewInit} from '@angular/core';
+import {Component, Injector, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {createCustomElement} from '@angular/elements';
 import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scroll-to';
@@ -45,10 +45,6 @@ export class HomeComponent implements OnInit {
     window.location.href = 'https://www.burginconstructionmn.com';
   }
 
-  goToMtdOnline() {
-    window.location.href = 'https://www.mtdonline.net';
-  }
-
   /*goToReggiesBucket() {
     window.location.href = 'https://www.reggiesbucket.com/home';
   }*/
@@ -69,10 +65,6 @@ export class HomeComponent implements OnInit {
       console.log('The dialog was closed');
       // this.animal = result;
     });*/
-  }
-
-  myTestFunction(): void {
-    const functionName = 'My Test Funcdtion';
   }
 
 }
