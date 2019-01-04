@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/mtdonline/",
+    "public": "dist/mtdonline",
     "ignore": [
       "firebase.json",
       "**/.*",
