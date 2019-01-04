@@ -1,6 +1,6 @@
 import {Component, Injectable, OnInit, Input } from '@angular/core';
 
-@Injectable()
+
 @Component({
   selector: 'app-title',
   templateUrl: './app-title.component.html',

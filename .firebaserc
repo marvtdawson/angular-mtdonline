@@ -1,5 +1,6 @@
 {
   "projects": {
-    "mtdonline": "mtdonline-cae72"
+    "mtdonline": "mtdonline-cae72",
+    "default": "mtdonline-cae72"
   }
 }

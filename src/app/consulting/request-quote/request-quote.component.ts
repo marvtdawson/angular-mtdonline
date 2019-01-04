@@ -13,7 +13,7 @@ export class RequestQuoteComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmitRequestQuoteForm() {
+  onSubmitRequestQuoteForm(value) {
 
   }
 
