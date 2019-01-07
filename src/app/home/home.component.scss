@@ -181,9 +181,10 @@
 }
 
 
-/** Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .bg-jumbrotron-wrapper{
+
+  /** Extra large devices (large desktops, 1200px and up) */
+  .bg-jumbrotron-wrapper {
     width: 100%;
     height: 700px;
     position: relative;
@@ -232,66 +233,29 @@
     }
   }
 
-  .homepage-wall,
-  .homepage-wall img {
-    width: 100%;
-  }
-  .myPhoto {
-    width: 100%;
-  }
-  .homePagePic {
-    background: url('../../assets/img/selfPortrait/mdApril2016_3_cropped.jpg') no-repeat;
-    width: 140px;
-    height: 145px;
-    margin: 25px auto 30px;
-    border-radius: 100px;
-  }
-  .homePage-MoreAboutMe {
-    width: 80%;
-    margin: 0 auto 0;
+  .recent-projects mat-card-header {
+    margin: 0 auto 8px;
     text-align: center;
-  }
-
-  .homePage-MoreAboutMe h3 {
-    font-family: Arial sans-serif;
-    font-size: 24px;
-    color: #FFFFFF;
-  }
-
-  .homePage-MoreAboutMe p {
-    color: #d2d2d2;
-  }
-
-  .my-resume-btn > span {
-    color: #fff;
-    top: 12px;
-    position: relative;
+    align-content: center;
+    width: 66%;
+    display: block;
     font-weight: bold;
-    background: none;
   }
-  .my-resume-btn {
-    width: 20%;
-    height: 50px;
-    margin: 3% auto 20px;
-    border: 2px solid #fff;
-    color: #fff;
-    background: none;
-    text-align: center;
-    position: relative;
-    border-radius: 2px;
-  }
-  .section-h2 {
-    width: 200px;
-    margin: 10px auto 20px;
-    padding: 10px;
-    color: #fff;
-  }
-  .section-h2 :first-child {
-      color: #000000;
-    }
 
-  .fa-icon-wrapper {
-    text-align: center;
+  .skills {
+    background: url("../../assets/img/site/ai-codes-coding-247791.jpg") no-repeat;
+
+    grid-column: center-start / center-end;
+
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+    align-items: center;
+    justify-items: center;
+
   }
 
   .skills-experience .card-container {
@@ -300,8 +264,97 @@
     min-height: 265px;
     float: left;
   }
-  .btn {
+
+  .skill {
+    background-color: #2c3e50;
+    width: 60%;
+    height: 30rem;
+    margin: 2rem 0;
+    border-radius: 25px;
+    padding: 1rem;
+    justify-items: center;
+
+    display: grid;
+
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-row-gap: 1.5rem;
+
+    &__icon {
+      width: 4.5rem;
+      height: 4.5rem;
+      grid-row: 1 / span 2;
+      transform: translate(-1rem);
+    }
+
+    &__content {
+      font-size: 1.7rem;
+      text-align: center;
+      text-wrap: normal;
+    }
+  }
+
+  .moreAboutMe {
+    width: 80%;
+    margin: 0 auto 0;
+    text-align: center;
+
+    &__title {
+      font-family: Arial sans-serif;
+      font-size: 24px;
+      width: 200px;
+      margin: 10px auto 20px;
+      padding: 10px;
+      color: #fff;
+    }
+
+    &__pic {
+      background: url('../../assets/img/selfPortrait/mdApril2016_3_cropped.jpg') no-repeat;
+      width: 140px;
+      height: 145px;
+      margin: 25px auto 30px;
+      border-radius: 100px;
+    }
+
+    &__content {
+
+      p {
+        color: #d2d2d2;
+      }
+
+    }
+
+    &__btn {
+      width: 20%;
+      height: 50px;
+      margin: 3% auto 20px;
+      border: 2px solid #fff;
+      color: #fff;
+      background: none;
+      text-align: center;
+      position: relative;
+      border-radius: 2px;
+
+      span {
+        color: #fff;
+        top: 12px;
+        position: relative;
+        font-weight: bold;
+        background: none;
+      }
+    }
+
+  }
+
+  .section-h2 :first-child {
+    color: #000000;
+  }
+
+  .fa-icon-wrapper {
     text-align: center;
   }
 
+
 }
+
+

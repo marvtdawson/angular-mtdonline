@@ -1,13 +1,13 @@
 @import "base";
 
 
+@import "_nav";
 @import "typography";
 @import "header";
 @import "features";
-@import "homes";
+@import "_home";
 @import "gallery";
 @import "footer";
-@import "nav";
 
 
 @import "~bootstrap/dist/css/bootstrap.css";
