@@ -1,17 +1,17 @@
 /** Extra large devices (large desktops, 1200px and up) */
-  .bg-jumbrotron-wrapper{
+  .bg-jumbotron-wrapper{
     width: 100%;
     height: 700px;
     position: relative;
     /*clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);*/
   }
-  .bg-jumbrotron {
+  .bg-jumbotron {
     width: 100%;
     height: 100%;
     transition: all .5s;
   }
-  .bg-jumbrotron-wrapper:hover .bg-jumbrotron,
-  .bg-jumbrotron-wrapper:focus .bg-jumbrotron {
+  .bg-jumbotron-wrapper:hover .bg-jumbotron,
+  .bg-jumbotron-wrapper:focus .bg-jumbotron {
     transform: scale(1.1);
   }
   .summary__wrapper {
@@ -59,7 +59,7 @@
 
   .skills {
     background: url("../src/assets/img/site/ai-codes-coding-247791.jpg") no-repeat;
-
+    width: 100%;
     grid-column: center-start / center-end;
 
     margin: 0;
@@ -92,25 +92,32 @@
 
     grid-template-rows: repeat(3, 1fr);
     grid-row-gap: 1.5rem;
-    align-self: center;
+    align-items: center;
+    justify-items: center;
+
+    &__title {
+      align-items: center;
+      justify-items: center;
+      font-size: 1.6rem;
+
+    }
 
     &__icon {
-      /* fill: $color-primary*/
-    ;
       width: 4.5rem;
       height: 4.5rem;
-      grid-row: 1 / span 2;
+      grid-row: 2 / -1;
       transform: translate(-1rem);
-      align-self: center;
+      /*align-self: center;*/
       justify-self: center;
     }
 
     &__content {
-      font-size: 1.7rem;
+      text-align: center;
+      font-size: 1.6rem;
     }
   }
 
-  .moreAboutMe__wrapper {
+  .moreAboutMe {
     width: 80%;
     margin: 0 auto 0;
     text-align: center;

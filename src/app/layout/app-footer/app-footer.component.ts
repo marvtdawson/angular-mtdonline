@@ -7,7 +7,7 @@ import {ContactComponent} from '../../contact/contact.component';
 @Component({
   selector: 'app-footer',
   templateUrl: './app-footer.component.html',
-  styleUrls: ['./app-footer.component.css']
+  styleUrls: ['./app-footer.component.scss']
 })
 export class AppFooterComponent implements OnInit {
 

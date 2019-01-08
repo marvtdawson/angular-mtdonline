@@ -4,7 +4,7 @@
     padding-left: 0;
     padding-right: 0;
   }
-  .bg-jumbrotron {
+  .bg-jumbotron {
     background: linear-gradient(rgba(16, 29, 44, .50), rgba(16, 29, 44, .50)), url('../../assets/img/dallas1_cropped.jpg') no-repeat;
     background-size: cover;
     height: 300px;
@@ -143,7 +143,7 @@
 
 /** Small devices (landscape phones, 576px and up) **/
 @media (min-width: 568px) {
-  .bg-jumbrotron {
+  .bg-jumbotron {
     height: 400px;
   }
   .summary__wrapper {
@@ -163,7 +163,7 @@
 
 /**  Medium devices (tablets, 768px and up) **/
 @media (min-width: 768px) {
-  .bg-jumbrotron { }
+  .bg-jumbotron { }
   .summary__wrapper {
     width: 95%;
   }
@@ -171,7 +171,7 @@
 
 /**  Large devices (desktops, 992px and up) **/
 @media (min-width: 992px) {
-  .bg-jumbrotron {}
+  .bg-jumbotron {}
 
   .summary__wrapper{
     margin-top: 20%;
@@ -181,180 +181,6 @@
 }
 
 
-@media (min-width: 1200px) {
 
-  /** Extra large devices (large desktops, 1200px and up) */
-  .bg-jumbrotron-wrapper {
-    width: 100%;
-    height: 700px;
-    position: relative;
-    /*clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);*/
-  }
-  .bg-jumbrotron {
-    width: 100%;
-    height: 100%;
-    transition: all .5s;
-  }
-  .bg-jumbrotron-wrapper:hover .bg-jumbrotron,
-  .bg-jumbrotron-wrapper:focus .bg-jumbrotron {
-    transform: scale(1.1);
-  }
-  .summary__wrapper {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-
-    &__content {
-      margin: 0 auto 0;
-      font-size: 18px;
-    }
-
-    &__btn {
-      float: right;
-      width: 200px;
-      height: 50px;
-      margin: 1% 0 0 72.3%;
-      border: 2px solid #fff;
-      /* opacity: 0.6;*/
-      text-align: center;
-      position: relative;
-      border-radius: 2px;
-      display: block;
-
-      &__btn > span {
-        color: #fff;
-        top: 10px;
-        position: relative;
-        font-weight: bold;
-        background: none;
-      }
-    }
-  }
-
-  .recent-projects mat-card-header {
-    margin: 0 auto 8px;
-    text-align: center;
-    align-content: center;
-    width: 66%;
-    display: block;
-    font-weight: bold;
-  }
-
-  .skills {
-    background: url("../../assets/img/site/ai-codes-coding-247791.jpg") no-repeat;
-
-    grid-column: center-start / center-end;
-
-    margin: 0;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-
-    align-items: center;
-    justify-items: center;
-
-  }
-
-  .skills-experience .card-container {
-    margin: 0 0 55px 75px;
-    width: 25%;
-    min-height: 265px;
-    float: left;
-  }
-
-  .skill {
-    background-color: #2c3e50;
-    width: 60%;
-    height: 30rem;
-    margin: 2rem 0;
-    border-radius: 25px;
-    padding: 1rem;
-    justify-items: center;
-
-    display: grid;
-
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-row-gap: 1.5rem;
-
-    &__icon {
-      width: 4.5rem;
-      height: 4.5rem;
-      grid-row: 1 / span 2;
-      transform: translate(-1rem);
-    }
-
-    &__content {
-      font-size: 1.7rem;
-      text-align: center;
-      text-wrap: normal;
-    }
-  }
-
-  .moreAboutMe {
-    width: 80%;
-    margin: 0 auto 0;
-    text-align: center;
-
-    &__title {
-      font-family: Arial sans-serif;
-      font-size: 24px;
-      width: 200px;
-      margin: 10px auto 20px;
-      padding: 10px;
-      color: #fff;
-    }
-
-    &__pic {
-      background: url('../../assets/img/selfPortrait/mdApril2016_3_cropped.jpg') no-repeat;
-      width: 140px;
-      height: 145px;
-      margin: 25px auto 30px;
-      border-radius: 100px;
-    }
-
-    &__content {
-
-      p {
-        color: #d2d2d2;
-      }
-
-    }
-
-    &__btn {
-      width: 20%;
-      height: 50px;
-      margin: 3% auto 20px;
-      border: 2px solid #fff;
-      color: #fff;
-      background: none;
-      text-align: center;
-      position: relative;
-      border-radius: 2px;
-
-      span {
-        color: #fff;
-        top: 12px;
-        position: relative;
-        font-weight: bold;
-        background: none;
-      }
-    }
-
-  }
-
-  .section-h2 :first-child {
-    color: #000000;
-  }
-
-  .fa-icon-wrapper {
-    text-align: center;
-  }
-
-
-}
 
 
