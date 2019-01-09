@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 // import {Routes} from '@angular/router';
+// import {Routes} from '@angular/router';
 
 @Component({
   selector: 'app-php',
@@ -17,8 +18,12 @@ export class PhpComponent implements OnInit {
   ngOnInit() {
   }
 
- /* goToDividsHubSite() {
-    this.router.navigate('https://www.dvidshub.net');
-  }*/
+ goToDvidsHub() {
+    window.location.href = 'https://www.dvidshub.net';
+  }
+
+  goToGTD() {
+    window.location.href = 'https://www.gtd.com';
+  }
 
 }

@@ -1,10 +1,9 @@
 /** Extra small devices (portrait phones, less than 576px) */
 /** No media query for `xs` since this is the default in Bootstrap */
 @media (min-width: 320px) {
-  footer{
+  /*footer{
     bottom: 0;
     width: 100%;
-    color: #ffffff;
     margin-top: 0;
     background: url("../../../assets/img/site/black_brick_wall_footer_background.jpg");
   }
@@ -17,52 +16,43 @@
     margin: 20px auto 0;
     text-align: justify;
     float: none;
+    color: #ffffff;
   }
-  .site-footer-wrapper{
-    width: 100%;
-    background-color: #3c3f44;
-  }
-  .site-footer{
-    width: 90%;
-    margin: 0 auto 0;
-    padding: 5px;
-    color: #bebebe;
-    font-size: 12px;
-    text-align: center;
-  }
+
+  */
 
 }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 568px) {
-  .footer-nav-subdiv {
+ /* .footer-nav-subdiv {
     width: 90%;
     margin: 20px auto 0;
     text-align: justify;
     float: none;
-  }
+  }*/
 
 }
 
 
 @media (min-width: 667px) {
-  .footer-nav-subdiv {
+ /* .footer-nav-subdiv {
     float: none;
-  }
+  } */
 }
 
 
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-  .footer-wrapper{
+  /*.footer-wrapper{
     margin: 0 auto 0;
   }
   .footer-nav-subdiv {
     width: 98%;
     text-align: center;
   }
-  .site-footer{}
+  .site-footer{}*/
 
 }
 
@@ -73,32 +63,8 @@
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 
-  .footer-nav-subdiv{
-    max-width: 23%;
-    margin: 2% 0 0 9%;
-    float: left;
-  }
-  .contact-text:hover,
-  .contact-text a:hover{
-    cursor: pointer;
-    color: #ff6200;
-  }
 
-  .footer-nav-subdiv h3{
-    text-align: center;
-  }
-  .footer-consult-btn {
-    border: 2px solid white;
-    border-radius: 15px;
-    background-color: #ff6200;
-    color: #ffffff;
 
-  }
-  .site-footer{
-    margin: 2px auto 0;
-    font-size: 1.6rem;
-    width: 70%;
-  }
 
 }
 

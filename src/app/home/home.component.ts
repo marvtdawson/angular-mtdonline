@@ -45,10 +45,6 @@ export class HomeComponent implements OnInit {
     window.location.href = 'https://www.burginconstructionmn.com';
   }
 
-  /*goToReggiesBucket() {
-    window.location.href = 'https://www.reggiesbucket.com/home';
-  }*/
-
   goToWhosLaundry() {
     window.location.href = 'https://www.whoslaundry.com';
   }

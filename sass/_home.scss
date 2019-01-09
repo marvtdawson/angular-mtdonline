@@ -48,13 +48,15 @@
     }
   }
 
-  .recent-projects mat-card-header {
-    margin: 0 auto 8px;
+  .projects .card-container > button{
+    height: 30px;
     text-align: center;
-    align-content: center;
-    width: 66%;
-    display: block;
+    position: relative;
+    border-radius: 2px;
+    color: #fff;
+    border: 1px solid #fff;
     font-weight: bold;
+    font-size: 0.9rem;
   }
 
   .skills {

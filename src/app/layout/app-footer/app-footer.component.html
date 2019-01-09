@@ -1,34 +1,37 @@
 <!-- START FOOTER CONTAINER -->
-<div class="container-fluid">
-  <div class="row">
-    <footer>
-      <div class="col-sm-6 col-md-6 widget footer-nav-subdiv">
-        <h3>Consultant</h3>
-        <p>Are you in need of a consultant to join your team for a short or long term project?</p>
-        <button mat-button class="footer-consult-btn" (click)="openConsultantRequestForm()">Be My Consultant</button>
-      </div>
+<div class="row">
+  <footer>
+    <div class="col-sm-6 col-md-6 widget footer-nav-subdiv">
+      <h3>Consultant</h3>
+      <p>Are you in need of a consultant to join your team for a short or long term project?</p>
+      <button mat-button class="footer-nav-subdiv__consult-btn" (click)="openConsultantRequestForm()">Be My Consultant</button>
+    </div>
 
-      <div class="col-sm-6 col-md-6 widget footer-nav-subdiv">
-        <h3>BLOG <mat-icon fontSet="fab" fontIcon="fa-medium"></mat-icon></h3>
-        <p>Check out some of my recent blog & vlog topics.</p>
-        <p>
-          <a routerLink="/blog">Read Articles</a>
-        </p>
-      </div>
+    <div class="col-sm-6 col-md-6 widget footer-nav-subdiv">
+      <h3>BLOG
+        <mat-icon fontSet="fab" fontIcon="fa-medium"></mat-icon>
+      </h3>
+      <p>Check out some of my recent blog & vlog topics.</p>
+      <p>
+        <a routerLink="/blog">Read Articles</a>
+      </p>
+    </div>
 
-      <div class="col-sm-6 col-md-6 widget footer-nav-subdiv">
-        <h3 (click)="openContactForm()" class="contact-text">How Can I Help You</h3>
-        <p><a (click)="openContactForm()" class="contact-text">Contact</a> me to find out how my services and skills meet your business needs.</p>
-        <p>Email: marvintdawson@gmail.com</p>
-        <p>P: 770.530.2929</p>
-      </div>
-    </footer>
-  </div>
-  <div class="row">
-    <div class="site-footer-wrapper">
-      <div class="site-footer">
-        The {{ siteName }} site is develop with Angular 6 / 7 & TypeScript 2.  Hosting is provided by Google Firebase & Google Cloud Platform (GCP).
-      </div>
+    <div class="col-sm-6 col-md-6 widget footer-nav-subdiv">
+      <h3 (click)="openContactForm()" class="footer-nav-subdiv__contact-text">How Can I Help You</h3>
+      <p><a (click)="openContactForm()" class="footer-nav-subdiv__contact-text">Contact</a> me to find out how my services and skills meet
+        your business needs.</p>
+      <p>Email: marvintdawson@gmail.com</p>
+      <p>P: 770.530.2929</p>
+    </div>
+  </footer>
+</div>
+
+<div class="row">
+  <div class="site-footer-wrapper">
+    <div class="site-footer-wrapper__content">
+      The {{ siteName }} site is develop with Angular 6 / 7 & TypeScript 2. Hosting is provided by Google Firebase &
+      Google Cloud Platform (GCP).
     </div>
   </div>
 </div>

@@ -1,4 +1,51 @@
-.footer {
-  background-color: $color-secondary;
-  grid-column: full-start / full-end;
+footer{
+  bottom: 0;
+  width: 100%;
+  height: 27rem;
+  margin-top: 0;
+  background: url("../src/assets/img/site/black_brick_wall_footer_background.jpg") no-repeat;
+  background-size: 100% 27rem;
+  padding: 1rem;
+}
+
+.footer-nav-subdiv{
+  max-width: 23%;
+  margin: 2% 0 0 9%;
+  float: left;
+
+  h3 {
+    text-align: center;
+  }
+
+  &__consult-btn {
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: #ff6200;
+    color: #ffffff;
+  }
+
+  &____contact-text {
+
+  }
+
+  &__contact-text:hover,
+  &__contact-text a:hover {
+    cursor: pointer;
+    color: #ff6200;
+  }
+}
+
+
+.site-footer-wrapper{
+  width: 100%;
+  background-color: #3c3f44;
+
+  &__content {
+    width: 90%;
+    margin: 0 auto 0;
+    padding: 5px;
+    color: #bebebe;
+    font-size: 1.6rem;
+    text-align: center;
+  }
 }
