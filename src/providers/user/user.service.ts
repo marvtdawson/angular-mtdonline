@@ -12,6 +12,10 @@ export class UserService {
 
   constructor(private afDB: AngularFireDatabase) { }
 
+  getUser() {
+
+  }
+
   save(user: firebase.User) {
     this.afDB.object('/users/' + user.uid).update({
       name: user.displayName,

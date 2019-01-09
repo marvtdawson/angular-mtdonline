@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { FrameworksService } from '../../../../providers/frameworks/frameworks.service';
 import { Router } from '@angular/router';
+import {SiteDataService} from '../../../../providers/site-data/site-data.service';
+import {Meta, Title} from '@angular/platform-browser';
 // import { ProjectsInterface } from '../projects-interface';
 
 @Component({
@@ -10,6 +12,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./create-project.component.css']
 })
 export class CreateProjectComponent implements OnInit {
+
+  pageTitle = 'Create A Project';
+  pageDescription = 'Create A New Project';
+
   createProjectForm: FormGroup;
   formOptions: FormGroup;
   // createProject: ProjectsInterface[] = [];
@@ -17,7 +23,18 @@ export class CreateProjectComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder,
               private frameworkService: FrameworksService,
-              private router: Router) {
+              private router: Router,
+              private metaData: Meta,
+              private titleService: Title,
+              private siteData: SiteDataService) {
+
+    this.titleService.setTitle(this.pageTitle );
+    this.metaData.addTags([
+      {name: 'description', content: this.pageDescription},
+      {name: 'keywords', content: this.siteData.siteKeywords},
+      {name: 'author', content: this.siteData.siteName}
+    ]);
+
     // allows angular material to float input label
     this.formOptions = this.formBuilder.group({
       floatLabel: 'auto'
