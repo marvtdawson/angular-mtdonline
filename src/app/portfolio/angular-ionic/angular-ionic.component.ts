@@ -25,4 +25,18 @@ export class AngularIonicComponent implements OnInit {
   ngOnInit() {
   }
 
+  goToPrettyPeoplePages() { window.location.href = 'https://www.prettypeoplepages'; }
+
+  goToBurginConstructionMN() { window.location.href = 'https://www.burginconstructionmn.com'; }
+
+  goToMattressAndThings() {  window.location.href = 'https://www.mattressandthings.com';}
+
+  goToVrom() { window.location.href = 'https://www.vrom.com'; }
+
+  goToHomeGrownMusiq() { window.location.href = 'https://www.homegrownmusiq.com'; }
+
+  goToTheBestWorstXperience() { window.location.href = 'https://www.thebestworst.com'; }
+
+  goToLiveSync() { window.location.href = 'https://www.livesync.com'; }
+
 }

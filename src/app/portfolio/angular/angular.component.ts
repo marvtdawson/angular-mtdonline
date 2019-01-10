@@ -15,4 +15,8 @@ export class AngularComponent implements OnInit {
   ngOnInit() {
   }
 
+  goToPriceDawson() {
+    window.location.href = 'https://www.pricedawson.org';
+  }
+
 }
