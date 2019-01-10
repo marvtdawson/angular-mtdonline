@@ -22,6 +22,26 @@ export class PhpComponent implements OnInit {
     window.location.href = 'https://www.dvidshub.net';
   }
 
+  goToBouldenCompany() {
+    window.location.href = 'https://www.bouldencompany.com';
+  }
+
+  goToCCS() {
+    window.location.href = 'https://www.bouldencompany.com';
+  }
+
+  goToAeroMetals() {
+    window.location.href = 'https://www.bouldencompany.com';
+  }
+
+  goToQualityAirServices() {
+    window.location.href = 'https://www.bouldencompany.com';
+  }
+
+  goToLeecynCompany() {
+    window.location.href = 'https://www.bouldencompany.com';
+  }
+
   goToGTD() {
     window.location.href = 'https://www.gtd.com';
   }

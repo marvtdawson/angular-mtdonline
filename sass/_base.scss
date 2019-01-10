@@ -81,4 +81,16 @@ body {
   float: left;
 }
 
+.card-container .mat-button {
+   background-color: transparent;
+   border: 2px solid #FFFFFF;
+   color : $btn-hover-primary;
+ }
+
+.card-container .mat-button:hover {
+  background-color: $btn-hover-primary;
+  border: 2px solid #FFFFFF;
+  color : $color-grey-light-1;
+}
+
 

@@ -14,6 +14,7 @@
   .bg-jumbotron-wrapper:focus .bg-jumbotron {
     transform: scale(1.1);
   }
+  /** summary wrapper **/
   .summary__wrapper {
     position: absolute;
     top: 0;
@@ -58,6 +59,7 @@
     font-weight: bold;
     font-size: 0.9rem;
   }
+
 
   .skills {
     background: url("../src/assets/img/site/ai-codes-coding-247791.jpg") no-repeat;
