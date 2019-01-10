@@ -1,20 +1,56 @@
 .header {
   width: 100%;
-  height: 70rem;
+  height: 90rem;
   position: relative;
 
   grid-column: full-start / col-end 6;
   align-items: center;
   /*clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);*/
 
-  &__banner-wrapper {
-    width: 80%;
-    height: 70rem;
-    margin: 0 auto;
+  .bg-jumbotron {
+    width: 100%;
+    height: 90rem;
+    transition: all .5s;
+    background: linear-gradient(rgba(16, 29, 44, .50), rgba(16, 29, 44, .50)), url('../src/assets/img/dallas1_cropped.jpg') no-repeat;
+    background-size: cover;
+  }
+  .bg-jumbotron:hover .bg-jumbotron,
+  .bg-jumbotron:focus .bg-jumbotron {
+    transform: scale(1.1);
   }
 
-  &__banner-img {
-    width: 100%;
-    height: 70rem;
+  /** summary wrapper **/
+  .summary__wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    &__content {
+      margin: 0 auto 0;
+      font-size: 18px;
+    }
+
+    &__btn {
+      float: right;
+      width: 200px;
+      height: 50px;
+      margin: 1% 0 0 72.3%;
+      border: 2px solid #fff;
+      /* opacity: 0.6;*/
+      text-align: center;
+      position: relative;
+      border-radius: 2px;
+      display: block;
+
+      &__btn > span {
+        color: #fff;
+        top: 10px;
+        position: relative;
+        font-weight: bold;
+        background: none;
+      }
+    }
   }
 }
