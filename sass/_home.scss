@@ -9,7 +9,7 @@
     background-size: cover;
     height: 300px;
   }
-  .summary__wrapper {
+  .summary {
     position: absolute;
     top: 27%;
     left: 50%;
@@ -19,8 +19,8 @@
     &__content {
       width: 80%;
       margin: 30% auto 0;
-      font-family: Arial sans-serif;
-      font-size: 16px;
+      font-family: $font-primary;
+      font-size: $font-primary-content-size;
       color: #FFFFFF;
       text-align: center;
       background-color: #545454;
@@ -147,7 +147,7 @@
   .bg-jumbotron {
     height: 400px;
   }
-  .summary__wrapper {
+  .summary {
     margin: 24% auto 0;
   }
   .bg-cloud {
@@ -159,7 +159,7 @@
 @media (min-width: 768px) {
   .bg-jumbotron {
   }
-  .summary__wrapper {
+  .summary {
     width: 95%;
   }
 }
@@ -169,7 +169,7 @@
   .bg-jumbotron {
   }
 
-  .summary__wrapper {
+  .summary {
     margin-top: 20%;
     padding: 1px;
   }
@@ -178,6 +178,35 @@
 
 
 /** Extra large devices (large desktops, 1200px and up) */
+
+.summary {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  &__content {
+    width: 80%;
+    margin: 5% auto 0;
+    font-family: Arial sans-serif;
+    font-size: $font-primary-content-size;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #545454;
+    opacity: 0.8;
+    border-radius: 14px;
+    padding: 15px;
+  }
+  &__btn {
+    width: 15%;
+    margin: 25px auto 0;
+    opacity: 0.6;
+    color: #fff;
+    position: relative;
+  }
+
+}
 
 .aboutThisSite {
   width: 40%;
@@ -192,13 +221,16 @@
   &__section-h2 {
     grid-row: 1 / -1;
     grid-column: 1 / -1;
+    align-content: center;
     justify-items: center;
+    text-align: center;
   }
 
   &__content {
     margin-top: 2rem;
     font-size: $font-primary-content-size;
     color: $font-primary-color;
+    padding: 2rem;
 
     grid-row: 2 / span 1;
     grid-column: 1 / -1;
@@ -215,7 +247,8 @@
     grid-row: 2 / -1;
     grid-column: 2 / -1;
 
-    justify-items: end;
+    align-content: center;
+    justify-content: center;
   }
 }
 .bg-cloud {

@@ -36,6 +36,11 @@
   &--dark { color: $color-grey-dark-1; }
 }
 
+.heading-5 {
+  @extend %heading;
+  font-size: 1.4rem;
+}
+
 .btn {
   color: #fff;
   border: 2px solid white;

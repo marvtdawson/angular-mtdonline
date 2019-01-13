@@ -13,9 +13,14 @@ $color-grey-dark-2: #6D5D4B;
 // FONT VARIABLES
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
+
+// FONT COLOR
 $font-primary-color: #ffffff;
+
+
+// FONT SIZES
 $font-primary-content-size: 1.6rem;
-$font-primary-card-content-size: 1.2rem;
+$font-primary-card-content-size: 1.6rem;
 $font-dropdown-size: 1.4rem;
 
 // BUTTON VARIABLES
@@ -52,7 +57,7 @@ body {
 }
 
 .main-content{
-  width: 75%;
+  width: 85%;
   margin: 50px auto 0;
 }
 
@@ -82,6 +87,10 @@ body {
   text-align: center;
   position: relative;
   float: left;
+}
+
+.card-container mat-card-content p {
+  font-size: $font-primary-card-content-size;
 }
 
 .card-container .mat-button {
