@@ -81,6 +81,12 @@ body {
     width: 333px;
     height: 165px;
   }
+  
+  &__image:hover {
+    transform: scale(2);
+    position: relative;
+    z-index: 100;
+  }
 }
 
 .card-container {
