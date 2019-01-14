@@ -8,7 +8,7 @@ import {SiteDataService} from '../../../../providers/site-data/site-data.service
 import { ProjectsInterface } from '../projects-interface';
 
 // import { ProjectsService } from '../projects-service';
-// import {ProjectsService} from '../projects-service';
+import {ProjectsService} from '../projects-service';
 
 
 @Component({
@@ -66,7 +66,6 @@ export class ListProjectComponent implements OnInit {
      this.projectsCollection = this.afStore.collection('projects');
      this.projects$ = this.projectsCollection.valueChanges();
      console.log('Here are your projects from the database: ' + this.projects$);
-
 
   }
 
