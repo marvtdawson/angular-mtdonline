@@ -6,7 +6,8 @@ import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scrol
 import { RecentProjectsComponent } from '../recent-projects/recent-projects.component';
 import { ResumeComponent } from '../resume/resume.component';
 import { MatDialog } from '@angular/material';
-import {SiteDataService} from '../../providers/site-data/site-data.service';
+import { SiteDataService } from '../../providers/site-data/site-data.service';
+import {AboutSiteComponent} from '../about-site/about-site.component';
 
 
 @Component({
@@ -61,6 +62,10 @@ export class HomeComponent implements OnInit {
       console.log('The dialog was closed');
       // this.animal = result;
     });*/
+  }
+
+  openAboutThisSite() {
+    this.dialog.open(AboutSiteComponent, {});
   }
 
 }

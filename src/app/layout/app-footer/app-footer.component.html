@@ -1,28 +1,23 @@
 <!-- START FOOTER CONTAINER -->
 <div class="row">
   <footer class="footer">
+
     <div class="footer__nav-subdiv">
-      <h3>Consultant</h3>
+      <h2>Consultant</h2>
       <p class="footer__nav-subdiv__contact-text">Are you in need of a consultant to join your team for a short or long term project?</p>
-      <button class="footer__nav-subdiv__consult-btn" (click)="openConsultantRequestForm()">Be My Consultant</button>
+      <button class="footer__nav-subdiv__btn" (click)="openConsultantRequestForm()">Marvin Join My Team</button>
     </div>
 
     <div class="footer__nav-subdiv">
-      <h3>BLOG
-        <mat-icon fontSet="fab" fontIcon="fa-medium"></mat-icon>
-      </h3>
-      <p class="footer__nav-subdiv__contact-text">Check out some of my recent blog & vlog topics.</p>
-      <p>
-        <a routerLink="/blog">Read Articles</a>
-      </p>
+      <h2>BLOG </h2>
+      <p class="footer__nav-subdiv__contact-text">Check out some of my recent blog & vlog on tech, music and career topics.</p>
+      <button class="footer__nav-subdiv__btn" routerLink="/blog">Read Articles</button>
     </div>
 
     <div class="footer__nav-subdiv">
-      <h3 (click)="openContactForm()" class="footer__nav-subdiv__contact-text">How Can I Help You</h3>
-      <p><a (click)="openContactForm()" class="footer__nav-subdiv__contact-text">Contact</a> me to find out how my services and skills meet
-        your business needs.</p>
-      <p>Email: marvintdawson@gmail.com</p>
-      <p>P: 770.530.2929</p>
+      <h2 (click)="openContactForm()">How Can I Help You</h2>
+      <p class="footer__nav-subdiv__contact-text">Find out how my services and skills meet your business needs.</p>
+      <button (click)="openContactForm()" class="footer__nav-subdiv__btn">Contact Me</button>
     </div>
 
   </footer>

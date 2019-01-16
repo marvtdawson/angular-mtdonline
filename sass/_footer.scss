@@ -12,44 +12,62 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  align-content: center;
+  align-items: center;
   justify-items: center;
 
 
   &__nav-subdiv {
     width: 75%;
-    min-height: 10rem;
+    min-height: 1.6rem;
     margin: 2% 0 0 2rem;
     padding: 1rem;
 
     grid-row: 1 / -1;
 
-    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
 
-    h3 {
+    &:hover {
+      background-color: rgba(0,0,0, .3);
+    }
+
+    h2 {
       text-align: center;
-    }
-
-    &__consult-btn {
-      height: 3rem;
-      border: 2px solid white;
-      border-radius: 15px;
-      background-color: #ff6200;
-      color: #ffffff;
-
-      justify-content: center;
-    }
-    &__contact-text {
-      font-family: $font-primary;
-      font-size: $font-primary-card-content-size;
-    }
-
-    &__contact-text:hover,
-    &__contact-text a:hover {
-      cursor: pointer;
+      text-transform: uppercase;
       color: #ff6200;
     }
 
+    &__btn {
+      height: 4rem;
+      padding: 0.5rem;
+      border: 2px solid white;
+      border-radius: 15px;
+      background-color: #ff6200;
+      color: $font-primary-color;
+      font-size: $font-footer-btn;
+
+      align-self: center;
+      justify-self: center;
+
+      &:hover {
+        color: #000000;
+      }
+    }
+
+    &__contact-text {
+      font-family: $font-primary;
+      font-size: $font-primary-card-content-size;
+      color: $font-primary-color;
+
+
+      &__contact-text:hover,
+      &__contact-text a:hover {
+        cursor: pointer;
+        color: #ff6200;
+      }
+
+    }
   }
 }
 
