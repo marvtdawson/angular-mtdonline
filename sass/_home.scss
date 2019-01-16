@@ -221,7 +221,7 @@
   &__section-h2 {
     grid-row: 1 / -1;
     grid-column: 1 / -1;
-    align-content: center;
+    align-items: center;
     justify-items: center;
     text-align: center;
   }
@@ -247,8 +247,10 @@
     grid-row: 2 / -1;
     grid-column: 2 / -1;
 
-    align-content: center;
-    justify-content: center;
+    align-self: center;
+    justify-self: end;
+
+    margin-top: 1.6rem;
   }
 }
 .bg-cloud {
