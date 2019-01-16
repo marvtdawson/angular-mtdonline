@@ -3,20 +3,21 @@
 
 <section class="bg-cloud">
 <div class="row">
-  <div class="header">
-    <div class="header__banner-wrapper">
-      <img src="../../../assets/img/site/2000px-PHP-logo.svg.png" class="header__banner-img" alt="PHP Banner">
+  <div class="portfolio">
+    <div class="portfolio__header-wrapper">
+      <img [src]="headerImage"class="portfolio__header-img" alt="PHP Banner">
     </div>
   </div>
 </div>
+</section>
 
 <div class="row">
-  <div class="projects">
+  <section class="projects">
     <div class="section-h2">ZEND FRAMEWORK 1 & LARAVEL 5</div>
-    <mat-card class="card-container">
+    <mat-card class="project">
       <mat-card-title>DVIDS Hub</mat-card-title>
       <mat-card-subtitle>ZF1 & Laravel</mat-card-subtitle>
-      <img mat-card-image src="../../../assets/img/clients/encompass/dvidshub_2018.jpg" alt="Greenville Tool Website">
+      <img mat-card-image src="../../../assets/img/clients/encompass/dvidshub_2018.jpg" alt="Dvids Hub Website">
       <mat-card-content>
         <p>Defense Visual Information Distribution Service (DVIDS).</p>
       </mat-card-content>
@@ -25,28 +26,29 @@
         <button mat-button (click)="goToDvidsHub()">Visit Site</button>
       </mat-card-actions>
     </mat-card>
-  </div>
+  </section>
 </div>
 
 <div class="row">
-  <div class="projects">
+  <section class="projects">
 
     <div class="section-h2">CMS MADE SIMPLE 2.0</div>
-    <mat-card class="card-container">
-      <mat-card-title>BOULDEN COMPANY</mat-card-title>
-      <mat-card-subtitle>CMS Made Simple</mat-card-subtitle>
-      <img mat-card-image src="../../../assets/img/clients/ecw/boulden_company/homePg_after_2018.jpg"
-           alt="Boulden Company Website">
-      <mat-card-content>
-        <p>Experienced in app deployment for Android to the Google Play App Store.</p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>Learn More</button>
-        <button mat-button (click)="goToBouldenCompany()">Visit Site</button>
-      </mat-card-actions>
-    </mat-card>
 
-    <mat-card class="card-container">
+    <div class="project">
+      <div class="project__title">BOULDEN COMPANY</div>
+      <div class="project__subtitle">CMS Made Simple</div>
+      <img class="project__image" src="../../../assets/img/clients/ecw/boulden_company/homePg_after_2018.jpg"
+           alt="Boulden Company Website">
+      <div class="project__content">
+        <p>Experienced in app deployment for Android to the Google Play App Store.</p>
+      </div>
+      <div class="project__actions">
+        <button>Learn More</button>
+        <button (click)="goToBouldenCompany()">Visit Site</button>
+      </div>
+    </div>
+
+    <mat-card class="project">
       <mat-card-title>CONDENSOR AND CHILLER</mat-card-title>
       <mat-card-subtitle>CMS Made Simple</mat-card-subtitle>
       <img mat-card-image src="../../../assets/img/clients/ecw/condenser_chiller/homePg_after.JPG"
@@ -60,7 +62,7 @@
       </mat-card-actions>
     </mat-card>
 
-    <mat-card class="card-container">
+    <mat-card class="project">
       <mat-card-title>AERO METALS</mat-card-title>
       <mat-card-subtitle>CMS Made Simple</mat-card-subtitle>
       <img mat-card-image src="../../../assets/img/clients/ecw/aero_metals/homePg_after.JPG"
@@ -74,7 +76,9 @@
       </mat-card-actions>
     </mat-card>
 
-    <mat-card class="card-container">
+
+
+    <mat-card class="project">
       <mat-card-title>QUALITY AIR SERVICES</mat-card-title>
       <mat-card-subtitle>CMS Made Simple</mat-card-subtitle>
       <img mat-card-image src="../../../assets/img/clients/ecw/qas/qas_homepage.jpg"
@@ -88,7 +92,7 @@
       </mat-card-actions>
     </mat-card>
 
-    <mat-card class="card-container">
+    <mat-card class="project">
       <mat-card-title>LEECYN COMPANY</mat-card-title>
       <mat-card-subtitle>CMS Made Simple</mat-card-subtitle>
       <img mat-card-image src="../../../assets/img/clients/ecw/leecyn/leecyn_homepage_2018.jpg"
@@ -102,7 +106,7 @@
       </mat-card-actions>
     </mat-card>
 
-    <mat-card class="card-container">
+    <mat-card class="project">
       <mat-card-title>GREENVILLE TOOL</mat-card-title>
       <mat-card-subtitle>CMS Made Simple</mat-card-subtitle>
       <img mat-card-image src="../../../assets/img/clients/ecw/greenville_tool/homePg_after.JPG"
@@ -116,25 +120,13 @@
       </mat-card-actions>
     </mat-card>
 
-    <mat-card class="card-container">
-      <mat-card-title>Cummin's M.a.S.F Portal Demo</mat-card-title>
-      <mat-card-subtitle>PHP & MySQL</mat-card-subtitle>
-      <img mat-card-image src="../../../assets/img/clients/cummins/Cummins1.jpg" alt="Greenville Tool New Website">
-      <mat-card-content>
-        <p>Part Ordering Demo Application</p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>Learn More</button>
-      </mat-card-actions>
-    </mat-card>
-
-  </div>
+  </section>
 </div>
 
 <div class="row">
   <div class="projects">
     <div class="section-h2">PHP & MySQL</div>
-    <mat-card class="card-container">
+    <mat-card class="project">
       <mat-card-title>Cummin's M.a.S.F Portal Demo</mat-card-title>
       <mat-card-subtitle>PHP & MySQL</mat-card-subtitle>
       <img mat-card-image src="../../../assets/img/clients/cummins/Cummins1.jpg" alt="Greenville Tool New Website">
@@ -147,5 +139,3 @@
     </mat-card>
   </div>
 </div>
-
-</section>

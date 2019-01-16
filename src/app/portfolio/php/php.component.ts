@@ -11,6 +11,7 @@ export class PhpComponent implements OnInit {
 
   prePageTitle = 'Designed with';
   pageTitle = 'PHP 6 / 7';
+  headerImage = '../../assets/img/site/2000px-PHP-logo.svg.png';
 
 
   constructor() { }

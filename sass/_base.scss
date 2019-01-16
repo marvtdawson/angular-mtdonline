@@ -71,23 +71,7 @@ body {
   text-align: center;
 }
 
-.projects {
-  width: 85%;
-  padding: 2rem;
-  height: 55rem;
-  margin: 0 auto;
 
-  &__image {
-    width: 333px;
-    height: 165px;
-  }
-  
-  &__image:hover {
-    transform: scale(2);
-    position: relative;
-    z-index: 100;
-  }
-}
 
 .card-container {
   width: 25%;
