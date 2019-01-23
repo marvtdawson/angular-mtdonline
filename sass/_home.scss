@@ -1,187 +1,8 @@
-/** Small devices (landscape phones, 576px and up) **/
-@media (min-width: 320px) {
-  .container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .bg-jumbotron {
-    background: linear-gradient(rgba(16, 29, 44, .50), rgba(16, 29, 44, .50)), url('../src/assets/img/dallas1_cropped.jpg') no-repeat;
-    background-size: cover;
-    height: 300px;
-  }
-  .summary {
-    position: absolute;
-    top: 27%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-
-    &__content {
-      width: 80%;
-      margin: 30% auto 0;
-      font-family: $font-primary;
-      font-size: $font-primary-content-size;
-      color: #FFFFFF;
-      text-align: center;
-      background-color: #545454;
-      opacity: 0.8;
-      border-radius: 14px;
-      padding: 5px;
-    }
-
-  }
-
-  .moreAbout-Me-btn,
-  .my-resume-btn {
-    height: 30px;
-    text-align: center;
-    position: relative;
-    border-radius: 2px;
-    color: #fff;
-    border: 1px solid #fff;
-    font-weight: bold;
-    font-size: 0.9rem;
-  }
-  .moreAbout-Me-btn {
-    display: none;
-    width: 45%;
-    margin: 25px auto 0;
-    opacity: 0.6;
-    color: #fff;
-    position: relative;
-  }
-  .my-resume-btn {
-    width: 70%;
-    margin: 1% auto 20px;
-  }
-  .moreAbout-Me-btn span,
-  .my-resume-btn span {
-    top: 2px;
-    position: relative;
-  }
-  .moreAbout-Me-btn > span a {
-    text-decoration: none;
-    color: #fff;
-  }
-  .moreAbout-Me-btn > span a:hover,
-  .my-resume-btn > span a:hover {
-    text-decoration: none;
-    color: #ff672c;
-  }
-  .my-resume-btn > span a {
-    text-decoration: none;
-  }
-  .section-h2 {
-    width: 51%;
-    padding: 1px;
-    margin: 15px auto 0;
-    font-family: Arial sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-  }
-  .bg-jumbrotron-wrapper {
-    width: 100%;
-    height: 300px;
-  }
-  .bg-midnight-blue {
-    width: 100%;
-    background-color: #2c3e50;
-    padding: 25px;
-  }
-
-  .bg-midnight-blue .section-h2 {
-    color: #d2d2d2;
-  }
-  .bg-cloud {
-    background-color: #ecf0f1;
-  }
-  .bg-chinese-city-light {
-    background-color: #a4b0be;
-    width: 100%;
-  }
-  .about-this-site {
-    width: 80%;
-    min-height: 100px;
-    margin: 35px auto 15px;
-    background-color: transparent;
-    /* color: #d2d2d2;*/
-    text-align: center;
-    position: relative;
-    float: none;
-  }
-  .about-this-site .card-container {
-    width: 50%;
-    margin: 0 auto 0;
-    background-color: transparent;
-  }
-  .skills-experience {
-    width: 80%;
-    margin: 0 auto 20px;
-    text-align: center;
-  }
-  .skills-experience .card-container {
-    margin: 0 auto 15px;
-    background-color: #2c3e50;
-  }
-  .homePage-MoreAboutMe {
-    width: 100%;
-    margin: 0 auto 0;
-    text-align: center;
-  }
-
-  .homePage-MoreAboutMe h3 {
-    font-family: Arial sans-serif;
-    font-size: 24px;
-    color: #FFFFFF;
-  }
-
-  .homePage-MoreAboutMe p {
-    color: #d2d2d2;
-  }
-
-}
-
-/** Small devices (landscape phones, 576px and up) **/
-@media (min-width: 568px) {
-  .bg-jumbotron {
-    height: 400px;
-  }
-  .summary {
-    margin: 24% auto 0;
-  }
-  .bg-cloud {
-   /* margin: 100px auto 0;*/
-  }
-}
-
-/**  Medium devices (tablets, 768px and up) **/
-@media (min-width: 768px) {
-  .bg-jumbotron {
-  }
-  .summary {
-    width: 95%;
-  }
-}
-
-/**  Large devices (desktops, 992px and up) **/
-@media (min-width: 992px) {
-  .bg-jumbotron {
-  }
-
-  .summary {
-    margin-top: 20%;
-    padding: 1px;
-  }
-
-}
-
-
 /** Extra large devices (large desktops, 1200px and up) */
 
 .summary {
   position: absolute;
-  top: 5%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -189,7 +10,7 @@
   &__content {
     width: 80%;
     margin: 5% auto 0;
-    font-family: Arial sans-serif;
+    font-family: $font-primary;
     font-size: $font-primary-content-size;
     color: #FFFFFF;
     text-align: center;
@@ -198,8 +19,9 @@
     border-radius: 14px;
     padding: 15px;
   }
+
   &__btn {
-    width: 15%;
+    width: 25%;
     margin: 25px auto 0;
     opacity: 0.6;
     color: #fff;
@@ -253,20 +75,7 @@
     margin-top: 1.6rem;
   }
 }
-.bg-cloud {
 
-}
-
-.projects .card-container > button {
-  height: 30px;
-  text-align: center;
-  position: relative;
-  border-radius: 2px;
-  color: #fff;
-  border: 1px solid #fff;
-  font-weight: bold;
-  font-size: 0.9rem;
-}
 
 .skills {
   background: url("../src/assets/img/site/ai-codes-coding-247791.jpg") no-repeat;
@@ -276,19 +85,12 @@
   margin: 0;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 6rem;
 
   align-items: center;
   justify-items: center;
 
-}
-
-.skills-experience .card-container {
-  margin: 0 0 55px 75px;
-  width: 25%;
-  min-height: 265px;
-  float: left;
 }
 
 .skill {
@@ -300,9 +102,10 @@
   padding: 1rem;
 
   display: grid;
-
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-row-gap: 1.5rem;
+  grid-column-gap: 2.5rem;
+
   align-items: center;
   justify-items: center;
 
@@ -319,7 +122,7 @@
     height: 4.5rem;
     grid-row: 2 / -1;
     transform: translate(-1rem);
-    /*align-self: center;*/
+    align-self: center;
     justify-self: center;
   }
 

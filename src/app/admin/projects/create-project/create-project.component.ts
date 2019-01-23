@@ -52,7 +52,7 @@ export class CreateProjectComponent implements OnInit {
   }
 
   onCreateProject(project) {
-    // creaete new project
+    // create new project
    this.frameworkService.createProject(project);
    // navigate to list project page
    this.router.navigate(['admin/projects/list-projects']);

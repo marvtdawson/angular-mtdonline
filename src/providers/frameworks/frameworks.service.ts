@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { AngularFireDatabase } from 'angularfire2/database';
 import {AngularFirestore} from '@angular/fire/firestore';
 
 @Injectable({
@@ -7,17 +6,13 @@ import {AngularFirestore} from '@angular/fire/firestore';
 })
 export class FrameworksService {
 
-  constructor(private db: AngularFireDatabase,
-              private afStore: AngularFirestore) { }
+  constructor(private afStore: AngularFirestore) { }
 
   getFrameworks() {
-    return this.db.list('/frameworks', ref => ref.orderByChild('name'));
+    return this.afStore.collection('frameworks');
   }
 
   createProject(project) {
-    // saved to real time database
-    // return this.db.list('/projects').push(project);
-
     // save to firestore database
     return this.afStore.collection('projects').add(project);
   }

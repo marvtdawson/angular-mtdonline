@@ -8,6 +8,9 @@ import { ResumeComponent } from '../resume/resume.component';
 import { MatDialog } from '@angular/material';
 import { SiteDataService } from '../../providers/site-data/site-data.service';
 import {AboutSiteComponent} from '../about-site/about-site.component';
+import {AngularFirestore, AngularFirestoreCollection} from '@angular/fire/firestore';
+import {ProjectsInterface} from '../admin/projects/projects-interface';
+import {Observable} from 'rxjs';
 
 
 @Component({
@@ -19,11 +22,15 @@ export class HomeComponent implements OnInit {
   content = null;
   siteName = this.siteData.siteName;
 
+  projectsCollection: AngularFirestoreCollection<ProjectsInterface>;
+  projects$: Observable<ProjectsInterface[]>;
+
   constructor(public router: Router,
               public injector: Injector,
               private dialog: MatDialog,
               private _scrollToService: ScrollToService,
-              private siteData: SiteDataService) {
+              private siteData: SiteDataService,
+              private afStore: AngularFirestore) {
     const RecentProjectsElement = createCustomElement(RecentProjectsComponent, {injector: injector});
     customElements.define('recent-projects', RecentProjectsElement);
     setTimeout(() => {
@@ -32,6 +39,12 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+    // this.projects$ = this.projectService.getProjects();
+
+    // this.projects$ = this.projectService.getAllProjects();
+
+    this.projectsCollection = this.afStore.collection('projects', ref => ref.limit(3));
+    this.projects$ = this.projectsCollection.valueChanges();
   }
 
   triggerScrollTo() {

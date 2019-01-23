@@ -29,59 +29,68 @@
 </div>
 
 <!-- Recent Projects -->
-<div class="row">
-  <section class="bg-cloud">
+<div class="row bg-cloud">
     <div class="projects">
-      <div id="" class="section-h2">RECENT PROJECTS</div>
+      <!--div id="" class="section-h2">RECENT PROJECTS</div-->
 
-      <mat-card class="card-container">
 
-        <mat-card-title class="heading-4">Burgin Construction MN</mat-card-title>
-        <mat-card-subtitle class="heading-5">Angular 6 & Ionic 4</mat-card-subtitle>
-
-        <img mat-card-image class="projects__image" src="../../assets/img/clients/burginconstruction/burgin_home_screen.jpg" alt="">
+      <mat-card class="project" *ngFor="let projs of projects$ | async ">
+        <mat-card-title>{{ projs.title }}</mat-card-title>
+        <mat-card-subtitle>{{ projs.framework }}</mat-card-subtitle>
+        <img mat-card-image [src]="projs.imageUrl"
+             alt="Condensor and Chiller Website">
         <mat-card-content>
+          <p>{{ projs.summary }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>Learn More</button>
+          <button mat-button (click)="goToCCS()">Visit Site</button>
+        </mat-card-actions>
+      </mat-card>
+
+      <!--div class="project">
+        <div class="project__title">Burgin Construction MN</div>
+        <div class="project__subtitle">Angular 6 & Ionic 4</div>
+        <img class="project__image" src="../../assets/img/clients/burginconstruction/burgin_home_screen.jpg"
+             alt="Burgin Construction MN  Website">
+        <div class="project__content">
           <p>Twin Cities general contractor quote application.</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>Learn More</button>
-          <button mat-button (click)="goToBurginConstruction()">Visit Site</button>
-        </mat-card-actions>
-      </mat-card>
+        </div>
+        <div class="project__actions">
+          <button>Learn More</button>
+          <button (click)="goToBurginConstruction()">Visit Site</button>
+        </div>
+      </div>
 
-      <mat-card class="card-container">
+      <div class="project">
+        <div class="project__title">Mattress & Thing</div>
+        <div class="project__subtitle">Angular 6 & Ionic 4</div>
+        <img class="project__image" src="../../assets/img/clients/mattressandthings/homepage_2018.jpg"
+             alt="Mattress and Things Website">
+        <div class="project__content">
+          <p>Mattress retailer and household Things online store..</p>
+        </div>
+        <div class="project__actions">
+          <button>Learn More</button>
+          <button (click)="goToMattressAndThings()">Visit Site</button>
+        </div>
+      </div>
 
-        <mat-card-title class="heading-4">Mattress & Things</mat-card-title>
-        <mat-card-subtitle class="heading-5">Angular 6 & Ionic 4</mat-card-subtitle>
-
-        <img mat-card-image class="projects__image" src="../../assets/img/clients/mattressandthings/homepage_2018.jpg"
-             alt="Mattress & Things Image">
-        <mat-card-content>
-          <p>Mattress retailer and household Things online store.</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>Learn More</button>
-          <button mat-button (click)="goToMattressAndThings()">Visit Site</button>
-        </mat-card-actions>
-      </mat-card>
-
-      <mat-card class="card-container" >
-        <mat-card-title class="heading-4">Who's Laundry</mat-card-title>
-        <mat-card-subtitle class="heading-5">Angular 6 & Ionic 4</mat-card-subtitle>
-
-        <img mat-card-image class="" src="../../assets/img/clients/whoslaundry/wholaundry_homescreen.jpg"
-             alt="Who's Laundry Image">
-        <mat-card-content>
+      <div class="project">
+        <div class="project__title">Who's Laundry</div>
+        <div class="project__subtitle">Angular 6 & Ionic 4</div>
+        <img class="project__image" src="../../assets/img/clients/whoslaundry/wholaundry_homescreen.jpg"
+             alt="Who's Laundry Website">
+        <div class="project__content">
           <p>Rental Property Office Management Portal SaaS.</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>Learn More</button>
-          <button mat-button (click)="goToWhosLaundry()">Visit Site</button>
-        </mat-card-actions>
-      </mat-card>
+        </div>
+        <div class="project__actions">
+          <button>Learn More</button>
+          <button (click)="goToWhosLaundry()">Visit Site</button>
+        </div>
+      </div-->
 
     </div>
-  </section>
 </div>
 
 <!-- Skills -->

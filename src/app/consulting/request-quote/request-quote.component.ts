@@ -4,7 +4,7 @@ import { Form } from '@angular/forms';
 @Component({
   selector: 'app-request-quote',
   templateUrl: './request-quote.component.html',
-  styleUrls: ['./request-quote.component.css']
+  styleUrls: ['./request-quote.component.scss']
 })
 export class RequestQuoteComponent implements OnInit {
 
