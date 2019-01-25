@@ -1,11 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
+const projects = [
+  {'title': 'string'}
+];
+
 @Component({
   selector: 'app-angular-ionic',
   templateUrl: './angular-ionic.component.html',
   styleUrls: ['./angular-ionic.component.scss']
 })
+
 export class AngularIonicComponent implements OnInit {
 
   prePageTitle = 'Designed with';
@@ -19,8 +24,10 @@ export class AngularIonicComponent implements OnInit {
 
     this.translate.setTranslation('en', {
       ANGULAR_IONIC: 'Angular & Ionic'
-    })
+    });
   }
+
+
 
   ngOnInit() {
   }
@@ -29,7 +36,7 @@ export class AngularIonicComponent implements OnInit {
 
   goToBurginConstructionMN() { window.location.href = 'https://www.burginconstructionmn.com'; }
 
-  goToMattressAndThings() {  window.location.href = 'https://www.mattressandthings.com';}
+  goToMattressAndThings() {  window.location.href = 'https://www.mattressandthings.com'; }
 
   goToVrom() { window.location.href = 'https://www.vrom.com'; }
 

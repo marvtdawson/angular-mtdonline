@@ -3,16 +3,19 @@
 <mat-dialog-content>
   <mat-card class="dialog__card-container">
     <form #contactForm="ngForm" >
+
       <mat-form-field appearance="legacy">
         <mat-label>Name</mat-label>
         <input type="text" matInput #name>
         <mat-hint>"John Doe"</mat-hint>
       </mat-form-field>
+
       <mat-form-field appearance="legacy">
         <mat-label>Email</mat-label>
         <input type="email" matInput #name required>
         <mat-hint>"john.doe@johnsemail.com"</mat-hint>
       </mat-form-field>
+
       <mat-form-field appearance="legacy">
         <mat-label>States</mat-label>
         <mat-select>
@@ -23,18 +26,23 @@
         </mat-select>
         <mat-hint>"Texas"</mat-hint>
       </mat-form-field>
+
       <mat-form-field appearance="legacy">
         <mat-label>City</mat-label>
         <input type="text" matInput #city required>
         <mat-hint>"Dallas"</mat-hint>
       </mat-form-field>
+
       <mat-form-field>
         <mat-label>Message / Comment</mat-label>
         <textarea name="message" id="message" cols="10" rows="3" #message required matInput ></textarea>
       </mat-form-field>
-      <mat-dialog-action>
-        <button mat-button mat-raised-button mat-dialog-close="yes">CONTACT</button>
-      </mat-dialog-action>
+
+
+        <mat-dialog-action>
+          <button mat-button mat-raised-button mat-dialog-close="yes">CONTACT</button>
+        </mat-dialog-action>
+
 
     </form>
 </mat-card>

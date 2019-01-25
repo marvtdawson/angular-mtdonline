@@ -8,16 +8,6 @@
     </tr>
     </thead>
     <tbody>
-    <!--tr *ngFor="let projs of projects ">
-      <td>{{ projs.title }}</td>
-      <td>{{ projs.frameworkType }}</td>
-      <td>{{ projs.summary }}</td>
-      <td>{{ projs.imagePath }}</td>
-      <td>
-        <a routerLink="['/admin/projects/', p.$key]">Edit</a>
-      </td>
-    </tr -->
-
     <tr *ngFor="let projs of projects$ | async ">
       <td>{{ projs.title }}</td>
       <td>{{ projs.framework }}</td>
