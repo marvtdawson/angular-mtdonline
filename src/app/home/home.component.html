@@ -16,24 +16,20 @@
   </div><!--  end header  -->
 </div><!--  end row  -->
 
-<div class="row">
-  <div class="bg-chinese-city-light">
+<div class="row bg-chinese-city-light">
     <div class="aboutThisSite">
       <div class="aboutThisSite__section-h2 section-h2">ABOUT THIS SITE</div>
       <div class="aboutThisSite__content">
-        WHAT tools and resources did I used to make this site.
+        What tools and resources did I used to make this site.
       </div>
       <button class="aboutThisSite__btn" (click)="openAboutThisSite()">Learn More</button>
     </div>
-  </div>
 </div>
 
 <!-- Recent Projects -->
 <div class="row bg-cloud">
     <div class="projects">
       <!--div id="" class="section-h2">RECENT PROJECTS</div-->
-
-
       <mat-card class="project" *ngFor="let projs of projects$ | async ">
         <mat-card-title>{{ projs.title }}</mat-card-title>
         <mat-card-subtitle>{{ projs.framework }}</mat-card-subtitle>
@@ -47,49 +43,6 @@
           <button mat-button (click)="goToCCS()">Visit Site</button>
         </mat-card-actions>
       </mat-card>
-
-      <!--div class="project">
-        <div class="project__title">Burgin Construction MN</div>
-        <div class="project__subtitle">Angular 6 & Ionic 4</div>
-        <img class="project__image" src="../../assets/img/clients/burginconstruction/burgin_home_screen.jpg"
-             alt="Burgin Construction MN  Website">
-        <div class="project__content">
-          <p>Twin Cities general contractor quote application.</p>
-        </div>
-        <div class="project__actions">
-          <button>Learn More</button>
-          <button (click)="goToBurginConstruction()">Visit Site</button>
-        </div>
-      </div>
-
-      <div class="project">
-        <div class="project__title">Mattress & Thing</div>
-        <div class="project__subtitle">Angular 6 & Ionic 4</div>
-        <img class="project__image" src="../../assets/img/clients/mattressandthings/homepage_2018.jpg"
-             alt="Mattress and Things Website">
-        <div class="project__content">
-          <p>Mattress retailer and household Things online store..</p>
-        </div>
-        <div class="project__actions">
-          <button>Learn More</button>
-          <button (click)="goToMattressAndThings()">Visit Site</button>
-        </div>
-      </div>
-
-      <div class="project">
-        <div class="project__title">Who's Laundry</div>
-        <div class="project__subtitle">Angular 6 & Ionic 4</div>
-        <img class="project__image" src="../../assets/img/clients/whoslaundry/wholaundry_homescreen.jpg"
-             alt="Who's Laundry Website">
-        <div class="project__content">
-          <p>Rental Property Office Management Portal SaaS.</p>
-        </div>
-        <div class="project__actions">
-          <button>Learn More</button>
-          <button (click)="goToWhosLaundry()">Visit Site</button>
-        </div>
-      </div-->
-
     </div>
 </div>
 
@@ -175,9 +128,9 @@
 
 
 <!-- More About Me -->
-<div id="about-me" class="row">
+<div id="about-me" class="row bg-midnight-blue">
 
-  <div class="bg-midnight-blue">
+  <div class="">
 
     <div class="moreAboutMe">
 
@@ -189,7 +142,7 @@
       <div class="moreAboutMe__content">
         <h3 class="heading-3">Sr. Full Stack Software Engineer</h3>
         <p>
-          I am a self taught developer that understands the big picture to maximize any project's bottom line.
+          I am a self taught developer that understands the big picture to maximize a project's bottom line.
         </p>
         <p>
           Having over 10 + years of Inventory Control / Supply Chain Management with a focus on root cause analysis,

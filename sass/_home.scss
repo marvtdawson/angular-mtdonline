@@ -30,6 +30,10 @@
 
 }
 
+.bg-chinese-city-light{
+  background-color: #DCDCDC;
+}
+
 .aboutThisSite {
   width: 40%;
   margin: 1rem auto;
@@ -51,7 +55,7 @@
   &__content {
     margin-top: 2rem;
     font-size: $font-primary-content-size;
-    color: $font-primary-color;
+    color: $font-secondary-color;
     padding: 2rem;
 
     grid-row: 2 / span 1;
@@ -94,7 +98,8 @@
 }
 
 .skill {
-  background-color: #2c3e50;
+  // background-color: #2c3e50;
+  background-color: $color-secondary;
   width: 60%;
   height: 30rem;
   margin: 2rem 0;
@@ -137,10 +142,16 @@
   }
 }
 
+.bg-midnight-blue {
+  background-color: $color-secondary;
+  padding: 2rem;
+}
+
 .moreAboutMe {
   width: 80%;
   margin: 0 auto 0;
   text-align: center;
+
 
   &__title {
     font-family: Arial sans-serif;
