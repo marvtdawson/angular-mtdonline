@@ -4,6 +4,11 @@
   width: 100%;
 
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 2rem;
+
+  align-items: center;
+  justify-items: center;
 
   &__header-wrapper {
     width: 35%;
@@ -18,7 +23,7 @@
 
 .portfolio__project {
   width: 69%;
-  height: 50rem;
+  height: 40rem;
   padding: 1rem;
   margin: 55px 0 50px 50px;
   background-color: #2c3e50;
