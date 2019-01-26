@@ -2,9 +2,9 @@
 <!--app-title [prePageTitle]="prePageTitle" [pageTitle]="pageTitle"></app-title-->
 
 <div class="row">
-  <div class="header">
-    <div class="header__banner-wrapper">
-      <img src="../../../assets/img/ionic_and_angular.png" class="header__banner-img">
+  <div class="portfolio">
+    <div class="portfolio__header-wrapper">
+      <img [src]="headerImage" class="portfolio__header-img" [alt]="headerImageAlt">
     </div>
   </div>
 </div>
@@ -13,11 +13,11 @@
   <div class="portfolio">
     <!--div class="section-h2">ANGULAR 6 / 7 & IONIC 4</div-->
     <mat-card class="portfolio__project" *ngFor="let projs of projects">
-      <mat-card-title>{{ projs.title }}</mat-card-title>
-      <mat-card-subtitle>{{ projs.frameworks }}</mat-card-subtitle>
-      <img mat-card-image [src]="[projs.imagePath]" alt="{{ projs.imageAlt }}">
+      <mat-card-title class="portfolio__project__title">{{ projs.title | uppercase }}</mat-card-title>
+      <mat-card-subtitle class="portfolio__project__subtitle">{{ projs.frameworks }}</mat-card-subtitle>
+      <img mat-card-image class="portfolio__project__image" [src]="[projs.imagePath]" alt="{{ projs.title }} Website">
       <mat-card-content>
-        <p>{{ projs.summary }}</p>
+        <p class="portfolio__project__content">{{ projs.summary }}</p>
       </mat-card-content>
       <mat-card-actions>
         <button mat-button>Learn More</button>

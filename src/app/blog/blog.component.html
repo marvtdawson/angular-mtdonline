@@ -2,20 +2,58 @@
 <app-title [prePageTitle]="prePageTitle" [pageTitle]="pageTitle"></app-title>
 
 
-<header class="header">
-  Header
-</header>
-
-<div class="sidebar"> Sidebar </div>
-
-<section class="articles">
-  Articles
-  <div class="story__pictures">
-    Story Pictures
+<div class="row">
+  <div class="blog">
+    <div class="blog__header-wrapper">
+      <img [src]="headerImage" class="portfolio__header-img" [alt]="headerImageAlt">
+    </div>
   </div>
+</div>
 
-  <div class="story__content">
-    Story content
+<div class="row bg-chinese-city-light">
+  <div class="aboutThisSite">
+    <div class="aboutThisSite__section-h2 section-h2">SUBSCRIBE</div>
+    <div class="aboutThisSite__content">
+      Subscribe & Stay Informed!
+    </div>
+    <button class="aboutThisSite__btn" (click)="openAboutThisSite()">Learn More</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="blogs">
+    <div class="blogs__title">What The Tech!</div>
+    <div class="blogs__subtitle">Tech talk about, well all things techie and the not so techie stuff!</div>
+    <div class="blogs_articles-header">LATEST ARTICLES</div>
+    <div class="blogs_articles">
+
+    </div>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="blogging-where">
+
+  </div>
+</div>
+
+<div class="row">
+  <section class="questions">
+    Articles
+    <div class="questions__title">
+      Hey Marvin!
+    </div>
+    <div class="questions__subtitle">
+      I Got A Question
+    </div>
+
+    <div class="questions__form">
+      <mat-form-field>
+        <mat-label>Tech Question</mat-label>
+        <input matInput type="text #techQuestion>
+    </mat-form-field>
   </div>
 </section>
+</div>
 

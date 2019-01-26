@@ -7,7 +7,6 @@ const PROJS = [
       'title': 'PRETTY PEOPLE PAGES',
       'frameworks': 'Angular 6 & Ionic 4',
       'imagePath': '../../../assets/img/clients/ppp/ppp_homepage.jpg',
-      'imageAlt': 'Pretty People Pages Website',
       'summary': 'Pretty People Pages Online Adult Dating Site',
       'siteUrl': 'goToPrettyPeoplePages'
     },
@@ -16,7 +15,6 @@ const PROJS = [
       'title': 'Burgin Construction MN',
       'frameworks': 'Angular 6 & Ionic 4',
       'imagePath': '../../../assets/img/clients/burginconstruction/burgin_home_screen.jpg',
-      'imageAlt': 'Burgin Construction MN Website',
       'summary': 'Twin Cities general contractor quote application',
       'siteUrl': 'this.goToBurginConstructionMN()'
     },
@@ -25,24 +23,21 @@ const PROJS = [
       'title': 'Mattress & Things',
       'frameworks': 'Angular 6 & Ionic 4',
       'imagePath': '../../../assets/img/clients/mattressandthings/homepage_2018.jpg',
-      'imageAlt': 'Mattress and Things Website',
       'summary': 'Online Mattress Retailer.',
       'siteUrl': 'goToMattressAndThings'
     },
     {
       '_id': 4,
-      'title': 'Get VROM formerly Who\'s Laundry',
+      'title': 'Get VROM',
       'frameworks': 'Angular 6 & Ionic 4',
       'imagePath': '../../../assets/img/clients/whoslaundry/wholaundry_homescreen.jpg',
-      'imageAlt': 'VROM Website',
-      'summary': 'Rental Property Office Management Portal SaaS.',
+      'summary': 'Virtual Office Management Portal.',
       'siteUrl': 'goToVrom'
     },
     {'_id': 5,
       'title': 'Home Grown Musiq',
       'frameworks': 'Angular 6 & Ionic 4',
       'imagePath': '../../../assets/img/clients/homegrownmusiq/hgm_homepage_2018.jpg',
-      'imageAlt': 'HomeGrownMusiq Website',
       'summary': 'Online Independent Hip Hop Community.',
       'siteUrl': 'this.goToHomeGrownMusiq'
     },
@@ -51,8 +46,7 @@ const PROJS = [
       'title': 'The Best Worst Xperience',
       'frameworks': 'Angular 6 & Ionic 4',
       'imagePath': '../../../assets/img/clients/under_construction_banner.png',
-      'imageAlt': 'The Best & Worst Experiences Website',
-      'summary': 'Online Independent Hip Hop Community.',
+      'summary': 'User rated shopping / retail experiences app',
       'siteUrl': 'goToTheBestWorstXperience()'
     },
     {
@@ -60,8 +54,7 @@ const PROJS = [
       'title': 'Live Sync',
       'frameworks': 'Angular 6 & Ionic 4',
       'imagePath': '../../../assets/img/clients/under_construction_banner.png',
-      'imageAlt': 'Live Sync Website',
-      'summary': 'User rated shopping / retail experiences.',
+      'summary': 'Marketing Tool',
       'siteUrl': 'goToLiveSync()"'
     }
 ];
@@ -76,7 +69,10 @@ export class AngularIonicComponent implements OnInit {
 
   prePageTitle = 'Designed with';
   pageTitle = 'Angular & Ionic';
+  headerImage = '../../../assets/img/ionic_and_angular.png';
+  headerImageAlt = 'Angular & Ionic Header Image';
   projects = PROJS;
+  framework = 'Angular & Ionic';
 
   constructor(private translate: TranslateService) {
     // set default language

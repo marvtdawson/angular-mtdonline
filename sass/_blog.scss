@@ -1,0 +1,49 @@
+.blog {
+  width: 100%;
+  height: 40rem;
+  position: relative;
+  margin-bottom: 10rem;
+
+  grid-column: full-start / col-end 6;
+  align-items: center;
+  /*clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);*/
+
+  &__header-wrapper {
+
+  }
+
+  &_header-img {}
+
+}
+
+.blogs {
+
+
+  &__title {}
+  &__subtitle {}
+  &__articles-header {}
+  &__blogs_articles {}
+
+}
+
+
+.blogging-where {
+
+}
+
+
+.questions {
+
+
+  &__tile {
+
+  }
+
+  &__subtitle {
+
+  }
+
+  &__form {
+
+  }
+}

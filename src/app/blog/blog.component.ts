@@ -10,6 +10,8 @@ export class BlogComponent implements OnInit {
 
   prePageTitle = 'Blah Blah Blah';
   pageTitle = 'BLOG!';
+  headerImage = '../../../assets/img/ionic_and_angular.png';
+  headerImageAlt = 'Marvin\'s Media Blog';
 
 
   constructor() { }

@@ -1,3 +1,15 @@
+.portfolio__header {
+  width: 100%;
+  height: 40rem;
+  position: relative;
+  margin-bottom: 10rem;
+
+  grid-column: full-start / col-end 6;
+  align-items: center;
+  /*clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);*/
+
+}
+
 .portfolio {
   // background-color: $color-grey-light-2;
   // grid-column: center-start / center-end;
@@ -41,6 +53,7 @@
   &__title {
     grid-row: 1 / span 1;
     height: 35px;
+    font-size: 1.8em;
   }
 
   &__subtitle {
@@ -49,11 +62,11 @@
   }
 
   &__image {
-    width: 333px;
-    height: 165px;
+    width: 353px;
+    height: 174px;
     grid-row: 3 / span 1;
 
-    &__imgage:hover {
+    &__image:hover {
       transform: scale(2);
       position: relative;
       z-index: 100;
