@@ -11,22 +11,24 @@
 </div>
 
 <div class="row bg-chinese-city-light">
-  <div class="aboutThisSite">
-    <div class="aboutThisSite__section-h2 section-h2">SUBSCRIBE</div>
-    <div class="aboutThisSite__content">
+  <div class="subscribe">
+    <div class="subscribe__section-h2 section-h2">SUBSCRIBE</div>
+    <div class="subscribe__content">
       Subscribe & Stay Informed!
     </div>
-    <button class="aboutThisSite__btn" (click)="openAboutThisSite()">Learn More</button>
+    <button class="subscribe__btn" (click)="openAboutThisSite()">Learn More</button>
   </div>
 </div>
 
 <div class="row">
   <div class="blogs">
-    <div class="blogs__title">What The Tech!</div>
+    <div class="blogs__title">"What The Tech!"</div>
     <div class="blogs__subtitle">Tech talk about, well all things techie and the not so techie stuff!</div>
-    <div class="blogs_articles-header">LATEST ARTICLES</div>
-    <div class="blogs_articles">
-
+    <div class="blogs__articles-header">LATEST ARTICLES</div>
+    <div class="blogs__wrapper">
+          <div class="blogs__wrapper__article" *ngFor="let arts of articles | async">
+            <div class="article__wrapper__article-title">{{ arts.title }}</div>
+          </div>
     </div>
 
   </div>
@@ -34,13 +36,18 @@
 
 <div class="row">
   <div class="blogging-where">
-
+    <div class="blogging-where__seenon-text">As seen on</div>
+    <div class="blogging-where__seenon-logos">
+      <img src="../../assets/img/tech/medium_text_logo-no_background.png" alt="Medium">
+      <img src="../../assets/img/tech/techcrunch-no_background.png" alt="Tech Crunch">
+      <img src="../../assets/img/tech/mashable-no_background.png" alt="Mashable">
+      <img src="../../assets/img/tech/reddit-no_background.png" alt="Reddit">
+    </div>
   </div>
 </div>
 
 <div class="row">
   <section class="questions">
-    Articles
     <div class="questions__title">
       Hey Marvin!
     </div>
@@ -50,10 +57,17 @@
 
     <div class="questions__form">
       <mat-form-field>
-        <mat-label>Tech Question</mat-label>
-        <input matInput type="text #techQuestion>
+        <mat-label>Type and hit enter!</mat-label>
+        <input matInput type="text" #techQuestion>
     </mat-form-field>
   </div>
 </section>
+</div>
+
+<div class="row">
+  <div class="vlogs">
+    <div class="vlogs__title"></div>
+    <div class="vlogs__subtitle"></div>
+  </div>
 </div>
 

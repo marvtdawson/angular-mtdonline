@@ -1,41 +1,25 @@
-<!-- app page title header bar -->
-<app-title [prePageTitle]="prePageTitle" [pageTitle]="pageTitle"></app-title>
-
 <div class="row">
-  <div class="header">
-    <div class="header__banner-wrapper">
-      <img src="../../../assets/img/site/2000px-React-icon.svg.png" class="header__banner-img" alt="React Banner">
+  <div class="portfolio">
+    <div class="portfolio__header-wrapper">
+      <img [src]="headerImage" class="portfolio__header-img" [alt]="headerImageAlt">
     </div>
   </div>
 </div>
 
 <div class="row">
-  <div class="projects">
-    <div class="section-h2">REACT 16</div>
-    <mat-card class="card-container">
-        <mat-card-title>MTD Online</mat-card-title>
-        <mat-card-subtitle>React 16</mat-card-subtitle>
-      <img mat-card-image src="../../../assets/img/clients/mtdonline-react/mtdonline.jpg" alt="MTD Online Home Screen" >
+  <div class="portfolio">
+    <!--div class="section-h2">REACT 16</div-->
+    <mat-card class="portfolio__project" *ngFor="let projs of projects">
+      <mat-card-title class="portfolio__project__title">{{ projs.title | uppercase }}</mat-card-title>
+      <mat-card-subtitle class="portfolio__project__subtitle">{{ projs.frameworks }}</mat-card-subtitle>
+      <img mat-card-image class="portfolio__project__image" [src]="[projs.imagePath]" alt="{{ projs.title }} Website">
       <mat-card-content>
-        <p>My React 16 online portfolio.</p>
+        <p class="portfolio__project__content">{{ projs.summary }}</p>
       </mat-card-content>
       <mat-card-actions>
         <button mat-button>Learn More</button>
-        <button mat-button><a href="https://mtdonline.net">Visit Site</a></button>
+        <button mat-button >Visit Site</button>
       </mat-card-actions>
     </mat-card>
   </div>
 </div>
-
-  <div class="row">
-    <div class="main-content">
-      <p>
-        Here you can view the latest projects I have develop while acquiring my React skills.
-      </p>
-      <p>Visit my very first React application, which is a my online portfolio written with React 16 at
-        <a href="https://mtdonline.net">MTDOnline.net</a>
-      </p>
-  </div>
-</div>
-
-
