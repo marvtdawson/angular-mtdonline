@@ -33,6 +33,12 @@
 
 }
 
+.navbar-nav {
+  @media only screen and(min-width:$bp-medium) and (max-width:$bp-large) {
+    width: 30%;
+  }
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: #007bff;
 }

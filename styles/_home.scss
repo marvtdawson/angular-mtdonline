@@ -89,6 +89,7 @@
   margin: 0;
 
   display: grid;
+  /* autoprefixer: off */
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   grid-gap: 6rem;
 
