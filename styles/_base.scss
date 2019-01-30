@@ -28,6 +28,14 @@ $font-footer-btn: 1.4rem;
 // BUTTON VARIABLES
 $btn-hover-primary: #ff4f00;
 
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px view point = 1200 / 16 = 75
+$bp-large: 62.5em; // 1000px view point = 1000 / 16 = 62.5
+$bp-medium: 50em; // 800px view point = 800 / 16 = 50
+$bp-small: 37.5em; // 600px view point = 600 / 16 = 37.5
+$bp-smallest: 25em; // 400px view point = 400 / 16 = 25
+
 *,
 *::before,
 *::after {
@@ -39,6 +47,10 @@ $btn-hover-primary: #ff4f00;
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 10px / 16px = 62.5% -> 1rem = 10px;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+}
 }
 
 body {
