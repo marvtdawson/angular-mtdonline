@@ -23,13 +23,19 @@
     height: 30rem;
   }
 
-  /** summary wrapper **/
-  .summary__wrapper {
+  /** summary **/
+  .summary {
     position: absolute;
-    top: 0;
+    // top: 10rem;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    align-self: center;
+    justify-self: center;
+
+    @media only screen and (min-width: $bp-medium) {
+      width: 70%;
+    }
 
     &__content {
       margin: 0 auto 0;
@@ -37,24 +43,29 @@
     }
 
     &__btn {
-      float: right;
       width: 200px;
       height: 50px;
-      margin: 1% 0 0 72.3%;
       border: 2px solid #fff;
-      /* opacity: 0.6;*/
       text-align: center;
+      color: #fff;
+      font-weight: bold;
+      font-size: $font-primary-btn-text-size;
       position: relative;
       border-radius: 2px;
       display: block;
 
-      &__btn > span {
-        color: #fff;
-        top: 10px;
+      &-span {
+        top: 1.3rem;
         position: relative;
-        font-weight: bold;
         background: none;
+        align-self: center;
+        justify-self: center;
       }
+    }
+
+    &__btn:hover {
+      background: orangered;
+      cursor: pointer;
     }
   }
 }

@@ -82,11 +82,12 @@
 
 
 .skills {
-  background: url("../src/assets/img/site/ai-codes-coding-247791.jpg") no-repeat;
+  background: linear-gradient(rgba(1, 1, 2, .50), rgba(5, 8, 12, .50)), url("../src/assets/img/site/ai-codes-coding-247791.jpg") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
   width: 100%;
   grid-column: center-start / center-end;
-
-  margin: 0;
+  padding: 4rem;
 
   display: grid;
   /* autoprefixer: off */
@@ -147,12 +148,16 @@
   background-color: $color-secondary;
   padding: 2rem;
 }
+.bg-cloud {
+  padding: 4rem;
+  margin-bottom: 7rem;
+}
 
 .moreAboutMe {
   width: 80%;
-  margin: 0 auto 0;
+  margin: 0 auto 4rem;
   text-align: center;
-
+  padding: 4rem;
 
   &__title {
     font-family: Arial sans-serif;
@@ -174,7 +179,7 @@
 
   &__content {
 
-    font-size: $font-primary-content-size;
+    font-size: 1.8rem;
     color: $font-primary-color;
 
     h3 {
@@ -190,9 +195,10 @@
   &__btn {
     width: 20%;
     height: 50px;
-    margin: 3% auto 20px;
+    margin: 5rem auto 20px;
     border: 2px solid #fff;
     color: #fff;
+    font-size: $font-primary-btn-text-size;
     background: none;
     text-align: center;
     position: relative;
@@ -200,7 +206,7 @@
 
     span {
       color: #fff;
-      top: 1.6rem;
+      top: 1.4rem;
       position: relative;
       font-weight: bold;
       background: none;
