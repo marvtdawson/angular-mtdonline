@@ -11,7 +11,7 @@
     width: 100%;
     height: 90rem;
     transition: all .5s;
-    background: linear-gradient(rgba(16, 29, 44, .50), rgba(16, 29, 44, .50)), url('../src/assets/img/dallas1_cropped.jpg') no-repeat;
+    background: linear-gradient(rgba(16, 29, 44, .50), rgba(16, 29, 44, .50)), url('../assets/img/dallas1_cropped.jpg') no-repeat;
     background-size: cover;
   }
   .bg-jumbotron:hover .bg-jumbotron,
@@ -24,9 +24,8 @@
   }
 
   /** summary **/
-  .summary {
+  &__summary-wrapper {
     position: absolute;
-    // top: 10rem;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -35,6 +34,13 @@
 
     @media only screen and (min-width: $bp-medium) {
       width: 70%;
+    }
+
+    @media only screen and (min-width: $bp-smallest) {
+      width: 80%;
+      top: 35rem;
+      color: $font-primary-color;
+      font-size: 2rem;
     }
 
     &__content {
@@ -54,10 +60,16 @@
       border-radius: 2px;
       display: block;
 
-      &-span {
-        top: 1.3rem;
+      @media only screen and(min-width: $bp-smallest) {
+        margin: 5rem auto 0;
+        position: relative;
+      }
+
+      &__span {
+        top: 1.7rem;
         position: relative;
         background: none;
+        display: grid;
         align-self: center;
         justify-self: center;
       }
