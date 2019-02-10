@@ -13,64 +13,64 @@ const PROJS = [
   },
   {
     '_id': 2,
-    'title': 'Burgin Construction MN',
+    'title': 'BOULDEN COMPANY',
     'frameworks': 'CMS Made Simple',
-    'imagePath': '../../../assets/img/clients/burginconstruction/burgin_home_screen.jpg',
+    'imagePath': '../../../assets/img/clients/ecw/boulden_company/homePg_after_2018.jpg',
     'imageAlt': 'Burgin Construction MN Website',
-    'summary': 'Twin Cities general contractor quote application',
-    'siteUrl': 'this.goToBurginConstructionMN()'
+    'summary': 'Experienced in app deployment for Android to the Google Play App Store.',
+    'siteUrl': 'this.goToBouldenCompany()'
   },
   {
     '_id': 3,
-    'title': 'Mattress & Things',
-    'frameworks': 'ACMS Made Simple',
-    'imagePath': '../../../assets/img/clients/mattressandthings/homepage_2018.jpg',
+    'title': 'CONDENSOR & CHILLER',
+    'frameworks': 'CMS Made Simple',
+    'imagePath': '../../../assets/img/clients/ecw/condenser_chiller/homePg_after.JPG',
     'imageAlt': 'Mattress and Things Website',
-    'summary': 'Online Mattress Retailer.',
-    'siteUrl': 'goToMattressAndThings'
+    'summary': 'Experienced in app deployment for Android to the Google Play App Store.',
+    'siteUrl': 'goToCCS()'
   },
   {
     '_id': 4,
-    'title': 'Get VROM',
+    'title': 'AERO METALS',
     'frameworks': 'CMS Made Simple',
-    'imagePath': '../../../assets/img/clients/whoslaundry/wholaundry_homescreen.jpg',
-    'imageAlt': 'VROM Website',
-    'summary': 'Virtual Office Management Portal.',
+    'imagePath': '../../../assets/img/clients/ecw/aero_metals/homePg_after.JPG',
+    'imageAlt': 'AERO Website',
+    'summary': 'Experienced in app deployment for Android to the Google Play App Store.',
     'siteUrl': 'goToVrom'
   },
   {'_id': 5,
-    'title': 'Home Grown Musiq',
+    'title': 'QUALITY AIR SERVICES',
     'frameworks': 'CMS Made Simple',
-    'imagePath': '../../../assets/img/clients/homegrownmusiq/hgm_homepage_2018.jpg',
-    'imageAlt': 'HomeGrownMusiq Website',
-    'summary': 'Online Independent Hip Hop Community.',
-    'siteUrl': 'this.goToHomeGrownMusiq'
+    'imagePath': '../../../assets/img/clients/ecw/qas/qas_homepage.jpg',
+    'imageAlt': 'Quality Air Services Website',
+    'summary': 'Experienced in app deployment for Android to the Google Play App Store.',
+    'siteUrl': 'this.goToQualityAirServices()'
   },
   {
     '_id': 6,
-    'title': 'The Best Worst Xperience',
+    'title': 'LEECYN COMPANY',
     'frameworks': 'CMS Made Simple',
-    'imagePath': '../../../assets/img/clients/under_construction_banner.png',
-    'imageAlt': 'The Best & Worst Experiences Website',
-    'summary': 'User rated shopping / retail experiences app',
-    'siteUrl': 'goToTheBestWorstXperience()'
+    'imagePath': '../../../assets/img/clients/ecw/leecyn/leecyn_homepage_2018.jpg',
+    'imageAlt': 'Leecyn Company Website',
+    'summary': 'Experienced in app deployment for Android to the Google Play App Store.',
+    'siteUrl': 'goToLeecynCompany()'
   },
   {
     '_id': 7,
-    'title': 'Live Sync',
+    'title': 'GREENVILLE TOOL',
     'frameworks': 'CMS Made Simple',
-    'imagePath': '../../../assets/img/clients/under_construction_banner.png',
-    'imageAlt': 'Live Sync Website',
-    'summary': 'Marketing Tool',
-    'siteUrl': 'goToLiveSync()"'
+    'imagePath': '../../../assets/img/clients/ecw/greenville_tool/homePg_after.JPG',
+    'imageAlt': 'Greenville Tool Website',
+    'summary': 'Experienced in app deployment for Android to the Google Play App Store.',
+    'siteUrl': 'goToGTD()'
   },
   {
     '_id': 8,
-    'title': 'Live Sync',
+    'title': 'Cummin\'s M.a.S.F Portal',
     'frameworks': 'PHP & MySQL',
-    'imagePath': '../../../assets/img/clients/under_construction_banner.png',
-    'imageAlt': 'Live Sync Website',
-    'summary': 'Marketing Tool',
+    'imagePath': '.../../../assets/img/clients/cummins/Cummins1.jpg',
+    'imageAlt': 'M.a.S.F Portal Application',
+    'summary': 'Part Ordering Demo Application',
     'siteUrl': 'goToLiveSync()"'
   }
 ];
