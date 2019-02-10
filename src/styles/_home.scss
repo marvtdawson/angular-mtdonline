@@ -77,7 +77,10 @@
     justify-self: end;
 
     margin-top: 1.6rem;
+
   }
+
+
 }
 
 
@@ -206,11 +209,17 @@
 
     span {
       color: #fff;
-      top: 1.4rem;
+      top: 1.3rem;
       position: relative;
       font-weight: bold;
       background: none;
     }
+
+  }
+
+  &__btn:hover {
+    background: orangered;
+    cursor: pointer;
   }
 
 }
