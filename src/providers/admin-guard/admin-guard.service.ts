@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, Router, RouterStateSnapshot} from '@angular/router';
-import {AdminService} from '../../app/admin/admin.service';
+import { AdminService } from '../../app/admin/admin.service';
 import 'rxjs/add/operator/map';
 
 @Injectable({

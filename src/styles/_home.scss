@@ -92,6 +92,10 @@
   grid-column: center-start / center-end;
   padding: 4rem;
 
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 0;
+  }
+
   display: grid;
   /* autoprefixer: off */
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
@@ -118,6 +122,10 @@
 
   align-items: center;
   justify-items: center;
+
+  @media only screen and (max-width: $bp-smallest) {
+    width: 75%;
+  }
 
   &__title {
     align-items: center;
@@ -161,6 +169,10 @@
   margin: 0 auto 4rem;
   text-align: center;
   padding: 4rem;
+
+  @media only screen and (max-width: $bp-smallest) {
+    width: 100%;
+  }
 
   &__title {
     font-family: Arial sans-serif;
@@ -206,6 +218,10 @@
     text-align: center;
     position: relative;
     border-radius: 2px;
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 75%;
+    }
 
     span {
       color: #fff;
