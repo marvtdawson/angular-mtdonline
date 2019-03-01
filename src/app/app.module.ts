@@ -113,7 +113,7 @@ import { AboutRoutingModule } from './about/about-routing/about-routing.module';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    NgbModule.forRoot(),
+    NgbModule,
     LayoutModule,
     AngularMaterialModule,
     ProjectsModule,
