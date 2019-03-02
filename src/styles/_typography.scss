@@ -26,6 +26,9 @@
   font-size: 2rem ;
   color: $color-primary;
   text-transform: uppercase;
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 2.7rem;
+  }
 }
 
 .heading-4 {

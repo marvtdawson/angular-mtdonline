@@ -170,8 +170,9 @@
   text-align: center;
   padding: 4rem;
 
-  @media only screen and (max-width: $bp-smallest) {
+  @media only screen and (max-width: $bp-medium) {
     width: 100%;
+    padding: 0;
   }
 
   &__title {
@@ -194,8 +195,9 @@
 
   &__content {
 
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     color: $font-primary-color;
+    width: 100%;
 
     h3 {
 
@@ -219,13 +221,13 @@
     position: relative;
     border-radius: 2px;
 
-    @media only screen and (max-width: $bp-smallest) {
+    @media only screen and (max-width: $bp-medium) {
       width: 75%;
     }
 
     span {
       color: #fff;
-      top: 1.3rem;
+      top: 1.7rem;
       position: relative;
       font-weight: bold;
       background: none;
