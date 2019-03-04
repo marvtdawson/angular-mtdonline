@@ -28,21 +28,37 @@
     /* margin-left: 10px;*/
   }
 
-  &__link-wrapper  {
+  &__link-wrapper {
     float: right;
     right: 0;
     width: 33%;
     position: absolute;
     font-size: 1.75rem;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 30%;
+    }
+
+   /* @media only screen and (max-width: $bp-large) {
+      width: 40%;
+    }*/
+
+    @media only screen and (max-width: $bp-medium-larger) {
+      width: 35%;
+    }
+
+    @media only screen and (max-width: $bp-medium-large) {
+      width: 40%;
+    }
   }
 
 }
 
-.navbar-nav {
+/*.navbar-nav {
   @media only screen and(min-width:$bp-medium) and (max-width:$bp-large) {
-    width: 30%;
+    width: 35%;
   }
-}
+}*/
 
 .navbar-light .navbar-nav .nav-link {
   color: #007bff;
