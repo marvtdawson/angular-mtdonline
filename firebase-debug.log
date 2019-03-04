@@ -1,0 +1,107 @@
+[debug] [2019-03-02T09:45:55.602Z] ----------------------------------------------------------------------
+[debug] [2019-03-02T09:45:55.604Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-03-02T09:45:55.605Z] CLI Version:   6.2.2
+[debug] [2019-03-02T09:45:55.605Z] Platform:      linux
+[debug] [2019-03-02T09:45:55.605Z] Node Version:  v9.10.1
+[debug] [2019-03-02T09:45:55.605Z] Time:          Sat Mar 02 2019 03:45:55 GMT-0600 (CST)
+[debug] [2019-03-02T09:45:55.605Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-03-02T09:45:55.613Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-02T09:45:55.613Z] > authorizing via signed-in user
+[debug] [2019-03-02T09:45:55.613Z] [iam] checking project mtdonline-cae72 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-03-02T09:45:55.615Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-03-02T09:45:55.616Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-03-02T09:45:59.769Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-02T09:45:59.831Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/mtdonline-cae72:testIamPermissions  
+
+[debug] [2019-03-02T09:46:10.532Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-02T09:46:10.533Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/mtdonline-cae72  
+ 
+[debug] [2019-03-02T09:46:11.289Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'mtdonline-cae72'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-03-02T09:46:11.294Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/mtdonline-cae72/versions  
+
+[debug] [2019-03-02T09:46:34.414Z] Error: connect EHOSTUNREACH 172.217.12.74:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1173:14)
+[error] 
+[error] Error: Server Error. connect EHOSTUNREACH 172.217.12.74:443
+[debug] [2019-03-02T09:48:44.267Z] ----------------------------------------------------------------------
+[debug] [2019-03-02T09:48:44.269Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-03-02T09:48:44.270Z] CLI Version:   6.2.2
+[debug] [2019-03-02T09:48:44.270Z] Platform:      linux
+[debug] [2019-03-02T09:48:44.270Z] Node Version:  v9.10.1
+[debug] [2019-03-02T09:48:44.270Z] Time:          Sat Mar 02 2019 03:48:44 GMT-0600 (CST)
+[debug] [2019-03-02T09:48:44.270Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-03-02T09:48:44.278Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-02T09:48:44.279Z] > authorizing via signed-in user
+[debug] [2019-03-02T09:48:44.279Z] [iam] checking project mtdonline-cae72 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-03-02T09:48:44.281Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/mtdonline-cae72:testIamPermissions  
+
+[debug] [2019-03-02T09:48:44.628Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-02T09:48:44.632Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/mtdonline-cae72  
+ 
+[debug] [2019-03-02T09:48:44.926Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'mtdonline-cae72'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-03-02T09:48:44.944Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/mtdonline-cae72/versions  
+
+[debug] [2019-03-02T09:48:45.616Z] <<< HTTP RESPONSE 200
+[info] i  hosting[mtdonline-cae72]: beginning deploy...
+[info] i  hosting[mtdonline-cae72]: found 151 files in dist/mtdonline
+[debug] [2019-03-02T09:48:45.715Z] [hosting] hash cache [ZGlzdC9tdGRvbmxpbmU] load error: lines is not defined
+[debug] [2019-03-02T09:48:47.345Z] [hosting] hash cache [ZGlzdC9tdGRvbmxpbmU] stored for 151 files
+[debug] [2019-03-02T09:48:47.346Z] [hosting][hash queue][FINAL]
+[debug] [2019-03-02T09:48:47.346Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/mtdonline-cae72/versions/8775e4f51d5c0176:populateFiles  
+ <request body omitted>
+[debug] [2019-03-02T09:48:53.911Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-02T09:48:53.922Z] [hosting][populate queue][FINAL]
+[debug] [2019-03-02T09:48:53.922Z] [hosting] uploads queued: 3
+[debug] [2019-03-02T09:49:06.197Z] [hosting][upload queue][FINAL]
+[info] ✔  hosting[mtdonline-cae72]: file upload complete
+[debug] [2019-03-02T09:49:06.200Z] [hosting] deploy completed after 20579ms
+[debug] [2019-03-02T09:49:08.376Z] [
+  {
+    "config": {
+      "public": "dist/mtdonline",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "mtdonline-cae72"
+    },
+    "site": "mtdonline-cae72",
+    "version": "sites/mtdonline-cae72/versions/8775e4f51d5c0176"
+  }
+]
+[info] i  hosting[mtdonline-cae72]: finalizing version...
+[debug] [2019-03-02T09:49:08.378Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/mtdonline-cae72/versions/8775e4f51d5c0176?updateMask=status  
+
+[debug] [2019-03-02T09:49:08.876Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-02T09:49:08.877Z] [hosting] finalized version for mtdonline-cae72:
+[info] ✔  hosting[mtdonline-cae72]: version finalized
+[info] i  hosting[mtdonline-cae72]: releasing new version...
+[debug] [2019-03-02T09:49:08.880Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/mtdonline-cae72/releases?version_name=sites/mtdonline-cae72/versions/8775e4f51d5c0176  
+
+[debug] [2019-03-02T09:49:21.554Z] Error: socket hang up
+    at TLSSocket.onConnectEnd (_tls_wrap.js:1083:19)
+    at Object.onceWrapper (events.js:272:13)
+    at TLSSocket.emit (events.js:185:15)
+    at TLSSocket.emit (domain.js:421:20)
+    at endReadableNT (_stream_readable.js:1106:12)
+    at process._tickCallback (internal/process/next_tick.js:114:19)
+[error] 
+[error] Error: Server Error. socket hang up
