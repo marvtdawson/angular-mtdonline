@@ -65,7 +65,7 @@
   &__btn {
     width: 50%;
     background-color: transparent;
-    height: 4rem;
+    height: 4.5rem;
     border: 2px solid #000000;
     border-radius: 5rem;
     padding: 1rem;
@@ -77,8 +77,16 @@
     justify-self: end;
 
     margin-top: 1.6rem;
-
+    font-size: $font-primary-card-content-size;
   }
+
+  &__btn:hover {
+    background: orangered;
+    cursor: pointer;
+    color: #FFFFFF;
+  }
+
+
 
 
 }
