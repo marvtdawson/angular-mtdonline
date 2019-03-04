@@ -92,7 +92,7 @@
   grid-column: center-start / center-end;
   padding: 4rem;
 
-  @media only screen and (max-width: $bp-smallest) {
+  @media only screen and (max-width: $bp-medium) {
     padding: 0;
   }
 
@@ -126,14 +126,14 @@
   @media only screen and (max-width: $bp-medium) {
     width: 85%;
     height: 40rem;
+    font-size: 2.3rem;
   }
 
   &__title {
     align-items: center;
     justify-items: center;
-    font-size: 2.3rem;
+    font-size: 2rem;
     text-transform: uppercase;
-
   }
 
   &__icon {
@@ -147,12 +147,8 @@
 
   &__content {
     text-align: center;
-    font-size: 1.6rem;
-
-    p {
-      font-size: 2.3rem;
-      color: $font-primary-color;
-    }
+    font-size: 2rem;
+    color: $font-primary-color;
   }
 }
 
@@ -222,8 +218,23 @@
     position: relative;
     border-radius: 2px;
 
-    @media only screen and (max-width: $bp-medium) {
-      width: 75%;
+    @media only screen and (max-width: $bp-larger) {
+      width: 25%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      width: 30%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 40%;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+      width: 55%;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      width: 60%;
     }
 
     span {
