@@ -1,2 +1,9 @@
+.dialog {
+  width: 100%;
+  display: grid;
 
+  &__title {
+    width: 25%;
+  }
+}
 

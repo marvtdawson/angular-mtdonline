@@ -1,24 +1,26 @@
 <div class="dialog">
-  <mat-dialog-title>Request Consultation</mat-dialog-title>
+  <mat-dialog-title class="dialog__title">
+    Request Consultation
+  </mat-dialog-title>
   <mat-dialog-content>
     <mat-card class="dialog__card-container">
       <form #requestQuoteForm="ngForm" (ngSubmit)="onSubmitRequestQuoteForm(requestQuoteForm.value)">
         <p>
-          <mat-form-field appearance="legacy">
+          <mat-form-field class="dialog__card-container__field" appearance="legacy">
             <mat-label>Name:</mat-label>
             <input type="text" matInput name="requestorName" ngModel #requestorName required>
             <mat-error *ngIf="requestorName.invalid">Please enter a Valid Name.</mat-error>
           </mat-form-field>
         </p>
         <p>
-          <mat-form-field appearance="legacy">
+          <mat-form-field class="dialog__card-container__field" appearance="legacy">
             <mat-label>Email:</mat-label>
             <input type="text" matInput name="requestorEmail" ngModel #requestorEmail required>
             <mat-error *ngIf="requestorEmail.invalid">Please enter a Valid Email.</mat-error>
           </mat-form-field>
         </p>
         <p>
-          <mat-form-field appearance="legacy">
+          <mat-form-field class="dialog__card-container__field" appearance="legacy">
             <mat-label>Web Site:</mat-label>
             <input name="rquestorSite" type="text" matInput ngModel #requestorSite required>
             <mat-hint>https://www.your-site.com</mat-hint>
@@ -26,7 +28,7 @@
           </mat-form-field>
         </p>
         <p>
-          <mat-form-field appearance="legacy">
+          <mat-form-field class="dialog__card-container__field" appearance="legacy">
             <mat-label>Project Description:</mat-label>
             <textarea name="projectDescription" matInput ngModel #projectDescription cols="10" rows="3"
                       required></textarea>

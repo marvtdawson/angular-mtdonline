@@ -4,10 +4,19 @@
 
 
 .dialog {
+  width: 100%;
+  display: grid;
 
+  &__title {
+    width: 29%;
+    align-content: center;
+    justify-self: center;
+    font-size: $font-form-title-size;
+    font-weight: bold;
+  }
 
   &__card-container {
-    width: 70%;
+    width: 75%;
     min-height: 400px;
     margin: 55px 0 50px 75px;
     // background-color: #2c3e50;
@@ -15,5 +24,14 @@
     text-align: center;
     position: relative;
     float: left;
+    border: 1px solid #545454;
+    box-shadow: 5px 5px 5px #545454;
+
+    display: grid;
+
+    &__field {
+      width:80%;
+      font-size: $font-form-text-size;
+    }
   }
 }
