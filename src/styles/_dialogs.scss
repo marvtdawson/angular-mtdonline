@@ -1,5 +1,7 @@
 .cdk-overlay-pane {
   width: 45vw;
+
+  @media only screen and (max-width: $bp-medium) { width: 100vw;}
 }
 
 
@@ -13,6 +15,8 @@
     justify-self: center;
     font-size: $font-form-title-size;
     font-weight: bold;
+
+    @media only screen and (max-width: $bp-medium) { width: 60%;}
   }
 
   &__card-container {
@@ -28,6 +32,11 @@
     box-shadow: 5px 5px 5px #545454;
 
     display: grid;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      margin: 0;
+    }
 
     &__field {
       width:80%;
