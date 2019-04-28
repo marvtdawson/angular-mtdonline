@@ -9,7 +9,7 @@ const PROJS = [
     'frameworks': 'REACT 16',
     'imagePath': '../../../assets/img/clients/mtdonline-react/mtdonline.jpg',
     'summary': 'My React 16 online portfolio.',
-    'siteUrl': 'mtdOnline()'
+    // 'siteUrl': 'mtdOnline()'
   }
 ];
 
@@ -28,14 +28,15 @@ export class ReactComponent implements OnInit {
   projects = PROJS;
   framework = 'REACT 16';
 
-  constructor(private externalRoute: ExternalRoutesService) {
-    this.extRoute = MTD_ONLINE;
-  }
+  constructor() {}
 
   ngOnInit() {
   }
-  mtdOnline() {
-    this.externalRoute.goToMtdOnline();
+
+  goToMTDOnline() {
+   // this.externalRoute.goToMtdOnline();
+
+    window.location.href = 'https://mtdonline.net';
   }
 
 }

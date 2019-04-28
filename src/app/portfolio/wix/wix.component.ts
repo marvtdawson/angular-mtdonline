@@ -7,7 +7,7 @@ const PROJS = [
     'frameworks': 'WIX',
     'imagePath': '../../../assets/img/clients/reggiesbucket/reggiesbucket_homescreen.jpg',
     'summary': 'Ex MLB player, Reggie York\'s fitness improvement site.',
-    'siteUrl': 'goToReggiesBucket()'
+    // 'siteUrl': this.goToReggiesBucket()
   }
 ];
 
@@ -21,7 +21,7 @@ export class WixComponent implements OnInit {
 
   prePageTitle = 'Designed with';
   pageTitle = 'WIX';
-  headerImage = '../../../assets/img/site/zend_2018_php_7.jpg';
+  headerImage = '../../../assets/img/site/wix-logo.png';
   headerImageAlt = 'WIX Header Image';
   projects = PROJS;
   framework = 'WIX';
