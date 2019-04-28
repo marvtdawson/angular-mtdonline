@@ -22,7 +22,11 @@
     display: grid;
 
     @media only screen and (min-width: $bp-medium) {
-      width: 70%;
+      width: 60%;
+    }
+
+    @media only screen and (max-width: $bp-smaller-1) {
+      width: 100%;
     }
 
     @media only screen and (min-width: $bp-smallest) {
@@ -34,6 +38,10 @@
       height: 35rem;
 
       margin: 0 auto;
+
+      @media only screen and (min-width: $bp-smaller-1) {
+        width: 100%;
+      }
 
       @media only screen and (max-width: $bp-smallest) {
         width: 100%;

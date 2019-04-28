@@ -24,14 +24,11 @@
 
   &__logo {
     height: 45px;
-   display: none;
-    /* margin-left: 10px;*/
+    display: none;
   }
 
   &__link-wrapper {
-    float: right;
-    right: 0;
-    width: 33%;
+    width: 40%;
     position: absolute;
     font-size: 1.75rem;
 
@@ -48,7 +45,9 @@
     }
 
     @media only screen and (max-width: $bp-medium-large) {
-      width: 40%;
+      width: 100%;
+      position: relative;
+      text-align: center;
     }
   }
 
