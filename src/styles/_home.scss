@@ -51,6 +51,8 @@
 
   @media only screen and (max-width: $bp-medium-larger) { width: 57%;}
 
+  @media only screen and (max-width: $bp-smallest) { width: 100%;}
+
 
   &__section-h2 {
     grid-row: 1 / -1;
@@ -58,6 +60,8 @@
     align-items: center;
     justify-items: center;
     text-align: center;
+
+    @media only screen and (max-width: $bp-smallest) { width: 60%;}
   }
 
   &__content {
@@ -212,9 +216,15 @@
     font-size: 1.6rem;
     color: $font-primary-color;
     width: 100%;
+    margin: 0 auto 0;
 
     @media only screen and (max-width: $bp-medium) {
       font-size: 2.5rem;
+      width: 90%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 2rem;
     }
 
     h3 {
