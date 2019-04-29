@@ -2,6 +2,8 @@
   width: 45vw;
 
   @media only screen and (max-width: $bp-medium) { width: 100vw;}
+
+  @media only screen and (max-width: $bp-smaller-1) { width: 100vw;}
 }
 
 
