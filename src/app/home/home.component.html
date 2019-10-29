@@ -4,8 +4,9 @@
     <div class="bg-jumbotron animated fadeIn delay-1s">
       <div class="header__summary-wrapper">
         <div class="header__summary-wrapper__content animated slideInDown delay-2s">
-          I am a Sr. Full Stack Software Engineer, that designs mobile, responsive and hybrid applications. I am skilled in front-end frameworks like Angular 6, Ionic 4 or Spring 5 and back-end languages like Java and PHP.
-          I am currently available as a on-site consultant / freelance developer in the Dallas-Fort Worth area in Texas or remotely.
+          I am a Sr. Full Stack Software Engineer, that designs mobile, responsive and hybrid applications.
+          I am skilled in front-end frameworks like Angular 8, ReactJS 16, Ionic 4 or Spring 5 and back-end languages like Java, C# and PHP.
+          I am currently available as a on-site consultant / freelance developer in the Dallas-Fort Worth, Texas area or remotely.
         </div>
         <div class="header__summary-wrapper__btn animated rotateIn delay-3s">
           <span class="header__summary-wrapper__btn__span">
@@ -31,13 +32,13 @@
 <div class="row">
     <div class="projects">
       <!--div id="" class="section-h2">RECENT PROJECTS</div-->
-      <mat-card *ngFor="let projs of projects$ | async ">
-        <mat-card-title>{{ projs.title }}</mat-card-title>
-        <mat-card-subtitle>{{ projs.framework }}</mat-card-subtitle>
-        <img mat-card-image [src]="projs.imageUrl"
-             alt="{{projs.title}} Website">
+      <mat-card *ngFor="let project of projects$ | async ">
+        <mat-card-title>{{ project.title }}</mat-card-title>
+        <mat-card-subtitle>{{ project.framework }}</mat-card-subtitle>
+        <img mat-card-image [src]="project.imageUrl"
+             alt="{{project.title}} Website">
         <mat-card-content>
-          <p>{{ projs.summary }}</p>
+          <p>{{ project.summary }}</p>
         </mat-card-content>
         <mat-card-actions>
           <button mat-button>Learn More</button>
@@ -65,7 +66,7 @@
       <div class="heading-4--light skill__title">Front End</div>
       <i class="fab fa-angular fa-9x"></i>
       <div class="skill__content">
-        <p>JavaScript frameworks such as: Angular 6 / 7, React 16.</p>
+        <p>JavaScript frameworks such as: Angular 8, ReactJs 16.</p>
       </div>
     </div>
 
@@ -81,7 +82,7 @@
       <div class="heading-4--light skill__title">Open Source</div>
       <i class="fab fa-linux fa-9x"></i>
       <div class="skill__content">
-        <p>Linux command line for dev environment setup and prod deployment.</p>
+        <p>Linux command line for dev environment setup and production deployment.</p>
       </div>
     </div>
 
@@ -147,9 +148,9 @@
         </p>
         <p>
           Having over 10 + years of Inventory Control / Supply Chain Management with a focus on root cause analysis,
-          Agile's Kanban and LEAN manufacturing.
+          using Agile's Kanban model within a LEAN manufacturing environment.
           These skills have given me the ability to better understand a project's development timeline
-          regarding the customer in an Agile Scrum environment.
+          regarding the customer, in an Agile Scrum environment.
         </p>
         <p>
           During my 10 + years tenure in Inventory Control / Supply Chain Management, I've moon-lighted as a freelance

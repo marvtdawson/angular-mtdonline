@@ -1,17 +1,18 @@
-@import "base";
+@import "base/base";
 
+@import "layout/nav";
+@import "base/typography";
+@import "layout/header";
 
-@import "nav";
-@import "typography";
-@import "header";
-@import "portfolio";
-@import "projects";
-@import "home";
-@import "blog";
-@import "admin";
-@import "dialogs";
-@import "forms";
-@import "footer";
+@import "pages/portfolio";
+@import "pages/blog";
+@import "pages/projects";
+
+@import "pages/home";
+@import "pages/admin";
+@import "components/dialogs";
+@import "components/forms";
+@import "layout/footer";
 
 
 @import "../../node_modules/bootstrap/dist/css/bootstrap.css";

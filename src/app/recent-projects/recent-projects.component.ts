@@ -8,9 +8,7 @@ import { Component, Input,  OnInit } from '@angular/core';
 })
 export class RecentProjectsComponent implements OnInit {
 
-  constructor() {
-
-  }
+  constructor() {  }
 
   ngOnInit() {
   }

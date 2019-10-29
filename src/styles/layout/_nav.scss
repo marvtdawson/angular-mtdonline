@@ -34,22 +34,27 @@
     position: absolute;
     font-size: 1.75rem;
 
-    @media only screen and (max-width: $bp-large) {
-      width: 30%;
+    // 1100
+    @media only screen and (max-width: $bp-larger) {
+      width: 33%;
+      float: right;
+      right: 1%;
     }
 
-   /* @media only screen and (max-width: $bp-large) {
+    // 1000
+   @media only screen and (max-width: $bp-large) {
       width: 40%;
-    }*/
-
-    @media only screen and (max-width: $bp-medium-larger) {
-      width: 35%;
     }
 
     @media only screen and (max-width: $bp-medium-large) {
-      width: 100%;
-      position: relative;
+      width: 52%;
+    }
+
+    @media only screen and (min-width: $bp-medium) and (max-width: $bp-medium-large) {
+      width: 50%;
+      // position: relative;
       text-align: center;
+      right:0;
     }
   }
 

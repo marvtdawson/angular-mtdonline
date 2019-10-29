@@ -11,7 +11,11 @@
     width: 100%;
     height: 90rem;
     transition: all .5s;
-    background: linear-gradient(rgba(16, 29, 44, .50), rgba(16, 29, 44, .50)), url('../assets/img/dallas1_cropped.jpg') no-repeat;
+    background-image: linear-gradient(
+          rgba(16, 29, 44, .50),
+          rgba(16, 29, 44, .50)),
+    url('/src/assets/img/dallas1_cropped.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
   }
   .bg-jumbotron:hover .bg-jumbotron,

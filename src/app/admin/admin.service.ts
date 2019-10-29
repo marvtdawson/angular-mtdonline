@@ -57,7 +57,11 @@ export class AdminService {
       );
   }
 
-
+  /**
+   *
+   * @param email
+   * @param password
+   */
   signInWithEmailAndPassword(email: string, password: string) {
     // sign in with email and password using firebase
     this.afAuth.auth.signInWithEmailAndPassword(email, password)

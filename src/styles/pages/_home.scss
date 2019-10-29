@@ -53,7 +53,6 @@
 
   @media only screen and (max-width: $bp-smallest) { width: 100%;}
 
-
   &__section-h2 {
     grid-row: 1 / -1;
     grid-column: 1 / -1;
@@ -98,15 +97,14 @@
     cursor: pointer;
     color: #FFFFFF;
   }
-
-
-
-
 }
 
-
 .skills {
-  background: linear-gradient(rgba(1, 1, 2, .50), rgba(5, 8, 12, .50)), url("../assets/img/site/ai-codes-coding-247791.jpg") no-repeat;
+  background-image: linear-gradient(
+                  rgba(1, 1, 2, .50),
+                  rgba(5, 8, 12, .50)),
+                  url("src/assets/img/site/ai-codes-coding-247791.jpg");
+  background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   width: 100%;
@@ -204,7 +202,8 @@
 
   &__pic {
     display: block;
-    background: url('../assets/img/selfPortrait/marvin_2019_140_x_140.jpg') no-repeat;
+    background-image: url('/src/assets/img/selfPortrait/marvin_2019_140_x_140.jpg');
+    background-repeat: no-repeat;
     width: 140px;
     height: 145px;
     margin: 25px auto 30px;
