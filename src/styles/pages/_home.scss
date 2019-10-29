@@ -99,6 +99,16 @@
   }
 }
 
+mat-card-title {
+  text-align: center;
+}
+mat-card-subtitle {
+  text-align: center;
+}
+mat-card-content {
+  text-align: center;
+}
+
 .skills {
   background-image: linear-gradient(
                   rgba(1, 1, 2, .50),
@@ -182,9 +192,9 @@
 
 .moreAboutMe {
   width: 80%;
-  margin: 0 auto 4rem;
+  margin: 0 auto 2rem;
   text-align: center;
-  padding: 4rem;
+  padding: 2rem;
 
   @media only screen and (max-width: $bp-medium) {
     width: 100%;
@@ -202,7 +212,7 @@
 
   &__pic {
     display: block;
-    background-image: url('/src/assets/img/selfPortrait/marvin_2019_140_x_140.jpg');
+    background-image: url("src/assets/img/selfPortrait/marvin_2019_140_x_140.jpg");
     background-repeat: no-repeat;
     width: 140px;
     height: 145px;
@@ -278,7 +288,6 @@
         top: 1.7rem;
       }
     }
-
   }
 
   &__btn:hover {
