@@ -13,3 +13,20 @@ mat-card-subtitle {
 mat-card-content {
   text-align: center;
 }
+
+.dialog {
+  width: 100%;
+  display: grid;
+
+  &__title {
+    width: 25%;
+
+    @media only screen and (max-width: 798px) { width: 65%;}
+  }
+
+  .mat-button {
+    color: $color-black;
+  }
+}
+
+

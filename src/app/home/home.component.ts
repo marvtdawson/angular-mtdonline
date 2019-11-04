@@ -5,7 +5,7 @@ import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scrol
 
 import { RecentProjectsComponent } from '../recent-projects/recent-projects.component';
 import { ResumeComponent } from '../resume/resume.component';
-import { MatDialog } from '@angular/material';
+import { MatDialogModule, MatDialog } from '@angular/material/dialog';
 import { SiteDataService } from '../../providers/site-data/site-data.service';
 import {AboutSiteComponent} from '../about-site/about-site.component';
 import {AngularFirestore, AngularFirestoreCollection} from '@angular/fire/firestore';
