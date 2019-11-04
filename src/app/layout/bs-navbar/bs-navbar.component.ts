@@ -4,7 +4,7 @@ import { MatDialog } from '@angular/material';
 import { Router } from '@angular/router';
 import { AdminService } from '../../admin/admin.service';
 import { environment } from '../../../environments/environment';
-import * as firebase from 'firebase/app';
+import * as firebase from 'firebase';
 import {AngularFireAuth} from '@angular/fire/auth';
 import { Observable } from 'rxjs';
 

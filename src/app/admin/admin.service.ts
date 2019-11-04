@@ -4,7 +4,7 @@ import 'rxjs/add/operator/map';
 import {Observable} from 'rxjs';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AngularFirestore } from '@angular/fire/firestore';
-import * as firebase from 'firebase/app';
+import * as firebase from 'firebase';
 import {ActivatedRoute, Router } from '@angular/router';
 
 @Injectable({ providedIn: 'root' })
