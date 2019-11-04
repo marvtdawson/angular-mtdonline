@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ProjectsInterface } from './projects-interface';
-import { AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireDatabase } from '@angular/fire/database';
 import { map } from 'rxjs/operators';
 import {Observable, Subject} from 'rxjs';
 

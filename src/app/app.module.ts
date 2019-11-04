@@ -1,19 +1,23 @@
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { FIREBASE_CONFIG } from './app-firebase.config';
-import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { AngularMaterialModule } from './angular-material.module';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireAuthModule } from 'angularfire2/auth';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { LayoutModule } from '@angular/cdk/layout';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment} from '../environments/environment';
+
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// import {NgbDropdownMenu} from '@ng-bootstrap/ng-bootstrap/dropdown/dropdown';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { TranslateModule } from '@ngx-translate/core';
-// import { FirebaseListObservable } from 'angularfire2/database';
+
+import { FIREBASE_CONFIG } from './app-firebase.config';
+import { AngularMaterialModule } from './angular-material.module';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 
 // services
 import { AdminService} from './admin/admin.service';
@@ -22,9 +26,8 @@ import { FrameworksService } from '../providers/frameworks/frameworks.service';
 import { UserService } from '../providers/user/user.service';
 import { ExternalRoutesService } from '../providers/external-routes/external-routes.service';
 
-// app and layout components
+// app & layout components
 import { AppComponent } from './app.component';
-import { LayoutModule } from '@angular/cdk/layout';
 import { BsNavbarComponent } from './layout/bs-navbar/bs-navbar.component';
 import { AppFooterComponent } from './layout/app-footer/app-footer.component';
 import { AppTitleComponent } from './layout/app-title/app-title.component';
@@ -63,7 +66,7 @@ import { NewsletterComponent } from './admin/newsletter/newsletter.component';
 import { ResumeComponent } from './resume/resume.component';
 import { RequestQuoteComponent } from './consulting/request-quote/request-quote.component';
 import { RecentProjectsComponent } from './recent-projects/recent-projects.component';
-// import {NgbDropdownMenu} from '@ng-bootstrap/ng-bootstrap/dropdown/dropdown';
+
 
 import { SignupComponent } from './admin/signup/signup.component';
 import { HighlightDirective } from '../directives/highlight/highlight.directive';
@@ -118,7 +121,7 @@ import { AboutRoutingModule } from './about/about-routing/about-routing.module';
     AngularMaterialModule,
     ProjectsModule,
     ScrollToModule.forRoot(),
-    AngularFireModule.initializeApp(FIREBASE_CONFIG),
+    AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFireDatabaseModule,
     AngularFirestoreModule,
