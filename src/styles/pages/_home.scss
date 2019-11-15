@@ -90,6 +90,8 @@
     margin-top: 1.6rem;
     font-size: $font-primary-card-content-size;
     font-weight: bold;
+
+    @media only screen and (max-width: $bp-smallest) { width: 60%;}
   }
 
   &__btn:hover {
