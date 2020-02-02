@@ -8,6 +8,7 @@ import {AngularCAspnetComponent} from '../angular-c-aspnet/angular-c-aspnet.comp
 import {ReactComponent} from '../react/react.component';
 import {PhpComponent} from '../php/php.component';
 import {WixComponent} from '../wix/wix.component';
+import {JavaComponent} from '../java/java.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import {WixComponent} from '../wix/wix.component';
           { path: 'angular-ionic', component: AngularIonicComponent},
           { path: 'php', component: PhpComponent},
           { path: 'react', component: ReactComponent},
-          { path: 'wix', component: WixComponent}
+          { path: 'wix', component: WixComponent},
+          { path: 'java', component: JavaComponent}
         ]
       },
     ])

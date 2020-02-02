@@ -20,7 +20,7 @@ const appRoutes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'resume', component: ResumeComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'signup', component: SignupComponent },
+  { path: 'sign-up', component: SignupComponent },
   { path: 'login', component: LoginComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
