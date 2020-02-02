@@ -11,6 +11,7 @@ import { BlogComponent } from './blog/blog.component';
 import { SignupComponent} from './admin/signup/signup.component';
 
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import {PortfolioComponent} from './portfolio/portfolio.component';
 
 const appRoutes: Routes = [
 {path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -18,6 +19,7 @@ const appRoutes: Routes = [
   { path: 'about-site', component: AboutSiteComponent },
   { path: 'consulting', component: ConsultingComponent },
   { path: 'blog', component: BlogComponent },
+  { path: 'portfolio', component: PortfolioComponent },
   { path: 'resume', component: ResumeComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'sign-up', component: SignupComponent },

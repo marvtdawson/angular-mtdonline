@@ -17,7 +17,7 @@ import {JavaComponent} from '../java/java.component';
       { path: 'portfolio', component: PortfolioComponent,
         children: [
           { path: 'angular', component: AngularComponent},
-          { path: 'angular-c-aspnet', component: AngularCAspnetComponent},
+          { path: 'angular-c-asp-net', component: AngularCAspnetComponent},
           { path: 'angular-ionic', component: AngularIonicComponent},
           { path: 'php', component: PhpComponent},
           { path: 'react', component: ReactComponent},
