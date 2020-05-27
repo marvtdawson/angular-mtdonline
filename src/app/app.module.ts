@@ -73,6 +73,7 @@ import { HighlightDirective } from '../directives/highlight/highlight.directive'
 import { PortfolioRoutingModule } from './portfolio/portfolio-routing.module/portfolio-routing.module';
 import { AdminRoutingModule } from './admin/admin-routing/admin-routing.module';
 import { AboutRoutingModule } from './about/about-routing/about-routing.module';
+import {JavaComponent} from './portfolio/java/java.component';
 
 
 @NgModule({
@@ -90,6 +91,7 @@ import { AboutRoutingModule } from './about/about-routing/about-routing.module';
     ResumeComponent,
     PortfolioComponent,
     PhpComponent,
+    JavaComponent,
     AngularComponent,
     AngularIonicComponent,
     AngularCAspnetComponent,
