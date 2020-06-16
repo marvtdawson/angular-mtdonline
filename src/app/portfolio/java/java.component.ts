@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Observable} from 'rxjs';
+import {ProjectsInterface} from '../../admin/projects/projects-interface';
 
 @Component({
   selector: 'app-java',
@@ -7,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JavaComponent implements OnInit {
 
+  projects$: Observable<ProjectsInterface[]>;
   constructor() { }
 
   ngOnInit() {

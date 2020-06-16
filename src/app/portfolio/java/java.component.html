@@ -1,15 +1,18 @@
 <div class="row">
-  <div class="portfolio">
-    <mat-card class="portfolio__project">
-      <mat-card-title class="portfolio__project__title"></mat-card-title>
-      <mat-card-subtitle class="portfolio__project__subtitle"></mat-card-subtitle>
-
+  <div class="projects">
+    <!--div id="" class="section-h2">RECENT PROJECTS</div-->
+    <mat-card *ngFor="let project of projects$ | async ">
+      <mat-card-title>{{ project.title }}</mat-card-title>
+      <mat-card-subtitle>{{ project.framework }}</mat-card-subtitle>
+      <img mat-card-image [src]="project.imageUrl"
+           alt="{{project.title}} Website">
       <mat-card-content>
-        <audio controls>
-          <source src="assets/podcast/OurVoice/2020/May/Episode_2_George_Floyd_Death_Knee_of_Minneapolis_Police_Part_2.mp3">
-        </audio>
+        <p>{{ project.summary }}</p>
       </mat-card-content>
-
+      <mat-card-actions>
+        <button mat-button>Learn More</button>
+        <button mat-button>Visit Site</button>
+      </mat-card-actions>
     </mat-card>
   </div>
 </div>

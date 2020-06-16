@@ -10,17 +10,18 @@
       margin-left: 0;
     }
 
+    &__logo-wrapper:hover {
+      cursor: pointer;
+    }
+
+    &__text {
+      display: inline;
+      color: #007bff;
+      font-size: 1.75rem;
+    }
+
   }
 
-  &__logo-wrapper:hover {
-    cursor: pointer;
-  }
-
-  &__text {
-    display: inline;
-    color: #007bff;
-    font-size: 1.75rem;
-  }
 
   &__logo {
     height: 45px;
