@@ -1,3 +1,5 @@
+@import "../base/base";
+
 /** Extra large devices (large desktops, 1200px and up) */
 
 .summary {
@@ -168,7 +170,7 @@
 
   &__content {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: $font-primary-color;
   }
 }
