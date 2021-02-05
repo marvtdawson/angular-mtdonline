@@ -80,4 +80,8 @@ export class HomeComponent implements OnInit {
     this.dialog.open(AboutSiteComponent, {});
   }
 
+  myTestedFunction() {
+    return 'My Tested Function';
+  }
+
 }

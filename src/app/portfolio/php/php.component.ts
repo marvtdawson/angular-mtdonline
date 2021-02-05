@@ -36,7 +36,7 @@ const PROJS = [
     'imagePath': '../../../assets/img/clients/ecw/aero_metals/homePg_after.JPG',
     'imageAlt': 'AERO Website',
     'summary': 'Experienced in app deployment for Android to the Google Play App Store.',
-    'siteUrl': 'goToVrom'
+    'siteUrl': 'goToAeroMetals()'
   },
   {'_id': 5,
     'title': 'QUALITY AIR SERVICES',
@@ -103,19 +103,19 @@ export class PhpComponent implements OnInit {
   }
 
   goToCCS() {
-    window.location.href = 'https://www.bouldencompany.com';
+    window.location.href = 'https://www.ccs-tubes.com';
   }
 
   goToAeroMetals() {
-    window.location.href = 'https://www.bouldencompany.com';
+    window.location.href = 'https://www.aerometals.com';
   }
 
   goToQualityAirServices() {
-    window.location.href = 'https://www.bouldencompany.com';
+    window.location.href = 'https://www.qas.com';
   }
 
   goToLeecynCompany() {
-    window.location.href = 'https://www.bouldencompany.com';
+    window.location.href = 'https://www.quality-air-services.net';
   }
 
   goToGTD() {

@@ -25,7 +25,7 @@ describe('HomeComponent', () => {
   });
 
   it('should return function name', () => {
-    const result = component.myTestFunction();
+    const result = component.myTestedFunction();
     expect(result).toContain('My Test Function');
   });
 
